@@ -1,0 +1,375 @@
+Individual_code	Group	TGRC_	PI_CGN#	EA_#	Name	Botanical_variety	Categories	Origin	Province/Site	Latitude	Longitude	Raw_reads	Read_length	Raw_Bases_(bp)	Coverage	Mean_depth	
+TS-14	PIM	LA1547	-	-	Chota to EI Angel	S. pimpinellifolium	Wild  species	Ecuador	Carchi	0.583333	 -77.933333 	58.611.708 	100	5.861.170.800 	95,0%	5,2 	
+TS-15	PIM	LA2093	-	-		S. pimpinellifolium	Wild  species	Ecuador	El Oro 	 -3.628056	-79.888056	43.364.620 	100	4.336.462.000 	91,7%	4,4 	
+TS-16	PIM	LA1246	PI365912	-		S. pimpinellifolium	Wild  species	Ecuador	Loja 	-3.990000	-79.360000	57.831.786 	100	5.783.178.600 	93,7%	5,1 	
+TS-17	PIM	LA0373	-	-	Culebras	S. pimpinellifolium	Wild  species	Peru	Ancash 	-9.940000	-78.230000	56.345.650 	100	5.634.565.000 	92,6%	4,8 	
+TS-18	PIM	LA1579	-	-		S. pimpinellifolium	Wild  species	Peru	Lambayeque	 -6.590000	-79.870000	56.923.432 	100	5.692.343.200 	92,4%	4,9 	
+TS-19	PIM	LA1589	PI407545 	EA01467		S. pimpinellifolium	Wild  species	Peru	La Libertad	-8.390000	-78.740000	55.719.182 	100	5.571.918.200 	91,7%	4,8 	
+TS-20	PIM	LA0442	-	-	Sechin	S. pimpinellifolium	Wild  species	Peru	Ancash	-9.481667	 -78.259167 	55.810.210 	100	5.581.021.000 	94,7%	4,9 	
+TS-21	PIM	LA1375	PI365967 	-		S. pimpinellifolium	Wild  species	Peru	Lima	 -13.074722	-76.402500	54.660.816 	100	5.466.081.600 	91,8%	4,7 	
+TS-22	PIM	LA1269	PI365957	-	Pisiquillo	S. pimpinellifolium	Wild  species	Peru	Lima	-11.475000	 -77.108333	54.472.554 	100	5.447.255.400 	92,0%	4,7 	
+TS-23	PIM	LA1521	-	-	EI Pinon, Asia	S. pimpinellifolium	Wild  species	Peru	Lima	-12.764722	-76.505278	54.922.454 	100	5.492.245.400 	90,7%	4,7 	
+TS-24	PIM	-	-	-		S. pimpinellifolium	Wild  species					35.162.110 	100	3.516.211.000 	87,3%	3,4 	
+TS-50	PIM	LA0417	-	EA00565		S. pimpinellifolium	Wild  species	Ecuador	Guayas	-2.733333	-79.916667	55.456.718 	100	5.545.671.800 	87,9%	5,9 	
+TS-77	PIM	LA1237	PI365910	-	Atacames	S. pimpinellifolium	Wild  species	Ecuador	 Esmeraldas	0.866667	-79.850000	61.858.842 	100	6.185.884.200 	90,7%	6,1 	
+TS-79	PIM	LA1924	-	-	Piedras Gordas	S. pimpinellifolium	Wild  species	Peru	Ica	-14.628889	-75.214167	88.903.954 	100	8.890.395.400 	88,0%	8,7 	
+TS-92	PIM	LA1582	PI407539	-	Punto Cuatro	S. pimpinellifolium	Wild  species	Peru	Lambayeque	-6.150000	-79.733333	33.633.540 	100	3.363.354.000 	50,4%	3,3 	
+TS-123	PIM	LA0722	-	-	Trujillo	S. pimpinellifolium	Wild  species	Peru	La Libertad	-8.116667	-79.033333	49.567.590 	100	4.956.759.000 	75,6%	4,8 	
+TS-124	PIM	LA1245	PI365911 	-	Santa Rosa	S. pimpinellifolium	Wild  species	Ecuador	El Oro	-3.458333	-79.966667	56.263.620 	100	5.626.362.000 	55,4%	4,9 	
+TS-144	PIM	LA0411	PI251319 	-	Pichilingue	S. pimpinellifolium	Wild  species	Ecuador	Los Rios 	 -1.100000	-79.483333	62.156.960 	100	6.215.696.000 	67,6%	5,7 	
+TS-145	PIM	LA1617	-	-	Tumbes south	S. pimpinellifolium	Wild  species	Peru	Tumbes	 -3.566667	 -80.466667	49.745.804 	100	4.974.580.400 	56,0%	2,3 	
+TS-156	PIM	LA2181	-	-	Balsa Huaico	S. pimpinellifolium	Wild  species	Peru	Cajamarca	-5.775833	 -78.783056 	62.378.096 	100	6.237.809.600 	92,4%	6,2 	
+TS-164	PIM	LA1584	PI407541 	-	Jayanca to La Vina	S. pimpinellifolium	Wild  species	Peru	Lambayeque	-6.370000	-79.790000	114.165.486 	100	11.416.548.600 	62,5%	8,9 	
+TS-182	PIM	LA2183	-	-	Corral Quemado	S. pimpinellifolium	Wild  species	Peru	Amazonas	-5.740000	 -78.670000 	41.752.566 	100	4.175.256.600 	73,4%	3,4 	
+TS-222	PIM	-	-	-	Wva 700	S. pimpinellifolium	Wild  species					65.356.536 	100	6.535.653.600 	76,7%	7,0 	
+TS-244	PIM	LA1578	-	-	Santa Marta	S. pimpinellifolium	Wild  species	Peru	La Libertad 	-7.333333	-79.583333	55.566.326 	100	5.556.632.600 	91,2%	5,5 	
+TS-265	PIM	LA0400	-	-	Hacienda Buenos Aires	S. pimpinellifolium	Wild  species	Peru	Piura	-5.260833	-79.964167	58.098.096 	100	5.809.809.600 	67,1%	5,5 	
+TS-266	PIM	LA1478	-	-	Santo Tome	S. pimpinellifolium	Wild  species	Peru	Piura	-5.216667	-80.083333	71.600.682 	100	7.160.068.200 	69,6%	6,9 	
+TS-267*	PIM	LA2660	-	-	San Ignacia de Moxos	S. pimpinellifolium	Wild  species	Bolivia	Beni			202.562.420 	100	20.256.242.000 	74,4%	18,1 	
+TS-291	PIM	LA1589 	PI407545 	EA01467	Viru to Galumga	S. pimpinellifolium	Wild  species	Peru	La Libertad	-8.390000	-78.740000	49.432.280 	100	4.943.228.000 	49,4%	4,5 	
+TS-410	PIM	-	PI370093	-		S. pimpinellifolium	Wild  species	Canada				100.711.048 	100	10.071.104.800 	92,7%	10,6 	
+TS-411	PIM	LA0480	-	-		S. pimpinellifolium	Wild  species	Peru	Ica			64.285.442 	100	6.428.544.200 	92,2%	6,6 	
+TS-412	PIM	LA0722	-	-		S. pimpinellifolium	Wild  species	Peru	La Libertad 	 -8.116667	 -79.033333	43.301.548 	100	4.330.154.800 	88,1%	4,5 	
+TS-413	PIM	LA1242	-	-		S. pimpinellifolium	Wild  species	Ecuador	Guayas			67.157.190 	100	6.715.719.000 	93,4%	7,1 	
+TS-414	PIM	LA1341	PI379020 	-		S. pimpinellifolium	Wild  species	Peru	Lima	 -11.970833	-76.791667	49.877.478 	100	4.987.747.800 	90,2%	5,1 	
+TS-415	PIM	LA1596 	PI407552	-		S. pimpinellifolium	Wild  species	Peru	Ancash	 -8.925000	-78.566667	76.571.072 	100	7.657.107.200 	94,2%	7,7 	
+TS-416	PIM	LA1847	-	-		S. pimpinellifolium	Wild  species					71.749.800 	100	7.174.980.000 	94,4%	7,6 	
+TS-417	PIM	LA1933	-	-		S. pimpinellifolium	Wild  species	Peru	Arequipa	-15.456389	-74.445833	59.626.428 	100	5.962.642.800 	90,6%	6,1 	
+TS-418	PIM	LA2147	-	-		S. pimpinellifolium	Wild  species	Peru	Cajamarca	-7.200000	-78.983333	55.487.778 	100	5.548.777.800 	93,6%	5,9 	
+TS-419	PIM	LA2173	-	-		S. pimpinellifolium	Wild  species	Peru	Cajamarca			59.361.256 	100	5.936.125.600 	93,1%	6,1 	
+TS-420	PIM	LA2184	-	-		S. pimpinellifolium	Wild  species	Peru	Amazonas	-5.587500	-78.550556	55.498.628 	100	5.549.862.800 	92,7%	5,8 	
+TS-421	PIM	LA2187	-	-		S. pimpinellifolium	Wild  species	Peru	 Amazonas 	-5.925000	 -78.050000	56.411.540 	100	5.641.154.000 	92,9%	5,8 	
+TS-422	PIM	LA2425	-	-		S. pimpinellifolium	Wild  species					54.683.736 	100	5.468.373.600 	90,6%	5,6 	
+TS-424	PIM	-	PI126947	-		S. pimpinellifolium	Wild  species	Peru				48.184.088 	100	4.818.408.800 	89,9%	4,9 	
+TS-425	PIM	-	PI126925	-		S. pimpinellifolium	Wild  species	Peru				58.005.630 	100	5.800.563.000 	90,6%	5,9 	
+TS-429	PIM	-	PI126954	-		S. pimpinellifolium	Wild  species	Peru				68.117.978 	100	6.811.797.800 	93,3%	7,0 	
+TS-432	PIM	-	PI270449	-		S. pimpinellifolium	Wild  species	Mexico				47.806.392 	100	4.780.639.200 	94,9%	5,4 	
+TS-433	PIM	-	PI370093	-		S. pimpinellifolium	Wild  species	Canada				48.396.802 	100	4.839.680.200 	94,3%	5,3 	
+TS-434	PIM	LA1591	PI407547	-	SAL1871 	S. pimpinellifolium	Wild  species	Peru	 La Libertad 	 -7.716667	-79.116667	59.333.440 	100	5.933.344.000 	92,3%	6,1 	
+TS-435	PIM	LA1595	PI407551	-	SAL1875	S. pimpinellifolium	Wild  species	Peru	Ancash	-9.270000	-78.470000	56.572.400 	100	5.657.240.000 	91,4%	5,8 	
+TS-437	PIM	LA1578	-	-	SAL1858	S. pimpinellifolium	Wild  species	Peru	 La Libertad 	-7.333333	-79.583333	46.799.920 	100	4.679.992.000 	89,8%	4,8 	
+TS-438	PIM	-	-	-	CN7542	S. pimpinellifolium	Wild  species					63.970.848 	100	6.397.084.800 	93,6%	6,6 	
+TS-439	PIM	LA2656	PI503524	-		S. pimpinellifolium	Wild  species	Peru	Tumbes	 -3.800000	-80.700000	65.242.236 	100	6.524.223.600 	92,1%	6,7 	
+TS-440	PIM	LA2857	-	-		S. pimpinellifolium	Wild  species	Ecuador	Galapagos Islands 	-0.950000	-90.966667	55.283.766 	100	5.528.376.600 	93,7%	5,8 	
+TS-441	PIM	LA4431	-	-		S. pimpinellifolium	Wild  species					61.906.330 	100	6.190.633.000 	91,5%	6,3 	
+TS-13	CER	-	-	-	Pime-Bruce	S. pimpinellifolium	Wild  species					57.524.650 	100	5.752.465.000 	95,0%	5,3 	
+TS-25	CER	-	-	-	Clémentine	S. lycopersicum var cerasiforme	cultivar					69.294.286 	100	6.929.428.600 	97,1%	7,4 	
+TS-26	CER	-	-	-		S. lycopersicum var cerasiforme	cultivar	Argentina				70.192.924 	100	7.019.292.400 	96,2%	7,4 	
+TS-27	CER	-	-	-	N135 Green Gage	S. lycopersicum var cerasiforme	cultivar	Deutchland				81.631.354 	100	8.163.135.400 	97,7%	8,8 	
+TS-28	CER	-	-	-	N 347 Yablochnyi	S. lycopersicum var cerasiforme		Mexico				80.722.300 	100	8.072.230.000 	98,1%	8,6 	
+TS-29	CER	-	-	-		S. lycopersicum var cerasiforme	cultivar	India				72.834.812 	100	7.283.481.200 	97,0%	7,6 	
+TS-30	CER	LA1204	-	-		S. lycopersicum var cerasiforme	Wild  species	Guatemala	Quetzaltenango			64.664.488 	100	6.466.448.800 	96,1%	6,8 	
+TS-31	CER	LA1464	-	-		S. lycopersicum var cerasiforme	Wild  species	Honduras	El Progreso, Yoro 	15.383333	-87.816667	83.757.614 	100	8.375.761.400 	97,5%	8,4 	
+TS-32	CER	LA0172	-	-	Santa Cruz	S. lycopersicum var cerasiforme	Latin American cultivar 	Bolivia	Santa Cruz 			92.950.668 	100	9.295.066.800 	97,9%	9,7 	
+TS-33	CER	LA2137	-	-		S. lycopersicum var cerasiforme	Wild  species	Ecuador	Morona-Santiago 			82.490.038 	100	8.249.003.800 	97,2%	8,2 	
+TS-34	CER	LA2675	-	-		S. lycopersicum var cerasiforme	Wild  species	Peru	Puno 	 -13.636944	-70.460556	69.231.854 	100	6.923.185.400 	96,5%	7,1 	
+TS-35	CER	-	-	-	tomate Richters	S. lycopersicum var cerasiforme	uncertain					71.691.376 	100	7.169.137.600 	98,2%	7,6 	
+TS-36	CER	-	PI187002-1	-		S. lycopersicum var cerasiforme	cultivar	Guatemala				80.385.334 	100	8.038.533.400 	97,5%	8,3 	
+TS-37	CER	-	-	-	L. pimpinellifolium atypique, site 10 (F300045)	S. lycopersicum var cerasiforme	Wild  Species	Peru				76.230.626 	100	7.623.062.600 	94,2%	7,3 	
+TS-38	CER	-	PI129088	-		S. lycopersicum var cerasiforme	cultivar	Colombia				77.020.410 	100	7.702.041.000 	97,6%	7,7 	
+TS-39	CER	-	-	-	Cerise Gold	S. lycopersicum var cerasiforme	cultivar					80.763.220 	100	8.076.322.000 	94,9%	7,8 	
+TS-40	CER	-	-	-	Cerise VFNT	S. lycopersicum var cerasiforme	cultivar					77.041.566 	100	7.704.156.600 	91,0%	7,2 	
+TS-53	CER	LA2095	-	-		S. lycopersicum var cerasiforme	Wild  species	Ecuador	Loja 	 -3.935278	-79.646111	63.681.360 	100	6.368.136.000 	95,6%	6,9 	
+TS-54	CER	-	-	-	cerise rose	S. lycopersicum var cerasiforme	cultivar					40.240.166 	100	4.024.016.600 	85,8%	3,9 	
+TS-56	CER	LA1320	PI365923	-		S. lycopersicum var cerasiforme	 Wild  species 	Peru	Apurimac	-13.550000	-72.616667	60.223.158 	100	6.022.315.800 	94,7%	6,0 	
+TS-57	CER	LA1307	PI378998	-		S. lycopersicum var cerasiforme	 Wild  species 	Peru	Ayacucho	 -12.616667	-73.791667	62.753.230 	100	6.275.323.000 	95,9%	6,4 	
+TS-61	CER	LA2670	-	-	Huayvaruni	S. lycopersicum var cerasiforme	 Wild  species 	Peru	Puno	-14.100000	-69.025000	59.696.644 	100	5.969.664.400 	91,4%	6,5 	
+TS-62	CER	-	-	EA02959				Argentina				73.447.272 	100	7.344.727.200 	70,0%	7,2 	
+TS-63	CER	-	-	-								51.088.100 	100	5.108.810.000 	95,4%	5,0 	
+TS-64	CER	-	-	EA03525			Cocktail tomato	Russia				45.263.386 	100	4.526.338.600 	89,1%	4,2 	
+TS-65	CER	LA1482	-	-		S. lycopersicum var cerasiforme	Wild  species 	Malaysia 				58.468.786 	100	5.846.878.600 	91,3%	6,3 	
+TS-66	CER	LA1388	PI379009	-	H707	S. lycopersicum var cerasiforme	Wild  species 	Peru	Junin	 -11.116667	-75.350000	56.320.394 	100	5.632.039.400 	93,0%	5,4 	
+TS-67	CER	-	-	EA02304			Cocktail tomato	EL SALVADOR				53.714.578 	100	5.371.457.800 	96,0%	5,2 	
+TS-70	CER	-	-	-	Pyriforme	S. lycopersicum var cerasiforme	cultivar					102.018.516 	100	10.201.851.600 	89,9%	9,7 	
+TS-71	CER	-	-	-	Ohmiya SunCerise	S. lycopersicum var cerasiforme	cultivar					69.319.710 	100	6.931.971.000 	96,9%	7,4 	
+TS-72	CER	-	-	-	Principe Borghese		Vintage cultivar	Italy				57.629.188 	100	5.762.918.800 	97,0%	5,8 	
+TS-75	CER	-	-	-	Poire jaune	S. lycopersicum var cerasiforme	cultivar					70.156.212 	100	7.015.621.200 	98,0%	7,7 	
+TS-83*	CER	-	-	EA01953		S. lycopersicum var cerasiforme	cultivar	ZAIRE				80.002.092 	100	8.000.209.200 	98,0%	8,5 	
+TS-84	CER	-	-	-								74.637.160 	100	7.463.716.000 	97,1%	7,8 	
+TS-87	CER	LA1701	-	-	Trujillo	S. lycopersicum var cerasiforme	"Latin American cultivar; Wild  species "	Peru	La Libertad 	-8.116667	-79.033333	38.062.494 	100	3.806.249.400 	70,8%	3,2 	
+TS-91	CER	-	-	-	N 2759 Enano	S. lycopersicum var cerasiforme	cultivar	Argentina				83.512.490 	100	8.351.249.000 	55,4%	6,9 	
+TS-94	CER	-	-	-	Farthest North	S. lycopersicum var cerasiforme	cultivar	France				152.827.704 	100	15.282.770.400 	80,9%	13,0 	
+TS-96	CER	LA1456	-	-		S. lycopersicum var cerasiforme	Wild  species 	Mexico	Vera Cruz	19.166667	-96.133333	103.343.342 	100	10.334.334.200 	37,5%	7,3 	
+TS-97	CER	LA0154	-	-	Tiny tim	S. lycopersicum var cerasiforme		France				142.003.604 	100	14.200.360.400 	65,5%	13,4 	
+TS-98	CER	LA4355	-	-	Gold Nugget 	S. lycopersicum var cerasiforme	cultivar	United States				67.055.806 	100	6.705.580.600 	78,3%	6,9 	
+TS-99	CER	-	-	-	Celsior	S. lycopersicum var cerasiforme						48.708.922 	100	4.870.892.200 	93,7%	4,1 	
+TS-105	CER	-	-	EA01448		S. lycopersicum var cerasiforme	Wild  species	Costa Rica				56.462.728 	100	5.646.272.800 	94,1%	4,8 	
+TS-106	CER	-	-	-		S. lycopersicum var cerasiforme	cultivar	Costa Rica				49.149.416 	100	4.914.941.600 	94,9%	4,6 	
+TS-107	CER	LA1542	-	-	Turrialba	S. lycopersicum var cerasiforme	Wild  species	Costa Rica	Costa Rica 			50.302.812 	100	5.030.281.200 	43,5%	3,6 	
+TS-109	CER	-	-	EA02660			Cocktail tomato					52.834.394 	100	5.283.439.400 	95,1%	4,7 	
+TS-116	CER	-	-	-	N1565	S. lycopersicum var cerasiforme	cultivar	Peru				60.342.172 	100	6.034.217.200 	35,8%	0,6 	
+TS-118	CER	LA0292	-	-	Santa Cruz, Galapagos	S. lycopersicum var cerasiforme	"Latin American cultivar;Wild  species "	Ecuador	Galapagos Islands 			66.518.884 	100	6.651.888.400 	66,5%	2,8 	
+TS-119*	CER	-	-	-	Wva 106	S. lycopersicum var cerasiforme	Wild  species 	France				134.196.916 	100	13.419.691.600 	64,2%	10,0 	
+TS-120	CER	-	-	EA01356				unknown				74.297.746 	100	7.429.774.600 	98,2%	8,4 	
+TS-129	CER	LA2845	-	-	Moyobamba	S. lycopersicum var cerasiforme	"Latin American cultivar; Wild  species "	Peru	San Martin 	 -6.050000	-76.966667	52.505.630 	100	5.250.563.000 	95,4%	5,9 	
+TS-131*	CER	LA1162	-	-	Cuba Plum	S. lycopersicum var cerasiforme	cultivar	Cuba	un			48.255.198 	100	4.825.519.800 	95,7%	5,5 	
+TS-134	CER	LA1429	-	-	La Estancilla	S. lycopersicum var cerasiforme	Wild  species	Ecuador	Manabi	-0.816667	-80.233333	47.353.416 	100	4.735.341.600 	68,2%	3,4 	
+TS-138	CER	-	-	-	Malintka 101		cultivar	Italy				65.736.492 	100	6.573.649.200 	96,3%	6,9 	
+TS-148	CER	LA1323	PI365924 	-	Pfacchayoc	S. lycopersicum var cerasiforme	Wild  species	Peru	Cusco 	 -13.116667	-72.366667	53.834.630 	100	5.383.463.000 	94,0%	5,9 	
+TS-149	CER	LA1425	PI379060	-	Villa Hermosa	S. lycopersicum var cerasiforme	Latin American cultivar 	Colombia	Cauca			52.999.414 	100	5.299.941.400 	55,3%	4,4 	
+TS-154	CER	LA1623	-	-	Muna	S. lycopersicum var cerasiforme	Wild  species	Mexico	Yucatan			62.951.188 	100	6.295.118.800 	97,2%	7,1 	
+TS-158	CER	LA2626 	-	EA01541	 PE-67 	S. lycopersicum var cerasiforme	Wild  species	Peru	Cusco	-12.866667	-72.716667	89.991.370 	100	8.999.137.000 	97,1%	9,2 	
+TS-165	CER	LA1218	-	-	Veracruz	S. lycopersicum var cerasiforme	Latin American cultivar 	Mexico	Vera Cruz 			57.643.772 	100	5.764.377.200 	98,2%	6,3 	
+TS-181	CER	LA1457 	-	EA01438		S. lycopersicum var cerasiforme	Wild  species	Mexico 		18.466667	-97.400000	115.364.158 	100	11.536.415.800 	86,9%	5,0 	
+TS-187	CER	-	-	-	Monplaisir	S. lycopersicum var cerasiforme	cultivar					49.796.528 	100	4.979.652.800 	93,8%	4,7 	
+TS-189	CER	-	-	-	Nagcarlang		cultivar	Philippines				56.015.304 	100	5.601.530.400 	96,0%	5,4 	
+TS-202	CER	LA2402	-	-		S. lycopersicum var cerasiforme	Latin American cultivar 	Brazil	Santa Catarina 	-27.600000	-48.550000	61.503.358 	100	6.150.335.800 	66,2%	2,9 	
+TS-205	CER	-	-	-	8 bis	S. lycopersicum var cerasiforme	cultivar					65.577.472 	100	6.557.747.200 	91,9%	4,4 	
+TS-209	CER	-	-	-	Da serbo		landrace	Italy				92.962.612 	100	9.296.261.200 	84,6%	3,3 	
+TS-213	CER	-	-	EA01784				Italy				58.482.596 	100	5.848.259.600 	96,8%	6,6 	
+TS-216	CER	-	-	-	Phyra	S. lycopersicum var cerasiforme	cultivar					49.756.820 	100	4.975.682.000 	17,1%	0,3 	
+TS-219	CER	-	-	-	Mobalcon		landrace	Greece				28.845.092 	100	2.884.509.200 	78,3%	2,1 	
+TS-221	CER	LA1569	-	-	Jalapa	S. lycopersicum var cerasiforme	Wild  species 	Mexico	Vera Cruz 			50.856.932 	100	5.085.693.200 	90,9%	5,2 	
+TS-223	CER	LA2675 	-	EA01557		S. lycopersicum var cerasiforme	Wild  species 	Peru	Puno	 -13.636944	-70.460556	172.138.770 	100	17.213.877.000 	65,6%	10,1 	
+TS-227	CER	-	-	-	Atom	S. lycopersicum var cerasiforme	cultivar					37.371.034 	100	3.737.103.400 	76,4%	2,4 	
+TS-229	CER	LA1620	-	-		S. lycopersicum var cerasiforme	Wild  species 	Brazil	Bahia	-12.750000	-39.433333	63.112.096 	100	6.311.209.600 	97,5%	7,1 	
+TS-230	CER	-	-	-	Cerise Ildi	S. lycopersicum var cerasiforme	cultivar					127.105.900 	100	12.710.590.000 	73,3%	13,2 	
+TS-231	CER	-	-	-	L 285	S. lycopersicum var cerasiforme	cultivar					62.241.910 	100	6.224.191.000 	95,2%	6,1 	
+TS-233	CER	LA1218	-	EA00602		S. lycopersicum var cerasiforme	Latin American cultivar 	Mexico	Vera Cruz 			22.043.492 	100	2.204.349.200 	38,1%	0,9 	
+TS-238	CER	LA1228	PI379047	-	Macas	S. lycopersicum var cerasiforme	Wild  species 	Ecuador	Morona-Santiago	 -2.170000	 -78.030000 	76.102.568 	100	7.610.256.800 	80,3%	7,8 	
+TS-240	CER	LA3136	-	-	Arroyo Rico	S. lycopersicum var cerasiforme	Wild  species 	Cuba	Holguin			57.683.188 	100	5.768.318.800 	92,9%	5,3 	
+TS-243	CER	-	-	EA04228				Mexico 				47.464.034 	100	4.746.403.400 	95,3%	4,3 	
+TS-247	CER	-	-	-	N 795 Pescio	S. lycopersicum var cerasiforme	cultivar	Peru				67.417.196 	100	6.741.719.600 	96,9%	6,8 	
+TS-248	CER	-	-	-								58.935.084 	100	5.893.508.400 	94,9%	5,9 	
+TS-250	CER	-	-	EA03539				Russia				63.688.952 	100	6.368.895.200 	97,7%	6,6 	
+TS-252	CER	-	-	EA01802			cocktail tomato	Italy				54.772.144 	100	5.477.214.400 	96,9%	5,8 	
+TS-254	CER	-	-	EA02979								44.004.490 	100	4.400.449.000 	94,2%	4,6 	
+TS-257	CER	-	-	-	Marpha N2	S. lycopersicum var cerasiforme	cultivar	France				96.040.806 	100	9.604.080.600 	34,6%	5,7 	
+TS-258	CER	-	-	-	Minibel	S. lycopersicum var cerasiforme	cultivar					55.719.168 	100	5.571.916.800 	94,6%	5,7 	
+TS-260	CER	-	-	-	Cerise Orange dUzès	S. lycopersicum var cerasiforme	cultivar	France				84.107.900 	100	8.410.790.000 	29,6%	5,0 	
+TS-262	CER	LA1247 	PI379058 	EA01403		S. lycopersicum var cerasiforme	Wild  species 	Ecuador	Loja 	-3.990000	 -79.360000 	57.509.180 	100	5.750.918.000 	96,8%	6,2 	
+TS-271	CER	-	-	-	Linosa		landrace	Italy				58.284.748 	100	5.828.474.800 	70,6%	6,1 	
+TS-273	CER	LA2640 	-	EA01545	PE-63	S. lycopersicum var cerasiforme	Wild  species 	Peru	Apurimac	-13.641667	-72.908333	51.002.644 	100	5.100.264.400 	94,9%	5,2 	
+TS-280	CER	-	-	-	Cerise du sud ouest N 2	S. lycopersicum var cerasiforme	Wild  species 					59.445.120 	100	5.944.512.000 	98,0%	6,7 	
+TS-281	CER	LA1286	PI365920	-	San Martin de Pangoa	S. lycopersicum var cerasiforme	Wild  species 	Peru	 Junin 	 -11.166667	-74.466667	45.958.788 	100	4.595.878.800 	94,9%	5,1 	
+TS-283	CER	-	-	-	Cisterno	S. lycopersicum var cerasiforme	cultivar					50.056.940 	100	5.005.694.000 	96,1%	5,7 	
+TS-284	CER	-	-	-	Cerazjnho		landrace	Brasil				41.701.262 	100	4.170.126.200 	92,0%	3,5 	
+TS-286	CER	-	-	-	Allungato piccolo		landrace	Brasil				32.179.580 	100	3.217.958.000 	68,6%	1,8 	
+TS-287	CER	-	-	EA00915			Cocktail tomato	Unknown				40.640.550 	100	4.064.055.000 	87,9%	3,3 	
+TS-289*	CER	LA1244	PI379044	EA00610		S. lycopersicum var cerasiforme	Latin American cultivar 	Ecuador	Guayas			25.945.752 	100	2.594.575.200 	53,7%	1,2 	
+TS-290	CER	-	-	-	N 2257 Dikorastushii...	S. lycopersicum var cerasiforme	cultivar	Peru				91.300.520 	100	9.130.052.000 	67,6%	8,2 	
+TS-294	CER	-	-	-	N 933	S. lycopersicum var cerasiforme	cultivar	Uzbekistan				39.006.082 	100	3.900.608.200 	85,8%	2,9 	
+TS-295*	CER	LA0417	-	-	Puna	S. lycopersicum var cerasiforme	"Latin American cultivar; Wild  species"	Ecuador	Guayas	-2.733333	-79.916667	120.669.258 	100	12.066.925.800 	78,9%	12,6 	
+TS-298	CER	LA2308	-	-	San Francisco	S. lycopersicum var cerasiforme	Wild  species 	Peru	San Martin 	 -6.733333	-76.333333	70.609.448 	100	7.060.944.800 	78,5%	7,0 	
+TS-299	CER	LA2131	-	-	Bomboiza	S. lycopersicum var cerasiforme	Wild  species 	Ecuador	Zamora-Chinchipe 	-3.454444	-78.555278	51.420.642 	100	5.142.064.200 	97,4%	5,5 	
+TS-300	CER	LA1231 	PI379049	-	Tena	S. lycopersicum var cerasiforme	Wild  species 	Ecuador	Napo	-0.983333	 -77.816667	68.310.406 	100	6.831.040.600 	84,8%	6,9 	
+TS-301	CER	LA2688	-	-	Santa Cruz near Shintuyo	S. lycopersicum var cerasiforme	Wild  species 	Peru	Madre de Dios 	-12.678333	 -71.301111	61.816.242 	100	6.181.624.200 	58,0%	6,3 	
+TS-302	CER	LA1543	-	-	Upper Parana	S. lycopersicum var cerasiforme	Wild  species 	Brazil				62.336.416 	100	6.233.641.600 	97,8%	6,7 	
+TS-303	CER	LA1461	-	-	Los Banos	S. lycopersicum var cerasiforme	Wild  species 	Phillipines	Los Banos 	14.150000	 121.233333 	107.151.464 	100	10.715.146.400 	76,8%	11,2 	
+TS-304*	CER	LA2307	-	-	Tarapoto	S. lycopersicum var cerasiforme	 Latin American cultivar 	Peru	San Martin 	-6.501389	-76.365556 	52.698.166 	100	5.269.816.600 	96,2%	6,0 	
+TS-423*	CER	LA2840	-	-		S. lycopersicum var cerasiforme	Wild  species 	Peru	Amazonas 			53.901.326 	100	5.390.132.600 	93,9%	5,9 	
+TS-426*	CER	LA1263 	PI365918 	-	SAL345	S. lycopersicum var cerasiforme	cultivar	Ecuador 	Guayas 			46.874.592 	100	4.687.459.200 	94,7%	5,2 	
+TS-427*	CER	-	PI126933	-		S. lycopersicum var cerasiforme	cultivar	Peru				47.238.084 	100	4.723.808.400 	93,8%	5,1 	
+TS-428*	CER	-	PI126953	-		S. lycopersicum var cerasiforme	cultivar	Peru				44.303.760 	100	4.430.376.000 	84,3%	4,4 	
+TS-430*	CER	-	PI127807	-	BL 587-S	S. lycopersicum var cerasiforme	cultivar	Peru				67.895.354 	100	6.789.535.400 	96,0%	7,4 	
+TS-431*	CER	-	PI127807	-	BL 587	S. lycopersicum var cerasiforme	cultivar	Peru	 			62.496.908 	100	6.249.690.800 	96,1%	6,8 	
+TS-436*	CER	-	-	-	BL 359	S. lycopersicum var cerasiforme	cultivar					53.222.016 	100	5.322.201.600 	97,2%	5,9 	
+TS-1	BIG	LA0490	-	-	VF-36	S. lycopersicum	Vintage Processing	United States				60.798.146 	100	6.079.814.600 	97,6%	5,8 	
+TS-2	BIG	LA2706	-	-	Moneymaker	S. lycopersicum	Vintage Fresh Market	England				92.468.918 	100	9.246.891.800 	96,8%	8,7 	
+TS-3#	BIG	LA3475	-	-	M-82	S. lycopersicum	Modern Processing	Israel				61.114.414 	100	6.111.441.400 	96,1%	5,7 	
+TS-4	BIG	LA3856	-	-	Hawaii 7998	S. lycopersicum	Inbreed line					56.079.118 	100	5.607.911.800 	95,6%	5,3 	
+TS-5	BIG	LA2711	-	-	Edkawi	S. lycopersicum	Vintage Fresh Market	Egypt				60.977.684 	100	6.097.768.400 	97,3%	5,8 	
+TS-6	BIG	LA3008	-	-	San Marzano	S. lycopersicum	Vintage Processing	Italy				46.547.152 	100	4.654.715.200 	95,0%	4,4 	
+TS-7	BIG	LA3911	-	-	Micro-Tom	S. lycopersicum	Modern Fresh Market	United States				57.267.204 	100	5.726.720.400 	96,3%	5,3 	
+TS-8#	BIG	LA4024	-	-	E-6203	S. lycopersicum	Modern Processing	United States 				58.667.616 	100	5.866.761.600 	96,9%	5,5 	
+TS-9	BIG	LA2838A 	-	-	Ailsa Craig 	S. lycopersicum	Vintage Fresh Market	England				57.390.028 	100	5.739.002.800 	97,4%	5,5 	
+TS-10	BIG	LA0502	-	-	Marglobe 	S. lycopersicum	Vintage Fresh Market	United States				70.764.502 	100	7.076.450.200 	98,1%	7,5 	
+TS-11	BIG	-	-	-	KR2     	S. lycopersicum	Modern Fresh Market					56.728.132 	100	5.672.813.200 	93,3%	5,1 	
+TS-12	BIG	-	-	-	yoku improvement	S. lycopersicum	Modern Fresh Market					57.689.850 	100	5.768.985.000 	93,9%	5,2 	
+TS-41	BIG	-	-	EA02435		S. lycopersicum	Cocktail tomato	EL SALVADOR				56.120.122 	100	5.612.012.200 	97,2%	6,0 	
+TS-42	BIG	-	PI345565	EA05808		S. lycopersicum	Processing tomato	Russia				72.227.792 	100	7.222.779.200 	98,2%	7,6 	
+TS-43	BIG	-	-	EA00840	Moneymaker		Fresh Market					49.583.156 	100	4.958.315.600 	96,9%	5,2 	
+TS-44	BIG	-	-	-	A pera abruzzese		Landrace	Italy				67.807.510 	100	6.780.751.000 	97,4%	7,0 	
+TS-45#	BIG	-	PI303718	EA05578		S. lycopersicum	Processing tomato	United States				43.012.196 	100	4.301.219.600 	94,5%	4,7 	
+TS-46	BIG	-	-	EA01237			Processing tomato	unknown				51.294.544 	100	5.129.454.400 	98,0%	5,8 	
+TS-47	BIG	-	-	EA01960		S. lycopersicum	Processing tomato	Russia				51.252.278 	100	5.125.227.800 	96,7%	5,6 	
+TS-48	BIG	LA0146	-	-	Mexico City	S. lycopersicum	Landrace/Latin American cultivar 	Mexico	Mercado 			55.660.712 	100	5.566.071.200 	96,0%	6,1 	
+TS-49	BIG	LA3238	-	-	Earliana	S. lycopersicum	Vintage Processing	United States				62.511.956 	100	6.251.195.600 	77,7%	6,4 	
+TS-51	BIG	-	-	-								44.063.774 	100	4.406.377.400 	94,3%	4,7 	
+TS-52	BIG	-	-	-	05-4126 (97-49-2)		cultivar	unknown				50.891.530 	100	5.089.153.000 	74,2%	5,1 	
+TS-55	BIG	-	-	EA00448				Unknown				63.847.062 	100	6.384.706.200 	97,2%	6,9 	
+TS-58	BIG	-	-	EA03577		S. lycopersicum	Processing tomato	Russia				67.592.006 	100	6.759.200.600 	97,0%	6,8 	
+TS-59#	BIG	-	-	EA02898			Processing tomato	Bulgaria				62.614.358 	100	6.261.435.800 	94,6%	6,2 	
+TS-60	BIG	LA2009	-	-	New Yorker	S. lycopersicum	Vintage Fresh Market	United States 				49.904.660 	100	4.990.466.000 	94,1%	5,0 	
+TS-68	BIG	LA0395	-	-	Chiclayo	S. lycopersicum	Latin American cultivar 	Peru	Lambayeque	 -6.766667	"-79.850000 
+"	107.506.836 	100	10.750.683.600 	75,0%	10,7 	
+TS-69	BIG	LA1459	-	-	Huachinango	S. lycopersicum	Latin American cultivar 	Mexico				54.221.468 	100	5.422.146.800 	97,2%	6,1 	
+TS-73†	BIG	-	-	-	Quarantino			Italy				56.594.072 	100	5.659.407.200 	93,5%	5,8 	
+TS-74	BIG	-	-	-	N 739 	S. lycopersicum	Fresh Market	Peru				48.135.718 	100	4.813.571.800 	93,8%	5,2 	
+TS-76	BIG	-	-	EA01230			Processing tomato	Unknown				65.411.966 	100	6.541.196.600 	97,6%	7,2 	
+TS-78#	BIG	-	-	EA02895		S. lycopersicum	Processing tomato	Russia				72.280.966 	100	7.228.096.600 	97,2%	7,9 	
+TS-80	BIG	-	-	EA01020			Processing tomato	unknown				59.196.468 	100	5.919.646.800 	85,8%	6,2 	
+TS-81	BIG	-	-	EA02761			Processing tomato	Russia				57.521.106 	100	5.752.110.600 	97,0%	6,3 	
+TS-82	BIG	-	-	EA03274			Processing tomato	Spain				47.668.260 	100	4.766.826.000 	78,6%	4,6 	
+TS-85#	BIG	-	-	-								66.129.850 	100	6.612.985.000 	96,8%	6,6 	
+TS-86	BIG	-	-	EA01684				Italy				129.206.708 	100	12.920.670.800 	91,0%	13,1 	
+TS-88	BIG	-	-	EA01804		S. lycopersicum	Cocktail tomato	Italy				113.207.440 	100	11.320.744.000 	90,6%	11,0 	
+TS-89	BIG	-	-	EA01185			Processing tomato	Unknown				57.071.230 	100	5.707.123.000 	95,5%	5,4 	
+TS-90	BIG	-	-	EA02753		S. lycopersicum	Cocktail tomato	Russia				64.342.300 	100	6.434.230.000 	96,3%	5,8 	
+TS-93	BIG	-	-	EA01002			Processing tomato	Unknown				48.033.772 	100	4.803.377.200 	95,1%	4,6 	
+TS-95	BIG	-	-	-	Moneymaker	S. lycopersicum	Fresh Market					67.116.238 	100	6.711.623.800 	98,3%	7,6 	
+TS-100	BIG	-	-	EA03456		S. lycopersicum	Processing	Italy				84.062.682 	100	8.406.268.200 	98,5%	9,2 	
+TS-101	BIG	-	-	EA00369		S. lycopersicum		Unknown				112.253.424 	100	11.225.342.400 	38,6%	7,4 	
+TS-102	BIG	-	-	EA03673		S. lycopersicum	Processing tomato	Russia				91.139.068 	100	9.113.906.800 	90,7%	8,7 	
+TS-103	BIG	-	-	EA00389		S. lycopersicum		Unknown				58.286.890 	100	5.828.689.000 	95,9%	5,4 	
+TS-104	BIG	-	-	EA01756		S. lycopersicum	Processing tomato	Italy				49.758.478 	100	4.975.847.800 	93,9%	4,2 	
+TS-108#	BIG	-	-	EA01989	Puno I	S. lycopersicum	Processing tomato	Peru				38.922.306 	100	3.892.230.600 	73,4%	2,9 	
+TS-110	BIG	-	 PI93302	EA04243		S. lycopersicum		CHINA 				43.135.254 	100	4.313.525.400 	91,8%	3,7 	
+TS-111	BIG	-	-	EA01270			Processing tomato	Unknown				95.342.698 	100	9.534.269.800 	90,0%	8,1 	
+TS-112	BIG	-	-	EA03083		S. lycopersicum	Processing tomato	Russia				61.030.870 	100	6.103.087.000 	97,3%	5,4 	
+TS-113	BIG	-	-	EA01198			Processing tomato	Unknown				46.733.736 	100	4.673.373.600 	93,9%	4,0 	
+TS-114	BIG	-	-	EA01982		S. lycopersicum	Processing tomato	Russia				36.378.212 	100	3.637.821.200 	90,2%	3,2 	
+TS-115	BIG	-	-	EA03426			Processing tomato	unknown				72.607.242 	100	7.260.724.200 	86,5%	5,3 	
+TS-117	BIG	-	-	-	Scatolone di bolsena		Landrace	Italy				42.980.878 	100	4.298.087.800 	93,3%	4,0 	
+TS-121	BIG	LA3846	-	-	NC EBR-6 	S. lycopersicum	Modern Fresh Market	United States				97.339.938 	100	9.733.993.800 	85,3%	9,7 	
+TS-122	BIG	LA1090	-	-	Rutgers 	S. lycopersicum	Vintage Fresh Market	United States				100.300.094 	100	10.030.009.400 	37,2%	4,4 	
+TS-125	BIG	-	-	EA00422			Processing tomato	Unknown				38.480.268 	100	3.848.026.800 	83,7%	3,7 	
+TS-126	BIG	-	-	EA01903		S. lycopersicum		United States 				118.170.184 	100	11.817.018.400 	56,5%	6,5 	
+TS-127	BIG	LA0113	-	-	Hacienda Calera	S. lycopersicum	Landrace/Latin American cultivar 	Peru	La Libertad 	-7.227222	-79.429444	49.886.222 	100	4.988.622.200 	94,3%	5,4 	
+TS-128	BIG	LA0012	-	-	Pearson 	S. lycopersicum	Vintage Processing	United States				60.396.852 	100	6.039.685.200 	96,9%	6,8 	
+TS-130	BIG	LA2413	-	-	Severianin 	S. lycopersicum	Modern Fresh Market	Russia				45.469.444 	100	4.546.944.400 	50,2%	3,8 	
+TS-132	BIG	LA3903	-	-	Primabel	S. lycopersicum	Vintage Fresh Market	France				56.907.750 	100	5.690.775.000 	97,5%	6,2 	
+TS-133#	BIG	LA3528	-	-	Peto95-43	S. lycopersicum	Modern Processing	United States 				40.595.982 	100	4.059.598.200 	78,5%	3,5 	
+TS-135	BIG	LA0466	PI 258469 	-	Hacienda Rosario	S. lycopersicum	Landrace/Latin American cultivar 	Chile	Arica and Parinacota 	 -18.416667	 -70.150000 	60.018.824 	100	6.001.882.400 	97,1%	6,7 	
+TS-136	BIG	-	-	-	Vito			Italy				44.263.112 	100	4.426.311.200 	67,5%	4,0 	
+TS-137	BIG	-	-	-	Spagnoletta		Landrace	Italy				65.879.980 	100	6.587.998.000 	96,0%	5,4 	
+TS-139	BIG	-	-	-	Red Setter		Vintage cultivar	USA				69.318.304 	100	6.931.830.400 	97,5%	7,1 	
+TS-140	BIG	-	-	-	149-77		cultivar	Italy				63.467.040 	100	6.346.704.000 	97,5%	7,1 	
+TS-141	BIG	-	-	-	Saladette		cultivar	Italy				77.309.706 	100	7.730.970.600 	97,6%	7,7 	
+TS-142	BIG	-	-	-	Roma		Vintage cultivar	Italy				68.910.370 	100	6.891.037.000 	97,1%	6,8 	
+TS-143	BIG	LA4025	-	-	Florida 7547 	S. lycopersicum	Modern Fresh Market	United States				44.412.388 	100	4.441.238.800 	61,2%	4,6 	
+TS-147#	BIG	-	-	-								103.030.996 	100	10.303.099.600 	85,2%	8,7 	
+TS-150	BIG	LA2285	-	-	Tarapoto	S. lycopersicum	Landrace/Latin American cultivar 	Peru	San Martin 	 -6.501389	 -76.365556 	96.134.610 	100	9.613.461.000 	93,3%	6,6 	
+TS-151	BIG	LA2399	-	-	T-5 	S. lycopersicum	Modern Fresh Market	United States				48.229.506 	100	4.822.950.600 	88,6%	5,0 	
+TS-152	BIG	LA1021	-	-	Santa Cruz B	S. lycopersicum	Landrace/Latin American cultivar 	Brazil	Sao Paulo 			51.095.620 	100	5.109.562.000 	96,0%	5,8 	
+TS-153	BIG	LA1544	-	-	Xol Languna	S. lycopersicum	Landrace/Latin American cultivar 	Mexico	Campeche 			69.486.184 	100	6.948.618.400 	44,2%	1,8 	
+TS-155	BIG	LA0533	-	-	Condine Red	S. lycopersicum	Vintage Fresh Market,Monogenic	Germany				54.547.612 	100	5.454.761.200 	70,6%	4,1 	
+TS-157	BIG	-	-	EA03648		S. lycopersicum	Processing tomato	Russia				41.434.648 	100	4.143.464.800 	86,2%	3,2 	
+TS-159	BIG	-	-	EA03028			Processing tomato	Russia				58.738.702 	100	5.873.870.200 	96,6%	5,8 	
+TS-160	BIG	-	-	EA03533		S. lycopersicum	Processing tomato	Russia				62.646.528 	100	6.264.652.800 	96,9%	6,5 	
+TS-161	BIG	-	-	EA02586		S. lycopersicum	Processing tomato	Russia				59.222.116 	100	5.922.211.600 	96,8%	5,9 	
+TS-162#	BIG	-	-	EA03463		S. lycopersicum	Processing tomato	Azerbaijan				44.795.994 	100	4.479.599.400 	93,8%	4,0 	
+TS-163	BIG	LA1504	-	-	Marmande	S. lycopersicum	Vintage Fresh Market	France				48.007.822 	100	4.800.782.200 	95,3%	5,5 	
+TS-166	BIG	LA0404	-	-	Piura	S. lycopersicum	Landrace/Latin American cultivar 	Peru	Piura 			54.153.786 	100	5.415.378.600 	69,2%	5,6 	
+TS-167	BIG	LA0147	-	-	Tegucigalpa	S. lycopersicum	Landrace/Latin American cultivar 	Honduras	Tegucigalpa mercado 			50.090.240 	100	5.009.024.000 	85,3%	4,6 	
+TS-168#	BIG	-	-	-	Da appendere		Landrace	Italy				50.963.682 	100	5.096.368.200 	95,0%	4,8 	
+TS-169	BIG	-	-	-	Cuor di bue di Albenga		Landrace	Italy				44.139.804 	100	4.413.980.400 	93,1%	3,7 	
+TS-170	BIG	-	-	-	Cuor di bue		Landrace	Italy				47.010.562 	100	4.701.056.200 	95,1%	4,3 	
+TS-171#	BIG	LA1706	-	-	UC-82	S. lycopersicum	Modern Processing	United States				67.030.222 	100	6.703.022.200 	51,7%	1,8 	
+TS-172	BIG	-	PI280060	EA05480		S. lycopersicum	Processing tomato	Canada				60.934.238 	100	6.093.423.800 	96,6%	5,9 	
+TS-173	BIG	-	-	EA03611		S. lycopersicum		Russia				64.118.506 	100	6.411.850.600 	97,2%	6,6 	
+TS-174	BIG	-	-	EA00304			Processing tomato	Unknown				61.270.932 	100	6.127.093.200 	96,2%	6,1 	
+TS-175	BIG	-	-	EA03586		S. lycopersicum	Processing tomato	Russia				53.040.138 	100	5.304.013.800 	89,6%	4,8 	
+TS-176	BIG	-	-	EA02669			Processing tomato	Tunisia				64.607.612 	100	6.460.761.200 	51,5%	1,3 	
+TS-177	BIG	-	-	EA01155			Processing tomato	Unknown				49.296.080 	100	4.929.608.000 	94,5%	4,9 	
+TS-178	BIG	-	PI513036	EA06485		S. lycopersicum	Processing tomato	Spain				47.781.332 	100	4.778.133.200 	90,7%	3,6 	
+TS-179	BIG	-	-	EA01027			Processing tomato	Unknown				95.878.394 	100	9.587.839.400 	89,8%	8,3 	
+TS-180	BIG	-	-	EA02728			Processing tomato	Russia				41.452.656 	100	4.145.265.600 	91,6%	3,7 	
+TS-183	BIG	-	-	EA02764			Processing tomato	Germany				48.378.290 	100	4.837.829.000 	91,6%	3,6 	
+TS-184†	BIG	LA2283	-	-	Tarapoto	S. lycopersicum		Peru	San Martin 	-6.487778	-76.360000	44.205.304 	100	4.420.530.400 	95,8%	4,8 	
+TS-185	BIG	LA4347	-	-	B-L-35	S. lycopersicum	Vintage Fresh Market	Spain	Mallorca			100.713.412 	100	10.071.341.200 	54,0%	8,6 	
+TS-186#	BIG	LA3214	-	-	Rowpac	S. lycopersicum	Modern Processing	United States				59.562.796 	100	5.956.279.600 	82,6%	3,3 	
+TS-188	BIG	LA1506	-	-	Stone	S. lycopersicum	Vintage Fresh Market	United States				159.111.222 	100	15.911.122.200 	70,2%	5,7 	
+TS-190#	BIG	-	-	-	Santa Chiara		cultivar	Italy				62.520.986 	100	6.252.098.600 	95,7%	5,7 	
+TS-191	BIG	-	-	-	Francescano		Landrace	Italy				59.269.634 	100	5.926.963.400 	96,8%	6,1 	
+TS-192	BIG	-	-	-	Severianin		Vintage cultivar	Russia				60.992.246 	100	6.099.224.600 	97,2%	5,9 	
+TS-193	BIG	-	-	-	Pantano dArdea		Landrace	Italy				56.391.110 	100	5.639.111.000 	95,6%	5,6 	
+TS-194	BIG	-	-	-								52.278.866 	100	5.227.886.600 	94,5%	5,1 	
+TS-195	BIG	LA0516	-	-	Ace 	S. lycopersicum	Vintage Fresh Market	United States				43.533.852 	100	4.353.385.200 	21,7%	2,7 	
+TS-196	BIG	-	-	EA00240	N020212		Processing tomato	unknown				59.490.742 	100	5.949.074.200 	33,5%	0,6 	
+TS-197	BIG	-	-	-	Libanese		Landrace	Libanon				63.066.826 	100	6.306.682.600 	95,7%	5,6 	
+TS-198	BIG	-	-	EA00512								48.666.060 	100	4.866.606.000 	94,2%	4,5 	
+TS-200	BIG	LA3320	-	-	Hot set	S. lycopersicum	cultivar	Italy				108.394.724 	100	10.839.472.400 	90,1%	8,2 	
+TS-201	BIG	LA1210	-	-	San Salvador	S. lycopersicum	Landrace/Latin American cultivar	El Salvador	San Salvador 			52.017.226 	100	5.201.722.600 	96,6%	5,3 	
+TS-203	BIG	-	-	-	Bell pepper-like		Landrace	Italy				51.219.786 	100	5.121.978.600 	96,0%	5,2 	
+TS-204	BIG	LA3840	-	-	Florida 7060 	S. lycopersicum	Modern Fresh Market	United States				80.983.834 	100	8.098.383.400 	38,6%	0,6 	
+TS-206	BIG	LA0089	-	-	Prince Borghese 	S. lycopersicum	Vintage Fresh Market	Italy				48.384.596 	100	4.838.459.600 	26,2%	3,4 	
+TS-210	BIG	LA3625	-	-	NC 265-1 (93)-3-3 	S. lycopersicum	Modern Fresh Market	United States				78.156.282 	100	7.815.628.200 	92,8%	4,9 	
+TS-211	BIG	LA4354	-	-	NC 84173 	S. lycopersicum	Modern Fresh Market	United States				52.932.128 	100	5.293.212.800 	92,2%	5,7 	
+TS-212	BIG	LA3242	-	-	Flora-Dade	S. lycopersicum	Modern Fresh Market	United States				106.513.214 	100	10.651.321.400 	90,5%	4,6 	
+TS-214	BIG	-	-	-	Panama		Landrace	Panama				66.542.518 	100	6.654.251.800 	76,7%	6,5 	
+TS-215	BIG	-	-	-	Vrbikanske Nizke		cultivar	Bulgaria/Italy				107.759.596 	100	10.775.959.600 	76,8%	7,8 	
+TS-218	BIG	-	-	-	Santa Clara 5800		cultivar	Brasil				45.406.212 	100	4.540.621.200 	34,4%	0,8 	
+TS-220	BIG	-	-	-	Barnaulski Konservnyi		cultivar	Russia				66.454.926 	100	6.645.492.600 	84,2%	3,6 	
+TS-224	BIG	LA0410	PI 258474 	-	Guayaquil	S. lycopersicum	Landrace/Latin American cultivar 	Ecuador	Guayas			48.327.208 	100	4.832.720.800 	66,1%	1,9 	
+TS-225	BIG	-	PI330336	EA05747		S. lycopersicum	Processing tomato	Japan				61.936.808 	100	6.193.680.800 	87,4%	3,6 	
+TS-226	BIG	-	-	-	Microtom	S. lycopersicum	cultivar	France				49.840.902 	100	4.984.090.200 	46,5%	3,1 	
+TS-228#	BIG	-	-	-	M-82	S. lycopersicum	cultivar					95.522.458 	100	9.552.245.800 	72,4%	7,8 	
+TS-232	BIG	-	-	EA00951			Processing	unknown				31.518.460 	100	3.151.846.000 	54,2%	1,4 	
+TS-234	BIG	-	-	EA01371			Processing tomato	Unknown				40.289.470 	100	4.028.947.000 	92,7%	4,1 	
+TS-235	BIG	-	-	EA00892			Processing tomato	Guatemala				27.582.508 	100	2.758.250.800 	37,0%	1,1 	
+TS-236	BIG	-	-	EA02732			Processing tomato	Russian federation				32.170.818 	100	3.217.081.800 	81,9%	2,6 	
+TS-237	BIG	LA3243	-	-	Platense	S. lycopersicum	Vintage Fresh Market	Argentina				53.955.572 	100	5.395.557.200 	49,8%	4,0 	
+TS-239	BIG	LA3845	-	-	NC EBR-5	S. lycopersicum	Modern Fresh Market	United States 				35.163.644 	100	3.516.364.400 	91,7%	3,4 	
+TS-241	BIG	LA0126	-	-	Quito	S. lycopersicum	Latin American cultivar 	Ecuador	Pichincha	-0.216667	-78.500000 	120.261.642 	100	12.026.164.200 	71,3%	12,6 	
+TS-242	BIG	LA0134C	-	-	Ayacucho	S. lycopersicum	Latin American cultivar 	Peru	Ayacucho	 -13.158333	-74.223889	47.905.564 	100	4.790.556.400 	96,4%	5,4 	
+TS-245#	BIG	-	-	EA03126		S. lycopersicum	Processing tomato	CZECH REPUBLIC 				59.358.884 	100	5.935.888.400 	97,5%	6,2 	
+TS-246	BIG	-	-	EA00983			Processing tomato	Unknown				48.958.414 	100	4.895.841.400 	95,2%	4,2 	
+TS-249	BIG	LA1462	-	-	Merida	S. lycopersicum	Landrace/Latin American cultivar 	Mexico				54.132.374 	100	5.413.237.400 	96,7%	6,1 	
+TS-251	BIG	-	PI647249	EA04001		S. lycopersicum		Spain				51.048.570 	100	5.104.857.000 	96,9%	5,2 	
+TS-253#	BIG	LA4345	-	-	Heinz 1706-BG	S. lycopersicum	Modern Processing	United States				42.634.504 	100	4.263.450.400 	93,8%	4,5 	
+TS-255	BIG	-	-	EA03002			Processing tomato	Russian federation				71.582.706 	100	7.158.270.600 	98,0%	8,2 	
+TS-256	BIG	LA2260		EA00744		S. lycopersicum	Latin American cultivar 	Peru	 San Martin 	 -6.222778	-76.819167	69.932.704 	100	6.993.270.400 	97,0%	7,4 	
+TS-259	BIG	-	-	EA01712			Processing tomato	Italy				47.020.306 	100	4.702.030.600 	96,1%	5,3 	
+TS-261*	BIG	LA1511 	-	EA01444		S. lycopersicum	Wild  species 	Brazil	Minas Gerais 	-19.450000	-44.233333	59.619.538 	100	5.961.953.800 	97,1%	6,6 	
+TS-263#	BIG	LA3343	-	-	Rio Grande	S. lycopersicum	Processing tomato	United States				54.454.742 	100	5.445.474.200 	50,8%	5,1 	
+TS-264	BIG	LA0025	-	-	King Humbert #1	S. lycopersicum	Vintage Fresh Market	Italy				72.176.920 	100	7.217.692.000 	76,6%	7,6 	
+TS-268	BIG	-	-	EA01915		S. lycopersicum	cultivar	Unknown				99.606.180 	100	9.960.618.000 	69,2%	9,4 	
+TS-269	BIG	-	-	-	Canestrino		Landrace	Italy				113.641.454 	100	11.364.145.400 	51,6%	10,7 	
+TS-270	BIG	-	-	EA03174				Bulgaria				134.744.782 	100	13.474.478.200 	65,8%	13,5 	
+TS-272#	BIG	-	-	EA06878			Processing tomato	unknown				32.257.320 	100	3.225.732.000 	58,2%	3,0 	
+TS-274#	BIG	-	-	EA03613			Cocktail/Processing tomato	Russian federation				84.980.046 	100	8.498.004.600 	60,2%	6,1 	
+TS-275	BIG	-	-	EA01049			Processing tomato	unknown				66.286.550 	100	6.628.655.000 	66,5%	5,2 	
+TS-276	BIG	-	-	EA03650			Cocktail/Processing tomato	Moldova				75.714.826 	100	7.571.482.600 	66,2%	5,5 	
+TS-277#	BIG	LA3144	-	-	Hunt100	S. lycopersicum	Modern Processing	United States				59.223.996 	100	5.922.399.600 	68,9%	6,2 	
+TS-278	BIG	LA0517	-	-	Early Santa Clara	S. lycopersicum	Vintage Processing	United States				122.223.322 	100	12.222.332.200 	72,5%	12,2 	
+TS-282*	BIG	-	-	-	Ucra2		Landrace	Ukraine				54.454.854 	100	5.445.485.400 	97,4%	6,1 	
+TS-285	BIG	-	PI303752	EA05612		S. lycopersicum	Processing tomato	United States 				40.161.998 	100	4.016.199.800 	88,9%	3,1 	
+TS-288	BIG	-	-	EA04236		S. lycopersicum	Processing tomato	CHINA 				28.697.604 	100	2.869.760.400 	77,8%	2,2 	
+TS-292#	BIG	-	-	EA06902		S. lycopersicum	Processing tomato	unknown				48.066.866 	100	4.806.686.600 	78,6%	4,8 	
+TS-293	BIG	-	-	EA03439		S. lycopersicum	Cocktail/Processing tomato	unknown				58.088.240 	100	5.808.824.000 	98,2%	6,6 	
+TS-296	BIG	-	-	-	Droplet	S. lycopersicum						64.570.474 	100	6.457.047.400 	96,2%	7,0 	
+TS-297	BIG	-	PI291344	EA05550		S. lycopersicum		China				53.347.572 	100	5.334.757.200 	57,9%	4,5 	
+TS-400	BIG	-	-	-		S. lycopersicum	inbred line	China				314.123.904 	100	31.412.390.400 	96,7%	34,1 	
+TS-401	BIG	-	-	-		S. lycopersicum	inbred line	China				68.994.956 	100	6.899.495.600 	96,2%	7,1 	
+TS-409	BIG	-	PI124161	-		S. lycopersicum	Landrace	Guatemala				74.401.468 	100	7.440.146.800 	94,7%	7,9 	
+TS-305	F1	-	-	-		S. lycopersicum	Fresh Market					52.323.116 	100	5.232.311.600 	95,2%	5,6 	
+TS-306	F1	-	-	-		S. lycopersicum	Fresh Market					49.495.960 	100	4.949.596.000 	95,2%	5,3 	
+TS-307	F1	-	-	-		S. lycopersicum	Fresh Market					46.888.062 	100	4.688.806.200 	93,9%	5,0 	
+TS-308	F1	-	-	-		S. lycopersicum	Fresh Market					60.365.592 	100	6.036.559.200 	96,6%	6,4 	
+TS-309	F1	-	-	-		S. lycopersicum	Fresh Market					53.284.230 	100	5.328.423.000 	92,3%	5,6 	
+TS-310	F1	-	-	-		S. lycopersicum	Fresh Market					52.797.642 	100	5.279.764.200 	96,3%	5,6 	
+TS-311	F1	-	-	-		S. lycopersicum	Fresh Market					47.330.198 	100	4.733.019.800 	94,5%	5,0 	
+TS-312	F1	-	-	-		S. lycopersicum	Fresh Market					49.152.720 	100	4.915.272.000 	92,2%	5,1 	
+TS-313	F1	-	-	-		S. lycopersicum	Fresh Market					53.590.630 	100	5.359.063.000 	96,3%	5,7 	
+TS-314	F1	-	-	-		S. lycopersicum	Fresh Market					78.383.852 	100	7.838.385.200 	97,1%	8,1 	
+TS-315	F1	-	-	-		S. lycopersicum	Fresh Market					84.868.054 	100	8.486.805.400 	98,8%	9,0 	
+TS-316	F1	-	-	-		S. lycopersicum	Fresh Market					96.754.000 	100	9.675.400.000 	98,8%	10,4 	
+TS-317	F1	-	-	-		S. lycopersicum	Processing					90.255.540 	100	9.025.554.000 	86,1%	9,2 	
+TS-318	F1	-	-	-		S. lycopersicum	Processing					68.375.308 	100	6.837.530.800 	97,2%	7,4 	
+TS-319	F1	-	-	-		S. lycopersicum	Processing					60.539.174 	100	6.053.917.400 	96,7%	6,5 	
+TS-320	F1	-	-	-		S. lycopersicum	Processing					51.445.678 	100	5.144.567.800 	95,8%	5,7 	
+TS-321	F1	-	-	-		S. lycopersicum	Processing					77.139.438 	100	7.713.943.800 	98,0%	8,5 	
+TS-146	wild	LA2133	-	-		S. neorickii		Peru		-3.400000	-79.183333	62.171.380 	100	6.217.138.000 	61,9%	3,5 	
+TS-208	wild	LA0528	-	-	Santa Cruz: Academy Bay	S. galapagense		Ecuador		-0.750000	-90.316667	46.375.426 	100	4.637.542.600 	74,1%	2,3 	
+TS-199	wild	LA0746	-	EA00587		S. cheesmaniae		Ecuador		 -1.000000	 -91.416667 	83.604.604 	100	8.360.460.400 	85,0%	3,3 	
+TS-207	wild	LA1037	-	-		S. cheesmaniae		Ecuador	Galapagos Islands 	-0.422500	-91.116667	67.908.580 	100	6.790.858.000 	84,3%	3,2 	
+TS-217	wild	LA0429	-	EA00568		S. cheesmaniae		Ecuador	Galapagos Islands 	-0.643889	-90.329444 	36.332.572 	100	3.633.257.200 	65,0%	2,4 	
+TS-402	wild	-	PI126935	-		S. peruvianum		Peru				110.301.578 	100	11.030.157.800 	52,2%	5,9 	
+TS-403	wild	-	PI128650	-		S. peruvianum		Chile				53.418.796 	100	5.341.879.600 	50,6%	2,8 	
+TS-404	wild	-	PI128657	-		S. peruvianum		Peru				62.049.328 	100	6.204.932.800 	53,2%	3,2 	
+TS-408	wild	LA1969	-	-		S. chilense		Peru		-17.552778	-70.028333	59.202.220 	100	5.920.222.000 	49,8%	3,2 	
+TS-407	wild	-	PI247087	-		S. habrochaites		Ecuador				61.638.062 	100	6.163.806.200 	43,7%	2,6 	
+																	
+* These accessions were different from their previously taxonomy and changed according to our data such as fruit weight and population structure analysis.																	
+																	
+# These accessions are modern processing tomato and were used for FST																	
+																	
+† These accessions fruit  were highly segregated in fruit weight																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
