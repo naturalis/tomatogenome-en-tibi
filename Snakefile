@@ -1,3 +1,5 @@
+# https://snakemake.readthedocs.io/en/stable/tutorial/short.html
+
 data = "~/Dropbox/documents/projects/dropbox-projects/tomato/data"
 
 fastp -i $in1 -I $in2 -o $out1 -O $out2 -j ${stem}.json -h ${stem}.html -a $adaptor --verbose --dont_overwrite 2> ${stem}.log
