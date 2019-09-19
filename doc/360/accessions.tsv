@@ -1,4 +1,4 @@
-Individual_code	Botanical_variety	Categories	Origin	Latitude	Longitude
+Row_ID  Individual_code	Botanical_variety	Categories	Origin	Latitude	Longitude
 1	TS-14	S. pimpinellifolium	Wild  species	Ecuador	0.583333	-77.933333
 2	TS-15	S. pimpinellifolium	Wild  species	Ecuador	-3.628056	-79.888056
 3	TS-16	S. pimpinellifolium	Wild  species	Ecuador	-3.99	-79.36
