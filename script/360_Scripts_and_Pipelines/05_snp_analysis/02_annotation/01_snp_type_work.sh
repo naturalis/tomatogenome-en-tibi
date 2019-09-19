@@ -1,0 +1,13 @@
+perl soap_cds_snp_final.pl ../../01_add_ref/Chr00.FinalSNPs.add.ref ../snp_location_info/ref.gff chromosome/chr00.fa -o ./
+perl soap_cds_snp_final.pl ../../01_add_ref/Chr1.FinalSNPs.add.ref ../snp_location_info/ref.gff chromosome/chr01.fa -o ./
+perl soap_cds_snp_final.pl ../../01_add_ref/Chr2.FinalSNPs.add.ref ../snp_location_info/ref.gff chromosome/chr02.fa -o ./
+perl soap_cds_snp_final.pl ../../01_add_ref/Chr3.FinalSNPs.add.ref ../snp_location_info/ref.gff chromosome/chr03.fa -o ./
+perl soap_cds_snp_final.pl ../../01_add_ref/Chr4.FinalSNPs.add.ref ../snp_location_info/ref.gff chromosome/chr04.fa -o ./
+perl soap_cds_snp_final.pl ../../01_add_ref/Chr5.FinalSNPs.add.ref ../snp_location_info/ref.gff chromosome/chr05.fa -o ./
+perl soap_cds_snp_final.pl ../../01_add_ref/Chr6.FinalSNPs.add.ref ../snp_location_info/ref.gff chromosome/chr06.fa -o ./
+perl soap_cds_snp_final.pl ../../01_add_ref/Chr7.FinalSNPs.add.ref ../snp_location_info/ref.gff chromosome/chr07.fa -o ./
+perl soap_cds_snp_final.pl ../../01_add_ref/Chr8.FinalSNPs.add.ref ../snp_location_info/ref.gff chromosome/chr08.fa -o ./
+perl soap_cds_snp_final.pl ../../01_add_ref/Chr9.FinalSNPs.add.ref ../snp_location_info/ref.gff chromosome/chr09.fa -o ./
+perl soap_cds_snp_final.pl ../../01_add_ref/Chr10.FinalSNPs.add.ref ../snp_location_info/ref.gff chromosome/chr10.fa -o ./
+perl soap_cds_snp_final.pl ../../01_add_ref/Chr11.FinalSNPs.add.ref ../snp_location_info/ref.gff chromosome/chr11.fa -o ./
+perl soap_cds_snp_final.pl ../../01_add_ref/Chr12.FinalSNPs.add.ref ../snp_location_info/ref.gff chromosome/chr12.fa -o ./

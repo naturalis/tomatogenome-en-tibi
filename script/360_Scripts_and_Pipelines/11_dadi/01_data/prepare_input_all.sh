@@ -1,0 +1,19 @@
+#!/bin/sh
+#$ -S /bin/sh
+#Version1.0	liuxin@genomics.org.cn	2012-10-09
+echo Start Time : 
+date
+perl	prepare_input.pl	Ref/chr01.fa	snp_raw/ch1.snp.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/big/ch1_big.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/cerasi/ch1_cerasi.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/pimp/ch1_pimp.raw	>>all_snp_dadi.input	
+perl	prepare_input.pl	Ref/chr02.fa	snp_raw/ch2.snp.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/big/ch2_big.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/cerasi/ch2_cerasi.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/pimp/ch2_pimp.raw	>>all_snp_dadi.input	
+perl	prepare_input.pl	Ref/chr03.fa	snp_raw/ch3.snp.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/big/ch3_big.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/cerasi/ch3_cerasi.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/pimp/ch3_pimp.raw	>>all_snp_dadi.input	
+perl	prepare_input.pl	Ref/chr04.fa	snp_raw/ch4.snp.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/big/ch4_big.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/cerasi/ch4_cerasi.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/pimp/ch4_pimp.raw	>>all_snp_dadi.input	
+perl	prepare_input.pl	Ref/chr05.fa	snp_raw/ch5.snp.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/big/ch5_big.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/cerasi/ch5_cerasi.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/pimp/ch5_pimp.raw	>>all_snp_dadi.input	
+perl	prepare_input.pl	Ref/chr06.fa	snp_raw/ch6.snp.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/big/ch6_big.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/cerasi/ch6_cerasi.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/pimp/ch6_pimp.raw	>>all_snp_dadi.input	
+perl	prepare_input.pl	Ref/chr07.fa	snp_raw/ch7.snp.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/big/ch7_big.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/cerasi/ch7_cerasi.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/pimp/ch7_pimp.raw	>>all_snp_dadi.input	
+perl	prepare_input.pl	Ref/chr08.fa	snp_raw/ch8.snp.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/big/ch8_big.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/cerasi/ch8_cerasi.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/pimp/ch8_pimp.raw	>>all_snp_dadi.input	
+perl	prepare_input.pl	Ref/chr09.fa	snp_raw/ch9.snp.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/big/ch9_big.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/cerasi/ch9_cerasi.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/pimp/ch9_pimp.raw	>>all_snp_dadi.input	
+perl	prepare_input.pl	Ref/chr10.fa	snp_raw/ch10.snp.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/big/ch10_big.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/cerasi/ch10_cerasi.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/pimp/ch10_pimp.raw	>>all_snp_dadi.input	
+perl	prepare_input.pl	Ref/chr11.fa	snp_raw/ch11.snp.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/big/ch11_big.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/cerasi/ch11_cerasi.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/pimp/ch11_pimp.raw	>>all_snp_dadi.input	
+perl	prepare_input.pl	Ref/chr12.fa	snp_raw/ch12.snp.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/big/ch12_big.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/cerasi/ch12_cerasi.raw	/share/fg3/lintao/solab/lintao/tomato/frequence_distribution/pimp/ch12_pimp.raw	>>all_snp_dadi.input	
+echo End Time : 
+date

@@ -1,0 +1,13 @@
+nohup perl bin/slipping.pl  ch01	90304244	fresh   process    0    100000 &
+nohup perl bin/slipping.pl  ch02	49918294	fresh   process    0    100000 &
+nohup perl bin/slipping.pl  ch03	64840714	fresh   process    0    100000 &
+nohup perl bin/slipping.pl  ch04	64064312	fresh   process    0    100000 &
+nohup perl bin/slipping.pl  ch05	65021438	fresh   process    0    100000 &
+nohup perl bin/slipping.pl  ch06	46041636	fresh   process    0    100000 &
+nohup perl bin/slipping.pl  ch07	65268621    fresh   process    0    100000 &
+nohup perl bin/slipping.pl  ch08	63032657	fresh   process    0    100000 &
+nohup perl bin/slipping.pl  ch09	67662091	fresh   process    0    100000 &
+nohup perl bin/slipping.pl  ch10	64834305	fresh   process    0    100000 &
+nohup perl bin/slipping.pl  ch11	53386025	fresh   process    0    100000 &
+nohup perl bin/slipping.pl  ch12	65486253	fresh   process    0    100000 &
+nohup perl bin/slipping.pl  ch00	21805821	fresh   process    0    100000 &

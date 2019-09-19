@@ -1,0 +1,12 @@
+awk '{print $8}' ../ch01.fst.single >Chr1.fst.single_only
+awk '{print $8}' ../ch02.fst.single >Chr2.fst.single_only
+awk '{print $8}' ../ch03.fst.single >Chr3.fst.single_only
+awk '{print $8}' ../ch04.fst.single >Chr4.fst.single_only
+awk '{print $8}' ../ch05.fst.single >Chr5.fst.single_only
+awk '{print $8}' ../ch06.fst.single >Chr6.fst.single_only
+awk '{print $8}' ../ch07.fst.single >Chr7.fst.single_only
+awk '{print $8}' ../ch08.fst.single >Chr8.fst.single_only
+awk '{print $8}' ../ch09.fst.single >Chr9.fst.single_only
+awk '{print $8}' ../ch10.fst.single >Chr10.fst.single_only
+awk '{print $8}' ../ch11.fst.single >Chr11.fst.single_only
+awk '{print $8}' ../ch12.fst.single >Chr12.fst.single_only
