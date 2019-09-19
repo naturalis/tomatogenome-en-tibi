@@ -194,7 +194,7 @@ TS-60	BIG	LA2009	-	-	New Yorker	S. lycopersicum	Vintage Fresh Market	United Stat
 TS-68	BIG	LA0395	-	-	Chiclayo	S. lycopersicum	Latin American cultivar 	Peru	Lambayeque	 -6.766667	"-79.850000 
 "	107.506.836 	100	10.750.683.600 	75,0%	10,7 	
 TS-69	BIG	LA1459	-	-	Huachinango	S. lycopersicum	Latin American cultivar 	Mexico				54.221.468 	100	5.422.146.800 	97,2%	6,1 	
-TS-73 	BIG	-	-	-	Quarantino			Italy				56.594.072 	100	5.659.407.200 	93,5%	5,8 	
+TS-73+	BIG	-	-	-	Quarantino			Italy				56.594.072 	100	5.659.407.200 	93,5%	5,8 	
 TS-74	BIG	-	-	-	N 739 	S. lycopersicum	Fresh Market	Peru				48.135.718 	100	4.813.571.800 	93,8%	5,2 	
 TS-76	BIG	-	-	EA01230			Processing tomato	Unknown				65.411.966 	100	6.541.196.600 	97,6%	7,2 	
 TS-78#	BIG	-	-	EA02895		S. lycopersicum	Processing tomato	Russia				72.280.966 	100	7.228.096.600 	97,2%	7,9 	
@@ -266,7 +266,7 @@ TS-178	BIG	-	PI513036	EA06485		S. lycopersicum	Processing tomato	Spain				47.781
 TS-179	BIG	-	-	EA01027			Processing tomato	Unknown				95.878.394 	100	9.587.839.400 	89,8%	8,3 	
 TS-180	BIG	-	-	EA02728			Processing tomato	Russia				41.452.656 	100	4.145.265.600 	91,6%	3,7 	
 TS-183	BIG	-	-	EA02764			Processing tomato	Germany				48.378.290 	100	4.837.829.000 	91,6%	3,6 	
-TS-184 	BIG	LA2283	-	-	Tarapoto	S. lycopersicum		Peru	San Martin 	-6.487778	-76.360000	44.205.304 	100	4.420.530.400 	95,8%	4,8 	
+TS-184+	BIG	LA2283	-	-	Tarapoto	S. lycopersicum		Peru	San Martin 	-6.487778	-76.360000	44.205.304 	100	4.420.530.400 	95,8%	4,8 	
 TS-185	BIG	LA4347	-	-	B-L-35	S. lycopersicum	Vintage Fresh Market	Spain	Mallorca			100.713.412 	100	10.071.341.200 	54,0%	8,6 	
 TS-186#	BIG	LA3214	-	-	Rowpac	S. lycopersicum	Modern Processing	United States				59.562.796 	100	5.956.279.600 	82,6%	3,3 	
 TS-188	BIG	LA1506	-	-	Stone	S. lycopersicum	Vintage Fresh Market	United States				159.111.222 	100	15.911.122.200 	70,2%	5,7 	
@@ -360,16 +360,3 @@ TS-403	wild	-	PI128650	-		S. peruvianum		Chile				53.418.796 	100	5.341.879.600 
 TS-404	wild	-	PI128657	-		S. peruvianum		Peru				62.049.328 	100	6.204.932.800 	53,2%	3,2 	
 TS-408	wild	LA1969	-	-		S. chilense		Peru		-17.552778	-70.028333	59.202.220 	100	5.920.222.000 	49,8%	3,2 	
 TS-407	wild	-	PI247087	-		S. habrochaites		Ecuador				61.638.062 	100	6.163.806.200 	43,7%	2,6 	
-																	
-* These accessions were different from their previously taxonomy and changed according to our data such as fruit weight and population structure analysis.																	
-																	
-# These accessions are modern processing tomato and were used for FST																	
-																	
-  These accessions fruit  were highly segregated in fruit weight																	
-																	
-																	
-																	
-																	
-																	
-																	
-																	
