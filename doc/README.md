@@ -20,3 +20,5 @@ whole-genome sequencing](150/1504.05610.pdf)
 - Data
   - [background about remapping against 2.50](150/README)
   - ftp://ftp.solgenomics.net/genomes/tomato_150/
+
+## [Analysis pipeline](Pipeline.md)
