@@ -53,7 +53,7 @@ while( my $site = $refsites->next ) {
 		# replace default value with observed, where applicable
 		for my $snp ( @snps ) {
 			my $acc = $snp->{_column_data}->{accession};
-			$table{$acc}->[-1] = 1;
+			$table{$acc}->[-1] = $snp->{_column_data}->{altallele};
 		}
 	}
 }
