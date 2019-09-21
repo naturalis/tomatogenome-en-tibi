@@ -19,7 +19,7 @@ row.names(accessions) <- accessions$Individual_code
 pca1_loading <- inner_join(pca1_loading, accessions, by = "Individual_code")
 
 # plot
-ggplot(pca1_loading, aes(x=PC1,y=PC2,color=Origin))+
+ggplot(pca1_loading, aes(x=PC1,y=PC2,color=Botanical_variety))+
     geom_point(alpha=0.5) +
     labs(x = "PC1", y = "PC2")+
     theme_classic()+
