@@ -97,7 +97,7 @@ I.e. low coverage: the average is 2.2, and only about 1% has coverage of over 10
 
 	samtools faidx Solanum_lycopersicum.SL2.50.dna.toplevel.fa
 
-## Do the thing
+## Do the SNP calling
 
 	bcftools mpileup \
 		-Ou \
@@ -109,38 +109,44 @@ I.e. low coverage: the average is 2.2, and only about 1% has coverage of over 10
 
 # SNP merging
 
-## Simplify the En Tibi snps:
+## Make target list
 
-	grep -v '#' run0220_En-Tibi_S2_L003.fixmate.sorted.markdup.flt.vcf \
-		| grep -v LowQual \
-		| grep -v INDEL \
-		| cut -f1,2,4,5 \
-		| grep -v SL2.40sc \
-		> snps.tsv
+Given run0220_En-Tibi_S2_L003.fixmate.sorted.markdup.depth, creates a 2-column TSV (chromo,pos) with sites cover>=10,
+i.e. mincover10.tsv, which is used by bcftools. 
 
-## Simplify the 360 snps:
-
-```bash
-vcfs=`ls *.vcf`
-for vcf in $vcfs; do
-	cut -f1,2,4,5 $vcf \
-		| sed -e 's/SL2.50ch//' \
-		| grep -v '#' \
-		| grep -v '^00' \
-		| sed -e 's/^0//' \
-		> $vcf.tsv
-done
+```perl
+while(<>) {
+	chomp;
+	@f = split /\t/, $_;
+	last if $f[0] !~ /^\d+$/;
+	if ( $f[2] >= 10 ) {		
+		print sprintf('SL2.50ch%02d', $f[0]), "\t", $f[1], "\n";
+	}
+}
 ```
 
-## Turn the 360 snps into csv with accession code suffix
+## Simplify the En Tibi snps:
+
+    bcftools view --threads 3 -H -T mincover10_int_chromo.tsv run0220_En-Tibi_S2_L003.fixmate.sorted.markdup.flt.vcf.gz \
+        | grep -v LowQual \
+        | egrep -v 'DP=\d;' \
+        | grep -v INDEL > run0220_En-Tibi_S2_L003.fixmate.sorted.markdup.flt.mincover10.vcf
+
+## Transform to CSV for [snps table](../script/schema.sql)
+
+    perl ../360/accessions/gff2csv.pl run0220_En-Tibi_S2_L003.fixmate.sorted.markdup.flt.mincover10.vcf \
+        | sed -e 's/$/,En-Tibi/' > En-Tibi.csv
+
+## Simplify and transform the 360 snps:
 
 ```bash
-tsvs=$(ls *.tsv | sed -e 's/.vcf.tsv//')
-for tsv in $tsvs; do 
-	cut -f1,2,4 $tsv.vcf.tsv \
-	| sed -e "s/$(printf '\t')/;/g" \
-	| sed -e "s/$/;$tsv/" \
-	| grep -v ',' \
-	| sed -e 's/;/,/' > $tsv.csv
+#!/bin/bash
+accessions=$(ls *.vcf.gz | sed -e 's/.vcf.gz//')
+for acc in $accessions; do
+	bcftools view --threads 3 -H -T ../../bam/mincover10.tsv $acc.vcf.gz \
+		| tee $acc.mincover10.vcf \
+		| egrep -v 'DP=\d;' \
+		| perl gff2csv.pl \
+		| sed -e "s/$/,$acc/" > $acc.csv
 done
 ```
