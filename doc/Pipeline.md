@@ -150,3 +150,7 @@ for acc in $accessions; do
 		| sed -e "s/$/,$acc/" > $acc.csv
 done
 ```
+
+### Statistical analysis
+
+[t-SNE](https://rpubs.com/marwahsi/tnse)
