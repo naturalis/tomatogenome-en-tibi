@@ -1,6 +1,5 @@
 library(dplyr)
 library(ggplot2)
-library(plotly)
 library(Rtsne)
 
 # load accessions
@@ -28,21 +27,24 @@ res <- Rtsne(df2,
              num_threads=4, 
              dims=2, 
              perplexity=26, 
+             #perplexity=12,
              verbose=T, 
-             max_iter=4000,
-             partial_pca=T,
-             theta=0.4
+             max_iter=1500,
+             theta=0.5
 )
-plot(res$Y, asp=1)
-colors = rainbow(length(unique(accessions$botanical_variety)))
-names(colors) = unique(accessions$botanical_variety)
-text(res$Y, 
-     labels=accessions$label, 
-     col=colors[accessions$botanical_variety],
-     cex=0.5)
-
-# cluster
-d <- dist(df2, method = "euclidean")
-fit <- hclust(d, method="ward")
-fit$labels <- accessions[fit$labels,]$country
-plot(fit)
+results <- data.frame( 
+    x = res$Y[,1], 
+    y = res$Y[,2], 
+    botanical_variety = accessions$botanical_variety,
+    label = accessions$label)
+ggplot( results, aes( x = x, y = y ) ) + 
+    geom_point( 
+        shape = 21, 
+        aes( bg = results$botanical_variety ), 
+        size = 2,
+        position = position_jitter( width = 0.1,height = 0.1 ) ) +
+    scale_fill_brewer(palette="Accent") +
+    labs( 
+        bg="Botanical variety", 
+        title = "t-SNE of landraces, cultivars and wild tomatoes"
+    )
