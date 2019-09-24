@@ -154,3 +154,16 @@ done
 ### Statistical analysis
 
 [t-SNE](https://rpubs.com/marwahsi/tnse)
+
+python structure.py \
+    -K 3 \
+    --input=/Users/rutger.vos/Documents/local-projects/tomatogenome-en-tibi/data/structure/structure \
+    --format=str \
+    --output=/Users/rutger.vos/Documents/local-projects/tomatogenome-en-tibi/data/structure/structure.out
+
+pythonw distruct.py \
+    -K 3 \
+    --input=/Users/rutger.vos/Documents/local-projects/tomatogenome-en-tibi/data/structure/structure.out \
+    --output=/Users/rutger.vos/Documents/local-projects/tomatogenome-en-tibi/data/structure/distruct.pdf \
+    --title="S. lycopersicum and S. l. var. cerasiforme" \
+    --popfile=/Users/rutger.vos/Documents/local-projects/tomatogenome-en-tibi/data/structure/labels.txt 
