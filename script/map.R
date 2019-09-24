@@ -2,59 +2,51 @@
 # collected. They are _S. lycopersicum_ and other wild relatives. We start by 
 # loading the required libraries:
 
-library(maptools)
 library(dplyr)
-data(wrld_simpl)
+library(ggplot2)
+library(ggmap)
+library(RColorBrewer)
 
-
-# Now we load the data. This is Supplementary Table 1 (Suppl. materials 2) from 
-# the paper, converted to TSV. The ID suffixes have the following meaning:
-#
-# * These accessions were different from their previously taxonomy and changed 
-#    according to our data such as fruit weight and population structure 
-#    analysis.																	
-# # These accessions are modern processing tomato and were used for FST
-# + These accessions fruit  were highly segregated in fruit weight
-
+# supplementary table S2 from the 360 tomato paper
 df <- select(read.csv2(
-    '../doc/360/ng.3117-S2.tsv', 
+    '../doc/360/accessions_cleaned.tsv', 
     header = T, 
     sep = "\t",
     dec = "."
-), Individual_code, Botanical_variety, Categories, Origin, Latitude, Longitude )
-df <- df[!is.na(df$Latitude),]
-df <- df[df$Longitude<0,]
+), label, botanical_variety, status, country, latitude, longitude )
 
-taxa <- list(
-    'red' = 'S. lycopersicum var cerasiforme',
-    'gold1' = 'S. pimpinellifolium',
-    'chocolate1' = 'S. lycopersicum',
-    'darkolivegreen2' = 'S. neorickii',
-    'cadetblue2' = 'S. galapagense',
-    'cornflowerblue' = 'S. chilense',
-    'darkorchid2' = 'S. cheesmaniae'
-)
+# remove non-georeferenced accessions
+df <- df[!is.na(df$latitude),]
 
-plot(
-    wrld_simpl,
-    axes = TRUE,
-    xlim = c(min(df$Longitude), max(df$Longitude)),
-    ylim = c(min(df$Latitude), max(df$Latitude)),
-    col = "gray93"
-)
+# only look at the western hemisphere 
+# (otherwise there is one accession in the Philippines)
+df <- df[df$longitude<0,]
+
+# make the bounding box relative to the extent of the occurrences
+bbox <- make_bbox(lon = df$longitude, lat = df$latitude, f = .05)
+
+# fetch a mp from google
+map <- get_map(
+    location = bbox, 
+    maptype = "watercolor", 
+    source = "stamen", 
+    force = T,
+    zoom = 5)
+ggmap(map) +
+    geom_point(
+        data = df, 
+        shape = 21,
+        mapping = aes(
+            x = longitude, 
+            y = latitude,
+            bg = botanical_variety
+        )) +
+    scale_fill_brewer(palette="Accent") +
+    labs(
+        bg="Botanical variety", 
+        subtitle = "Georeferenced accessions",
+        title = "Neotropical landraces, cultivars and wild tomatoes",
+        caption = "Adapted from doi:10.1038/ng.3117"
+    )
 
 
-# U__0015716
-# U__0015717
-# WAG0463703
-
-horiloc = 10
-for ( color in names(taxa) ) {
-    taxon.occurrences <- filter(df, Botanical_variety == taxa[color])
-    lon <- select(taxon.occurrences, Longitude)$Longitude
-    lat <- select(taxon.occurrences, Latitude)$Latitude
-    points(lon, lat, col = 'black', bg = color, pch = 21, cex = 1 )
-    horiloc <- horiloc + 30
-}
-
-box()
