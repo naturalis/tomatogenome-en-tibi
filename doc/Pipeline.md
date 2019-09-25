@@ -155,15 +155,28 @@ done
 
 [t-SNE](https://rpubs.com/marwahsi/tnse)
 
-python structure.py \
-    -K 3 \
-    --input=/Users/rutger.vos/Documents/local-projects/tomatogenome-en-tibi/data/structure/structure \
-    --format=str \
-    --output=/Users/rutger.vos/Documents/local-projects/tomatogenome-en-tibi/data/structure/structure.out
+```bash
+FSDIR=/Users/rutger.vos/Documents/local-projects/fastStructure
+Ks='2 3 4 5 6 7'
+for K in $Ks; do
+	python $FSDIR/structure.py -K $K \
+		--input=structure.pruned \
+		--format=str \
+		--output=structure.pruned.out
+done
+python $FSDIR/chooseK.py --input=structure.pruned.out
+```
 
-pythonw distruct.py \
+Model complexity that maximizes marginal likelihood = 3
+Model components used to explain structure in data = 4
+
+```bash
+DIR=/Users/rutger.vos/Documents/local-projects/tomatogenome-en-tibi/data/structure
+pythonw distruct2.3.py \
     -K 3 \
-    --input=/Users/rutger.vos/Documents/local-projects/tomatogenome-en-tibi/data/structure/structure.out \
-    --output=/Users/rutger.vos/Documents/local-projects/tomatogenome-en-tibi/data/structure/distruct.pdf \
-    --title="S. lycopersicum and S. l. var. cerasiforme" \
-    --popfile=/Users/rutger.vos/Documents/local-projects/tomatogenome-en-tibi/data/structure/labels.txt 
+    --input=$DIR/structure.pruned.out \
+    --output=$DIR/structure.pruned.distruct23.pdf \
+    --popfile=$DIR/labels.txt \
+    --poporder=$DIR/poporder \
+    --title="Structure analysis of S. pimpinellifolium, S. lycopersicum and S. l. var. cerasiforme"
+```
