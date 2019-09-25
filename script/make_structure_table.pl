@@ -33,7 +33,7 @@ my %iupac = (
 # process command line arguments
 my $db = $ENV{'HOME'} . '/Dropbox/documents/projects/dropbox-projects/tomatogenome-en-tibi/data/snps_bases.db';
 my $verbosity = WARN;
-my @fields    = qw(label botanical_variety status country latitude longitude);
+my @fields    = qw(status country latitude longitude label botanical_variety);
 my $outformat = 'structure';
 GetOptions(
     'db=s'        => \$db,
