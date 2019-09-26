@@ -5,38 +5,81 @@ use SVG;
 use XML::Twig;
 use Data::Dumper;
 use Getopt::Long;
+use Graphics::Color;
+use Graphics::Color::HSV;
+use List::Util 'shuffle';
 use Bio::Phylo::Util::Logger ':simple';
 
+my @popcolors = ( 'gray', 'black', 'white' );
+
+my %color_for_state = (
+    'Brazil'   => '#1d8f64',
+    'Chile'    => '#ce4a08',
+    'Ecuador'  => '#6159a4',
+    'Honduras' => '#de0077',
+    'Mexico'   => '#569918',
+    'Peru'     => '#df9c09',
+    'Unknown'  => 'gray',
+);
+
 # process command line arguments
-my $svg_file    = '../data/network/bases.phy.full.svg'; # produced by splitstree
-my $meanq_file  = '../data/structure/structure.pruned.out.3.meanQ'; # produced by fastStructure
-my $labels_file = '../data/structure/labels.txt'; # accession labels in same order as mapq_file
-my @colors      = qw(#386CB0 #FFFF99 #BF5B17); # svg/html compatible color codes
-my $verbosity   = WARN;
+my $svg_file        = '../data/network/bases.phy.full.svg'; # produced by splitstree
+my $meanq_file      = '../data/structure/structure.pruned.out.3.meanQ'; # produced by fastStructure
+my $labels_file     = '../data/structure/labels.txt'; # accession labels in same order as mapq_file
+my $accessions_file = '../doc/360/accessions_cleaned.tsv'; # accession metadata
+my $column          = 'country'; # metadata column in the accessions table
+my $verbosity       = WARN;
 GetOptions(
     'svg_file=s'    => \$svg_file,
     'meanq_file=s'  => \$meanq_file,
     'labels_file=s' => \$labels_file,
-    'colors=s'      => \@colors,
     'verbose+'      => \$verbosity,
 );
 Bio::Phylo::Util::Logger->new( '-level' => $verbosity, '-class' => 'main' );
 
-# read the input file
-my ( $twig, %nodes_for_labels ) = map_nodes_to_labels($svg_file);
+# read the input files
+my %cultivars_for_labels = map_states_to_labels($accessions_file, 'botanical_variety');
+my ( $twig, %nodes_for_labels ) = map_nodes_to_labels($svg_file, %cultivars_for_labels);
 my %pops_for_labels = map_admixture_to_labels($meanq_file,$labels_file);
+my %states_for_labels = map_states_to_labels($accessions_file, $column);
 
-# do the replacement
+# do the replacements
 for my $label ( keys %pops_for_labels ) {
     INFO "drawing piechart for $label";
-    draw_piechart( $pops_for_labels{$label}, \@colors, $nodes_for_labels{$label}->[0] );
+    draw_piechart( $pops_for_labels{$label}, \@popcolors, $nodes_for_labels{$label}->[0] );
+
+    INFO "draw stroke color for $label";
+    my $state = $states_for_labels{$label};
+    my $color = $color_for_state{$state};
+    $nodes_for_labels{$label}->[1]->set_att('stroke' => $color, 'fill' => 'none', 'stroke-width' => 8 );
 }
 $twig->print;
+
+# reads accessions table, extracts $column value for each label
+sub map_states_to_labels {
+    my ( $file, $column ) = @_;
+    my ( %map, @header );
+    open my $in, '<', $file or die $!;
+    LINE: while(<$in>) {
+        chomp;
+        my @record = split /\t/, $_;
+        if ( not @header ) {
+            @header = @record;
+            next LINE;
+        }
+        else {
+            my %record = map { $header[$_] => $record[$_] } 0 .. $#header;
+            my ( $label, $value ) = @record{'label',$column};
+            $map{$label} = $value;
+        }
+    }
+    return %map;
+}
 
 # arg: svg file, returns hash keyed on labels
 # value: [ fill, stroke ] circle element
 sub map_nodes_to_labels {
-    my $svg_file = shift;
+    my ( $svg_file, %cultivars ) = @_;
     INFO "Going to map node elements to accession labels in $svg_file";
 
     # going to collect the nodes with strokes or fills,
@@ -62,6 +105,16 @@ sub map_nodes_to_labels {
         if ( $label !~ /^\d+\.\d+$/ ) {
             push @labels, $label;
             INFO $label;
+            if ( $cultivars{$label} =~ /pimp/ ) {
+                $label =~ s/TS/P/;
+            }
+            elsif ( $cultivars{$label} =~ /cera/ ) {
+                $label =~ s/TS/C/;
+            }
+            elsif ( $cultivars{$label} =~ /cum$/ ) {
+                $label =~ s/TS/B/;
+            }
+            $text->set_text($label);
         }
     }
 
@@ -134,4 +187,30 @@ sub draw_piechart {
     my $rendered = $pie_twig->root->first_child->sprint;
     INFO $rendered;
     $circle->set_outer_xml($rendered);
+}
+
+sub make_palettes {
+    my ( $h1, $h2 ) = @_;
+    my ($v1) = values %$h1;
+    my %vals2 = map { $_ => 1 } values %$h2;
+    my $n1 = scalar(@$v1);
+    my $n2 = scalar(keys(%vals2));
+    my @palette = shuffle make_colors($n1+$n2);
+    my @p1 = @palette[0..$n1-1];
+    my @p2 = @palette[$n1..$#palette];
+    return \@p1, \@p2;
+}
+
+sub make_colors {
+    my $n = shift;
+    my $step = 360/$n;
+    my @rgbs;
+    for my $i ( 1 .. $n ) {
+        push @rgbs, Graphics::Color::HSV->new({
+            hue         => $i * $step,
+            saturation  => 1,
+            value       => .7,
+        })->to_rgb->as_hex_string('#');
+    }
+    return @rgbs;
 }
