@@ -6,3 +6,4 @@ The full genome of an early participant in the Columbian Exchange: the _En Tibi_
 - [Documentation](doc) 
 
 The analyses are run on the high mem node of Naturalis.
+The data is currently locally held on the Mac pro.
