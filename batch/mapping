@@ -4,8 +4,8 @@
 #SBATCh --output=mapping_output.txt
 
 	fastp \
-		-i En-Tibi_trimmed (paired).R1.fastq.gz \
-		-I En-Tibi_trimmed (paired).R2.fastq.gz \
+		-i  /home/rutger.vos/fileserver/projects/B19015-525/En-Tibi_trimmed (paired).R1.fastq.gz \
+		-I /home/rutger.vos/fileserver/projects/B19015-525/En-Tibi_trimmed (paired).R2.fastq.gz \
 		-o paired_R1_fastp.fastq.gz \
 		-O paired_R2_fastp.fastq.gz \
 		-j fastp.json -h fastp.html --verbose
@@ -13,7 +13,7 @@
 	minimap2 \
 		-d Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz.mmi \
 		-t 4 \
-		Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz
+		/home/rutger.vos/fileserver/projects/B19015-525/Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz
 	minimap2 \
 		-ax sr \
 		-a \
