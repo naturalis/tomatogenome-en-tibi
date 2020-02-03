@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH --job-name=mapping
-#SBATCh --output=mapping_output.txt
+#SBATCH --output=mapping_output.txt
 
 fastp \
 	-i "/home/rutger.vos/fileserver/projects/B19015-525/En-Tibi_trimmed (paired).R1.fastq.gz" \
@@ -18,6 +18,6 @@ minimap2 \
 	-ax sr \
 	-a \
 	-t 4 \
-	"Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz" \
-	"paired_R1_fastp.fastq.gz paired_R2_fastp.fastq.gz" | samtools view \
+	"Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz.mmi" \
+	"paired_R1_fastp.fastq.gz" "paired_R2_fastp.fastq.gz" | samtools view \
 	-b -u -F 0x04 --threads 4 -o "run0220_paired_En-Tibi_S2_L003.bam" -
