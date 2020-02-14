@@ -4,24 +4,25 @@
 #SBATCH --output=output_SNP_calling.txt
 
 # SNP calling
-# Basic stats
+echo "Basic stats"
 #Number of bases with at least 10x coverage:
 
 export MIN_COVERAGE_DEPTH=10
 samtools mpileup "paired_En-Tibi.fixmate.sorted.markdup.bam" | awk -v X="${MIN_COVERAGE_DEPTH}" '$4>=X' | wc -l
 
-#Get all the depths (useful for plotting histograms):
+echo "Get all the depths" #(useful for plotting histograms):
 
 samtools depth -a "paired_En-Tibi.fixmate.sorted.markdup.bam" > "paired_En-Tibi.fixmate.sorted.markdup.depth"
 
 #Compute the averages: Run in a separate  batch file due to the use of PERL. This can be done later
 #/home/ewout.michels/tomatogenome-en-tibi/batch/Index_high_coverage.sh paired_En-Tibi.fixmate.sorted.markdup.depth
 
-## Index the reference
+echo "Index the reference"
 
-samtools faidx Solanum_lycopersicum.SL2.50.dna.toplevel.fa
+#samtools faidx ../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa \
+#  -o ../reference/Solanum_lycopersicum.SL.2.50.dna.toplevel.fa.fai
 
-## Do the SNP calling
+echo "Do the SNP calling"
 
 bcftools mpileup \
   -Ou \

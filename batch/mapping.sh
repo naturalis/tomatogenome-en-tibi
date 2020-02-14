@@ -3,7 +3,7 @@
 #SBATCH --job-name=mapping
 #SBATCH --output=mapping_output.txt
 
-# Quality assessment and trimming
+echo "Quality assessment and trimming"
 fastp \
 	-i "/home/rutger.vos/fileserver/projects/B19015-525/En-Tibi_trimmed (paired).R1.fastq.gz" \
 	-I "/home/rutger.vos/fileserver/projects/B19015-525/En-Tibi_trimmed (paired).R2.fastq.gz" \
@@ -12,36 +12,36 @@ fastp \
 	-j fastp.json -h fastp.html --verbose
 
 # Assembly
-# Indexing the reference
+echo "Indexing the reference"
 minimap2 \
-	-d "Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz.mmi" \
+	-d "../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz.mmi" \
 	-t 4 \
-	"/home/rutger.vos/fileserver/projects/B19015-525/Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz"
+	"../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz"
 
-# Mapping
+echo "Mapping"
 minimap2 \
 	-ax sr \
 	-a \
 	-t 4 \
-	"Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz" \
+	"../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz.mmi" \
 	"paired_R1_fastp.fastq.gz" "paired_R2_fastp.fastq.gz" | samtools view \
 	-b -u -F 0x04 --threads 4 -o "paired_En-Tibi.bam" -
 
-# Correct mate pairs
+echo "Correct mate pairs"
 samtools \
 	fixmate -r -m  \
 	--threads 4 \
 	"paired_En-Tibi.bam" \
 	"paired_En-Tibi.fixmate.bam"
 
-# Sort the reads
+echo "Sort the reads"
 samtools \
   sort -l 0 \
   -m 3G \
   --threads 4 \
   -o "paired_En-Tibi.fixmate.sorted.bam" "paired_En-Tibi.fixmate.bam"
 
-# Mark duplicates
+echo "Mark duplicates"
 samtools \
   markdup -r \
   --threads 4 \
