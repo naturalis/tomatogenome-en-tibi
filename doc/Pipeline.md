@@ -3,8 +3,8 @@
 ## Quality assessment and trimming
 
 	fastp \
-		-i En-Tibi_trimmed (paired).R1.fastq.gz \
-		-I En-Tibi_trimmed (paired).R2.fastq.gz \
+		-i "En-Tibi_trimmed (paired).R1.fastq.gz" \
+		-I "En-Tibi_trimmed (paired).R2.fastq.gz" \
 		-o paired_R1_fastp.fastq.gz \
 		-O paired_R2_fastp.fastq.gz \
 		-j fastp.json -h fastp.html --verbose
