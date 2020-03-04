@@ -1,15 +1,7 @@
 #!/bin/bash
 
 #SBATCH --job-name=mapping
-#SBATCH --output=mapping_output.txt
-
-echo "Quality assessment and trimming"
-fastp \
-	-i "/home/rutger.vos/fileserver/projects/B19015-525/En-Tibi_trimmed (paired).R1.fastq.gz" \
-	-I "/home/rutger.vos/fileserver/projects/B19015-525/En-Tibi_trimmed (paired).R2.fastq.gz" \
-	-o "paired_R1_fastp.fastq.gz" \
-	-O "paired_R2_fastp.fastq.gz" \
-	-j fastp.json -h fastp.html --verbose
+#SBATCH --output=output_mapping.txt
 
 # Assembly
 echo "Indexing the reference"
