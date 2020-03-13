@@ -70,8 +70,6 @@ Get all the depths (useful for plotting histograms):
     samtools depth -a "paired_En-Tibi.fixmate.sorted.markdup.bam" > "paired_En-Tibi.fixmate.sorted.markdup.depth"
 
 
-I.e. low coverage: the average is 2.2, and only about 1% has coverage of over 10x
-
 ## Index the reference
 
     samtools faidx ../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa \
@@ -105,6 +103,8 @@ Running this results in:
  
     bases: 823154808 depth: 1226874728
     average: 1.49045442737668
+   
+I.e. low coverage: the average is 1.49, and only about 0.75% has coverage of over 10x
 
 # SNP merging
 
