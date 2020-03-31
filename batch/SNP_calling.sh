@@ -19,8 +19,7 @@ samtools depth -a "paired_En-Tibi.fixmate.sorted.markdup.bam" > "paired_En-Tibi.
 
 echo "Index the reference"
 
-#samtools faidx ../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa \
-#  -o ../reference/Solanum_lycopersicum.SL.2.50.dna.toplevel.fa.fai
+samtools faidx ../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa
 
 echo "Do the SNP calling"
 

@@ -15,7 +15,7 @@ minimap2 \
 	-ax sr \
 	-a \
 	-t 4 \
-	"../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz.mmi" \
+	"../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz" \
 	"paired_R1_fastp.fastq.gz" "paired_R2_fastp.fastq.gz" | samtools view \
 	-b -u -F 0x04 --threads 4 -o "paired_En-Tibi.bam" -
 
