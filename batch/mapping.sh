@@ -6,16 +6,16 @@
 # Assembly
 echo "Indexing the reference"
 minimap2 \
-	-d "../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz.mmi" \
+	-d "../reference/S_lycopersicum_chromosomes.2.50.fa.gz.mmi" \
 	-t 4 \
-	"../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz"
+	"../reference/S_lycopersicum_chromosomes.2.50.fa.gz"
 
 echo "Mapping"
 minimap2 \
 	-ax sr \
 	-a \
 	-t 4 \
-	"../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz" \
+	"../reference/S_lycopersicum_chromosomes.2.50.fa.gz" \
 	"paired_R1_fastp.fastq.gz" "paired_R2_fastp.fastq.gz" | samtools view \
 	-b -u -F 0x04 --threads 4 -o "paired_En-Tibi.bam" -
 
