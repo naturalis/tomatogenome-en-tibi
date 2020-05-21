@@ -1,29 +1,21 @@
 #!/bin/bash
 
 #SBATCH --job-name=mapping
-#SBATCH --output=mapping_output.txt
-
-echo "Quality assessment and trimming"
-fastp \
-	-i "/home/rutger.vos/fileserver/projects/B19015-525/En-Tibi_trimmed (paired).R1.fastq.gz" \
-	-I "/home/rutger.vos/fileserver/projects/B19015-525/En-Tibi_trimmed (paired).R2.fastq.gz" \
-	-o "paired_R1_fastp.fastq.gz" \
-	-O "paired_R2_fastp.fastq.gz" \
-	-j fastp.json -h fastp.html --verbose
+#SBATCH --output=output_mapping.txt
 
 # Assembly
 echo "Indexing the reference"
 minimap2 \
-	-d "../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz.mmi" \
+	-d "../reference/S_lycopersicum_chromosomes.2.50.fa.gz.mmi" \
 	-t 4 \
-	"../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz"
+	"../reference/S_lycopersicum_chromosomes.2.50.fa.gz"
 
 echo "Mapping"
 minimap2 \
 	-ax sr \
 	-a \
 	-t 4 \
-	"../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz.mmi" \
+	"../reference/S_lycopersicum_chromosomes.2.50.fa.gz" \
 	"paired_R1_fastp.fastq.gz" "paired_R2_fastp.fastq.gz" | samtools view \
 	-b -u -F 0x04 --threads 4 -o "paired_En-Tibi.bam" -
 

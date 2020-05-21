@@ -19,14 +19,13 @@ samtools depth -a "paired_En-Tibi.fixmate.sorted.markdup.bam" > "paired_En-Tibi.
 
 echo "Index the reference"
 
-#samtools faidx ../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa \
-#  -o ../reference/Solanum_lycopersicum.SL.2.50.dna.toplevel.fa.fai
+samtools faidx ../reference/S_lycopersicum_chromosomes.2.50.fa
 
 echo "Do the SNP calling"
 
 bcftools mpileup \
   -Ou \
-  -f ../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa \
+  -f ../reference/S_lycopersicum_chromosomes.2.50.fa \
   paired_En-Tibi.fixmate.sorted.markdup.bam \
   | bcftools call -Ou -mv \
   | bcftools filter -s LowQual -e '%QUAL<20 || DP>20' \

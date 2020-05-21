@@ -2,55 +2,55 @@
 
 ## Quality assessment and trimming
 
-	fastp \
-		-i En-Tibi_trimmed (paired).R1.fastq.gz \
-		-I En-Tibi_trimmed (paired).R2.fastq.gz \
-		-o paired_R1_fastp.fastq.gz \
-		-O paired_R2_fastp.fastq.gz \
-		-j fastp.json -h fastp.html --verbose
+    fastp \
+            -i "/home/rutger.vos/fileserver/projects/B19015-525/updated/run0220_En-Tibi_S2_L003_R1_001.nophix.fastq.gz" \
+            -I "/home/rutger.vos/fileserver/projects/B19015-525/updated/run0220_En-Tibi_S2_L003_R2_001.nophix.fastq.gz" \
+            -o "paired_R1_fastp.fastq.gz" \
+            -O "paired_R2_fastp.fastq.gz" \
+            -j fastp.json -h fastp.html --verbose
 
 # Assembly
 
 ## Indexing the reference
 
-	minimap2 \
-		-d Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz.mmi \
-		-t 4 \
-		Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz
+    minimap2 \
+        -d "../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz.mmi" \
+        -t 4 \
+        "../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz"
 
 ## Mapping
 
-	minimap2 \
-		-ax sr \
-		-a \
-		-t 4 \
-		Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz \
-		paired_R1_fastp.fastq.gz paired_R2_fastp.fastq.gz | samtools view \
-		-b -u -F 0x04 --threads 4 -o paired_En-Tibi.bam -
+    minimap2 \
+        -ax sr \
+        -a \
+        -t 4 \
+        "../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz.mmi" \
+        "paired_R1_fastp.fastq.gz" "paired_R2_fastp.fastq.gz" | samtools view \
+        -b -u -F 0x04 --threads 4 -o "paired_En-Tibi.bam" -
 
 ## Correct mate pairs
 
 	samtools \
-		fixmate -r -m  \
-		--threads 4 \
-		paired_En-Tibi.bam \
-		paired_En-Tibi.fixmate.bam
+        fixmate -r -m  \
+        --threads 4 \
+        "paired_En-Tibi.bam" \
+        "paired_En-Tibi.fixmate.bam"
 
 ## Sort the reads
 
-	samtools \
-		sort -l 0 \
-		-m 3G \
-		--threads 4 \
-		-o paired_En-Tibi.fixmate.sorted.bam paired_En-Tibi.fixmate.bam
+    samtools \
+      sort -l 0 \
+      -m 3G \
+      --threads 4 \
+      -o "paired_En-Tibi.fixmate.sorted.bam" "paired_En-Tibi.fixmate.bam"
 
 ## Mark duplicates
 
-	samtools \
-		markdup -r \
-		--threads 4 \
-		paired_En-Tibi.fixmate.sorted.bam \
-		paired_En-Tibi.fixmate.sorted.markdup.bam
+    samtools \
+      markdup -r \
+      --threads 4 \
+      "paired_En-Tibi.fixmate.sorted.bam" \
+      "paired_En-Tibi.fixmate.sorted.markdup.bam"
 
 # SNP calling
 
@@ -58,54 +58,53 @@
 
 Number of bases with at least 10x coverage:
 
-	export MIN_COVERAGE_DEPTH=10	
-	samtools mpileup paired_En-Tibi.fixmate.sorted.markdup.bam | awk -v X="${MIN_COVERAGE_DEPTH}" '$4>=X' | wc -l
+    export MIN_COVERAGE_DEPTH=10
+    samtools mpileup "paired_En-Tibi.fixmate.sorted.markdup.bam" | awk -v X="${MIN_COVERAGE_DEPTH}" '$4>=X' | wc -l
 
-    #     Answer:   9,894,824
+    #     Answer:   6072146
     # Ref length: 823,134,955
-    # i.e., about 1% has a coverage of >=10x
+    # i.e., about 0.75% has a coverage of >=10x
 
 Get all the depths (useful for plotting histograms):
 
-	samtools depth -a paired_En-Tibi.fixmate.sorted.markdup.bam > paired_En-Tibi.fixmate.sorted.markdup.depth
+    samtools depth -a "paired_En-Tibi.fixmate.sorted.markdup.bam" > "paired_En-Tibi.fixmate.sorted.markdup.depth"
 
-Compute the averages:
-
-```perl
-#!/usr/bin/perl
-my $line = 0;
-my $sum = 0;
-while(<>) {
-	chomp;
-	my ( $chr, $pos, $depth ) = split /\t/, $_;
-	$line++;
-	$sum += $depth;
-}
-print "bases: $line depth: $sum\n";
-print "average: ", $sum/$line, "\n";
-```
-
-Running this results in:
-
-	MacBook-Pro-Rutger-Vos:bam rutger.vos$ perl avgdepth.pl paired_En-Tibi.fixmate.sorted.markdup.depth 
-	bases: 823134955 depth: 1878040045
-	average: 2.28157003124718
-
-I.e. low coverage: the average is 2.2, and only about 1% has coverage of over 10x
 
 ## Index the reference
 
-	samtools faidx Solanum_lycopersicum.SL2.50.dna.toplevel.fa
+    samtools faidx ../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa \
+      -o ../reference/Solanum_lycopersicum.SL.2.50.dna.toplevel.fa.fai
 
 ## Do the SNP calling
 
-	bcftools mpileup \
-		-Ou \
-		-f ../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa \
-		paired_En-Tibi.fixmate.sorted.markdup.bam \
-		| bcftools call -Ou -mv \
-		| bcftools filter -s LowQual -e '%QUAL<20 || DP>20' \
-		> paired_En-Tibi.fixmate.sorted.markdup.flt.vcf
+    bcftools mpileup \
+      -Ou \
+      -f ../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa \
+      paired_En-Tibi.fixmate.sorted.markdup.bam \
+      | bcftools call -Ou -mv \
+      | bcftools filter -s LowQual -e '%QUAL<20 || DP>20' \
+      > paired_En-Tibi.fixmate.sorted.markdup.flt.vcf
+
+## Compute the averages:
+
+    #!/usr/bin/perl
+    my $line = 0;
+    my $sum = 0;
+    while(<>) {
+        chomp;
+        my ( $chr, $pos, $depth ) = split /\t/, $_;
+        $line++;
+        $sum += $depth;
+    }
+    print "bases: $line depth: $sum\n";
+    print "average: ", $sum/$line, "\n";
+
+Running this results in:
+ 
+    bases: 823154808 depth: 1226874728
+    average: 1.49045442737668
+   
+I.e. low coverage: the average is 1.49, and only about 0.75% has coverage of over 10x
 
 # SNP merging
 
@@ -119,22 +118,24 @@ while(<>) {
 	chomp;
 	@f = split /\t/, $_;
 	last if $f[0] !~ /^\d+$/;
-	if ( $f[2] >= 10 ) {		
-		print sprintf('SL2.50ch%02d', $f[0]), "\t", $f[1], "\n";
+	if ( $f[2] >= 10 ) {
+#		print sprintf('SL2.50ch%02d', $f[0]), "\t", $f[1], "\n";
+                printf("%d\t%d\n", $f[0], $f[1]);
 	}
 }
 ```
 
 ## Simplify the En Tibi snps:
 
-    bcftools view --threads 3 -H -T mincover10_int_chromo.tsv paired_En-Tibi.fixmate.sorted.markdup.flt.vcf.gz \
+    bcftools view --threads 3 -H -e 'DP<10' -T output_Index_high_coverage.txt \
+	paired_En-Tibi.fixmate.sorted.markdup.flt.vcf \
         | grep -v LowQual \
-        | egrep -v 'DP=\d;' \
-        | grep -v INDEL > paired_En-Tibi.fixmate.sorted.markdup.flt.mincover10.vcf
+        | grep -v INDEL \
+	> paired_En-Tibi.fixmate.sorted.markdup.flt.mincover10.vcf
 
 ## Transform to CSV for [snps table](../script/schema.sql)
 
-    perl ../360/accessions/gff2csv.pl paired_En-Tibi_S2.fixmate.sorted.markdup.flt.mincover10.vcf \
+    perl ../script/gff2csv.pl paired_En-Tibi.fixmate.sorted.markdup.flt.mincover10.vcf \
         | sed -e 's/$/,En-Tibi/' > En-Tibi.csv
 
 ## Simplify and transform the 360 snps:
