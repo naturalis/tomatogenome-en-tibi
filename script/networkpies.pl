@@ -13,20 +13,28 @@ use Bio::Phylo::Util::Logger ':simple';
 my @popcolors = ( 'gray', 'black', 'white' );
 
 my %color_for_state = (
-    'Brazil'   => '#1d8f64',
-    'Chile'    => '#ce4a08',
-    'Ecuador'  => '#6159a4',
-    'Honduras' => '#de0077',
-    'Mexico'   => '#569918',
-    'Peru'     => '#df9c09',
-    'Unknown'  => 'gray',
+    'Brazil'     => '#2b5797',
+    'Chile'      => '#9f00a7',
+    'Ecuador'    => '#99b433',
+    'Honduras'   => '#ee1111',
+    'Mexico'     => '#da532c',
+    'Peru'       => '#1e7145',
+    'Unknown'    => 'gray',
+    'Bolivia'    => '#603cba',
+    'Colombia'   => '#00aba9',
+    'Costa Rica' => '#b91d47',
+    'Guatemala'  => '#e3a21a',
+    'El Salvador'=> '#ffc40d',
 );
+# colors from https://www.w3schools.com/colors/colors_metro.asp
+# respective colors: Dark blue, Light purple, Light green, red, dark orange, dark green,
+#		     gray, dark purple, teal, dark red, orange, and yellow.
 
 # process command line arguments
-my $svg_file        = '../data/network/bases.phy.full.svg'; # produced by splitstree
-my $meanq_file      = '../data/structure/structure.pruned.out.3.meanQ'; # produced by fastStructure
-my $labels_file     = '../data/structure/labels.txt'; # accession labels in same order as mapq_file
-my $accessions_file = '../doc/360/accessions_cleaned.tsv'; # accession metadata
+my $svg_file        = '../../network/bases.phy.zoom.circles.svg'; # produced by splitstree
+my $meanq_file      = '../../structure/structure.new.out.3.meanQ'; # produced by fastStructure
+my $labels_file     = '../../network/labels_new.txt'; # accession labels in same order as mapq_file
+my $accessions_file = '../../network/accessions_new.tsv'; # accession metadata
 my $column          = 'country'; # metadata column in the accessions table
 my $verbosity       = WARN;
 GetOptions(
