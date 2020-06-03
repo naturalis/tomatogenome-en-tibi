@@ -1,9 +1,9 @@
 import pathlib
 pwd = "C:/Users/HP 8460p/Documents/Biology master/En tibi internship/Data/"
 
-ref_file = pwd + "refsites.csv"
-output_file = pwd + "snps.csv"
-accessions_file = str(pwd) + "accessions_cleaned.tsv"
+ref_file = pwd + "refsites_new.csv"
+output_file = pwd + "snps_new.csv"
+accessions_file = str(pwd) + "accessions_new.tsv"
 ref_sites = {}
 ref_id = 0
 snp_id = 0
@@ -23,7 +23,7 @@ for i in range(1,len(accessions)):
     # acc[0] is accessions pk (accessions fk in snps), acc[1] is label (and filename of snps files.)
 
     # Filenames have "-" instead of "."
-    snps_file = pwd + "snpfiles/" + acc[1].replace(".", "-") + ".csv"
+    snps_file = pwd + "snpfiles_new/" + acc[1].replace(".", "-") + ".csv"
     # start reading the snps file
     with open(snps_file) as f:
         snps = f.readlines()
