@@ -5,8 +5,8 @@
 
 echo "Quality assessment and trimming"
 fastp \
-        -i "/home/rutger.vos/fileserver/projects/B19015-525/updated/run0220_En-Tibi_S2_L003_R1_001.nophix.fastq.gz" \
-        -I "/home/rutger.vos/fileserver/projects/B19015-525/updated/run0220_En-Tibi_S2_L003_R2_001.nophix.fastq.gz" \
+        -i "/fileserver/projects/B19015-525/updated/run0220_En-Tibi_S2_L003_R1_001.nophix.fastq.gz" \
+        -I "/fileserver/projects/B19015-525/updated/run0220_En-Tibi_S2_L003_R2_001.nophix.fastq.gz" \
         -o "untrimmed_paired_R1_fastp.fastq.gz" \
         -O "untrimmed_paired_R2_fastp.fastq.gz" \
         -j fastp.json -h fastp.html --verbose
