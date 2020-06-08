@@ -14,7 +14,8 @@ fastp \
 echo "Cutadapt"
 
 cutadapt \
-        -a ADAPTER_FWD -A ADAPTER_REV \
+        -a AGATCGGAAGAGCACACGTCTGAACTCCAGTCA\
+	-A AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT \
         -o paired_R1_fastp.fastq.gz \
         -p paired_R2_fastp.fastq.gz \
         untrimmed_paired_R1_fastp.fastq.gz \
