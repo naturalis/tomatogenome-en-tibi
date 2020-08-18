@@ -24,7 +24,7 @@ with open(output_file, 'w') as f_out:
         # acc[0] is accessions pk (accessions fk in snps), acc[1] is label (and filename of snps files.)
 
         # Filenames have "-" instead of "."
-        snps_file = pwd + "snpfiles_new_pruned/" + acc[1].replace(".", "-") + ".csv"
+        snps_file = pwd + "snpfiles_remapped/" + acc[1].replace(".", "-") + ".csv"
         # start reading the snps file
         with open(snps_file) as f:
             snps = f.readlines()

@@ -1,7 +1,7 @@
 path ="C:\\Users\\HP 8460p\\Documents\\Biology master\\En tibi internship\\Data\\snpEff\\"
 
-out = "Gene_Info_Moderate_Impact_En_Tibi.txt"
-file = "En.Tibi.Moderate.Impact.txt"
+out = "Gene_Info_Moderate_Impact_TS_153_unique.txt"
+file = "TS.153.unique.ann.vcf"
 search_term = 'MODERATE'
 
 with open(path+out, 'w') as f_out:
@@ -10,6 +10,8 @@ with open(path+out, 'w') as f_out:
     # lines were selected using grep to include only lines with effects labeled 'HIGH' or 'MODERATE'.
     # The format is a tsv style file, however the information that I am trying to extract is all in the 8th column.
         for line in lines:
+            if line[0] == '#':
+                continue
             line = line.split('\t')
             ann = line[7]
             # The information written by snpEff is separated using '|'
