@@ -9,6 +9,16 @@
 		-O paired_R2_fastp.fastq.gz \
 		-j fastp.json -h fastp.html --verbose
 
+## Illumina adaptor trimming
+
+	cutadapt \
+        	-a AGATCGGAAGAGCACACGTCTGAACTCCAGTCA\
+		-A AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT \
+        	-o paired_R1_fastp.fastq.gz \
+	        -p paired_R2_fastp.fastq.gz \
+        	untrimmed_paired_R1_fastp.fastq.gz \
+	        untrimmed_paired_R2_fastp.fastq.gz
+
 # Assembly
 
 ## Indexing the reference
