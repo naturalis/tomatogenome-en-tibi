@@ -142,6 +142,15 @@ while(<>) {
         | egrep -v 'DP=\d;' \
         | grep -v INDEL > run0220_paired_En-Tibi_S2_L003.fixmate.sorted.markdup.flt.mincover10.vcf
 
+An updated version of this step is parameterized slightly differently. Notice how previously the DP was treated as something to
+filter with a grep (where any value of /^\d;$/ must implicitly be <10) where in the new version this filter is passed into
+bcftools:
+
+    bcftools view --threads 3 -H -e 'DP<10' -T output_Index_high_coverage_2.txt paired_En-Tibi.fixmate.sorted.markdup.flt.vcf \
+        | grep -v LowQual \
+        | grep -v INDEL \
+	> paired_En-Tibi.fixmate.sorted.markdup.flt.mincover10.vcf
+
 ## Transform to CSV for [snps table](../script/schema.sql)
 
     perl ../360/accessions/gff2csv.pl run0220_paired_En-Tibi_S2_L003.fixmate.sorted.markdup.flt.mincover10.vcf \
