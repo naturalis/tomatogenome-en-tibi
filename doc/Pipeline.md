@@ -78,6 +78,14 @@ With the updated data, this command is now:
 		run0220_paired_En-Tibi_S2_L003.fixmate.sorted.bam \
 		run0220_paired_En-Tibi_S2_L003.fixmate.sorted.markdup.bam
 
+With the updated data, this has become:
+
+	samtools \
+		markdup -r \
+		--threads 4 \
+		"paired_En-Tibi.fixmate.sorted.bam" \
+		"paired_En-Tibi.fixmate.sorted.markdup.bam"
+
 # SNP calling
 
 ## Basic stats
