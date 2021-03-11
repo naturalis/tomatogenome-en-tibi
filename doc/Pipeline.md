@@ -1,6 +1,6 @@
 # Pre-processing
 
-## Quality assessment and trimming
+## 1. Quality assessment and trimming
 
 	fastp \
 		-i "En-Tibi_trimmed (paired).R1.fastq.gz" \
@@ -18,7 +18,7 @@ With the new data, this command has changed to:
         	-O "untrimmed_paired_R2_fastp.fastq.gz" \
 	        -j fastp.json -h fastp.html --verbose
 
-## Illumina adaptor trimming
+## 2. Illumina adaptor trimming
 
 	cutadapt \
         	-a AGATCGGAAGAGCACACGTCTGAACTCCAGTCA\
@@ -30,7 +30,7 @@ With the new data, this command has changed to:
 
 # Assembly
 
-## Indexing the reference
+## 3. Indexing the reference
 
 	minimap2 \
 		-d Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz.mmi \
@@ -44,7 +44,7 @@ On the HPC high-mem node this has become:
 		-t 4 \
 		"../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz"
 
-## Mapping
+## 4. Mapping
 
 	minimap2 \
 		-ax sr \
@@ -64,7 +64,7 @@ On the HPC high-mem node this has become:
 		"paired_R1_fastp.fastq.gz" "paired_R2_fastp.fastq.gz" | samtools view \
 		-b -u -F 0x04 --threads 4 -o "paired_En-Tibi.bam" -
 
-## Correct mate pairs
+## 5. Correct mate pairs
 
 	samtools \
 		fixmate -r -m  \
@@ -80,7 +80,7 @@ The newly parameterized version of this command (with the updated data) goes lik
         	"paired_En-Tibi.bam" \
 	        "paired_En-Tibi.fixmate.bam"
 
-## Sort the reads
+## 6. Sort the reads
 
 	samtools \
 		sort -l 0 \
@@ -96,7 +96,7 @@ With the updated data, this command is now:
 		--threads 4 \
 		-o "paired_En-Tibi.fixmate.sorted.bam" "paired_En-Tibi.fixmate.bam"
 
-## Mark duplicates
+## 7. Mark duplicates
 
 	samtools \
 		markdup -r \
