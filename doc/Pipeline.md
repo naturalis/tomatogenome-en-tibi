@@ -119,9 +119,9 @@ With the updated data, this has become:
 Number of bases with at least 10x coverage:
 
 	export MIN_COVERAGE_DEPTH=10	
-	samtools mpileup run0220_paired_En-Tibi_S2_L003.fixmate.sorted.markdup.bam | awk -v X="${MIN_COVERAGE_DEPTH}" '$4>=X' | wc -l
+	samtools mpileup "paired_En-Tibi.fixmate.sorted.markdup.bam" | awk -v X="${MIN_COVERAGE_DEPTH}" '$4>=X' | wc -l
 
-    #     Answer:   9,894,824
+    #     Answer:   9,888,232
     # Ref length: 823,134,955
     # i.e., about 1% has a coverage of >=10x
 
