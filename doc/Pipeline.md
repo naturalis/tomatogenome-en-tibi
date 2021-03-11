@@ -120,7 +120,7 @@ With the updated data, this has become: -->
 
 # SNP calling
 
-## Basic stats
+## 8. Basic stats
 
 Number of bases with at least 10x coverage:
 
@@ -131,11 +131,47 @@ Number of bases with at least 10x coverage:
     # Ref length: 823,134,955
     # i.e., about 1% has a coverage of >=10x
 
-Get all the depths (useful for plotting histograms):
+## 9. Get all the depths 
 
+Produces a file with the depth at every base:
+
+<!--
 	samtools depth -a run0220_paired_En-Tibi_S2_L003.fixmate.sorted.markdup.bam > run0220_paired_En-Tibi_S2_L003.fixmate.sorted.markdup.depth
+-->
 
-Compute the averages:
+	samtools depth -a "paired_En-Tibi.fixmate.sorted.markdup.bam" > "paired_En-Tibi.fixmate.sorted.markdup.depth"
+
+## 10. Index the reference
+
+<!--
+	samtools faidx Solanum_lycopersicum.SL2.50.dna.toplevel.fa
+-->	
+	
+	samtools faidx ../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa
+
+## 11. Do the SNP calling
+
+<!--
+	bcftools mpileup \
+		-Ou \
+		-f ../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa \
+		run0220_paired_En-Tibi_S2_L003.fixmate.sorted.markdup.bam \
+		| bcftools call -Ou -mv \
+		| bcftools filter -s LowQual -e '%QUAL<20 || DP>20' \
+		> run0220_paired_En-Tibi_S2_L003.fixmate.sorted.markdup.flt.vcf
+-->
+
+	bcftools mpileup \
+		-Ou \
+		-f ../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa \
+		paired_En-Tibi.fixmate.sorted.markdup.bam \
+		| bcftools call -Ou -mv \
+		| bcftools filter -s LowQual -e '%QUAL<20 || DP>20' \
+		> paired_En-Tibi.fixmate.sorted.markdup.flt.vcf
+
+## Compute the average depths
+
+Command to execute on the file `paired_En-Tibi.fixmate.sorted.markdup.depth`
 
 ```perl
 #!/usr/bin/perl
@@ -157,20 +193,6 @@ Running this results in:
     average: 2.27923473253544
 
 I.e. low coverage: the average is 2.3, and only about 1% has coverage of over 10x
-
-## Index the reference
-
-	samtools faidx Solanum_lycopersicum.SL2.50.dna.toplevel.fa
-
-## Do the SNP calling
-
-	bcftools mpileup \
-		-Ou \
-		-f ../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa \
-		run0220_paired_En-Tibi_S2_L003.fixmate.sorted.markdup.bam \
-		| bcftools call -Ou -mv \
-		| bcftools filter -s LowQual -e '%QUAL<20 || DP>20' \
-		> run0220_paired_En-Tibi_S2_L003.fixmate.sorted.markdup.flt.vcf
 
 # SNP merging
 
