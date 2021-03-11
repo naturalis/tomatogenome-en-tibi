@@ -62,6 +62,14 @@ The newly parameterized version of this command (with the updated data) goes lik
 		--threads 4 \
 		-o run0220_paired_En-Tibi_S2_L003.fixmate.sorted.bam run0220_paired_En-Tibi_S2_L003.fixmate.bam
 
+With the updated data, this command is now:
+
+    samtools \
+            sort -l 0 \
+	    -m 3G \
+	    --threads 4 \
+	    -o "paired_En-Tibi.fixmate.sorted.bam" "paired_En-Tibi.fixmate.bam"
+
 ## Mark duplicates
 
 	samtools \
