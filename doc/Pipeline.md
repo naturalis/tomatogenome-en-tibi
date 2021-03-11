@@ -156,6 +156,11 @@ bcftools:
     perl ../360/accessions/gff2csv.pl run0220_paired_En-Tibi_S2_L003.fixmate.sorted.markdup.flt.mincover10.vcf \
         | sed -e 's/$/,En-Tibi/' > En-Tibi.csv
 
+An updated version of this step produces output where the SNPs are not present/absent but have the raw ACGT values in it, i.e.:
+
+    perl ../script/gff2csv_bases.pl paired_En-Tibi.fixmate.sorted.markdup.flt.mincover10.vcf \
+        | sed -e 's/$/,En-Tibi/' > En-Tibi.csv
+
 ## Simplify and transform the 360 snps:
 
 ```bash
