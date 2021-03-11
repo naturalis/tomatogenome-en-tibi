@@ -2,6 +2,7 @@
 
 ## 1. Quality assessment and trimming
 
+<!--
 	fastp \
 		-i "En-Tibi_trimmed (paired).R1.fastq.gz" \
 		-I "En-Tibi_trimmed (paired).R2.fastq.gz" \
@@ -9,7 +10,7 @@
 		-O paired_R2_fastp.fastq.gz \
 		-j fastp.json -h fastp.html --verbose
 
-With the new data, this command has changed to:
+With the new data, this command has changed to: -->
 
 	fastp \
 	        -i "/fileserver/projects/B19015-525/updated/run0220_En-Tibi_S2_L003_R1_001.nophix.fastq.gz" \
