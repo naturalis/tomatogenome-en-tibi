@@ -37,6 +37,13 @@ With the new data, this command has changed to:
 		-t 4 \
 		Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz
 
+On the HPC high-mem node this has become:
+
+	minimap2 \
+		-d "../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz.mmi" \
+		-t 4 \
+		"../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz"
+
 ## Mapping
 
 	minimap2 \
