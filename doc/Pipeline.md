@@ -121,11 +121,10 @@ print "average: ", $sum/$line, "\n";
 
 Running this results in:
 
-	MacBook-Pro-Rutger-Vos:bam rutger.vos$ perl avgdepth.pl run0220_paired_En-Tibi_S2_L003.fixmate.sorted.markdup.depth 
-	bases: 823134955 depth: 1878040045
-	average: 2.28157003124718
+    bases: 823134955 depth: 1876117779
+    average: 2.27923473253544
 
-I.e. low coverage: the average is 2.2, and only about 1% has coverage of over 10x
+I.e. low coverage: the average is 2.3, and only about 1% has coverage of over 10x
 
 ## Index the reference
 
