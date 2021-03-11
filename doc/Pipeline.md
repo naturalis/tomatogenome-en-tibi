@@ -28,15 +28,6 @@ With the new data, this command has changed to:
         	untrimmed_paired_R1_fastp.fastq.gz \
 	        untrimmed_paired_R2_fastp.fastq.gz
 
-ALERT: it seems that Ewout has run the command as follows:
-
-	cutadapt \
-	        -a ADAPTER_FWD -A ADAPTER_REV \
-        	-o paired_R1_fastp.fastq.gz \
-	        -p paired_R2_fastp.fastq.gz \
-        	untrimmed_paired_R1_fastp.fastq.gz \
-	        untrimmed_paired_R2_fastp.fastq.gz
-
 # Assembly
 
 ## Indexing the reference
