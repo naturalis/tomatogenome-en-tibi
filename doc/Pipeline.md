@@ -46,6 +46,14 @@
 		run0220_paired_En-Tibi_S2_L003.bam \
 		run0220_paired_En-Tibi_S2_L003.fixmate.bam
 
+The newly parameterized version of this command (with the updated data) goes like this:
+
+    samtools \
+        	fixmate -r -m  \
+	        --threads 4 \
+        	"paired_En-Tibi.bam" \
+	        "paired_En-Tibi.fixmate.bam"
+
 ## Sort the reads
 
 	samtools \
