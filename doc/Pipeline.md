@@ -54,6 +54,16 @@ On the HPC high-mem node this has become:
 		paired_R1_fastp.fastq.gz paired_R2_fastp.fastq.gz | samtools view \
 		-b -u -F 0x04 --threads 4 -o run0220_paired_En-Tibi_S2_L003.bam -
 
+On the HPC high-mem node this has become:
+
+	minimap2 \
+		-ax sr \
+		-a \
+		-t 4 \
+		"../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz" \
+		"paired_R1_fastp.fastq.gz" "paired_R2_fastp.fastq.gz" | samtools view \
+		-b -u -F 0x04 --threads 4 -o "paired_En-Tibi.bam" -
+
 ## Correct mate pairs
 
 	samtools \
