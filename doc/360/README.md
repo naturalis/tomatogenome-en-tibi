@@ -4,7 +4,7 @@
 - [supplementary methods](ng.3117-S1.pdf)
 - [accessions table](ng.3117-S2.xls)
 - [individuals list](360_individual.list)
-- [VCF files](ftp://ftp.solgenomics.net/genomes/tomato_360/)
+- VCF files: ftp://ftp.solgenomics.net/genomes/tomato_360/
 
 ## Background data on the VCF files
 
