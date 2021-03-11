@@ -33,12 +33,13 @@ With the new data, this command has changed to: -->
 
 ## 3. Indexing the reference
 
+<!--
 	minimap2 \
 		-d Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz.mmi \
 		-t 4 \
 		Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz
 
-On the HPC high-mem node this has become:
+On the HPC high-mem node this has become: -->
 
 	minimap2 \
 		-d "../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz.mmi" \
@@ -47,6 +48,7 @@ On the HPC high-mem node this has become:
 
 ## 4. Mapping
 
+<!--
 	minimap2 \
 		-ax sr \
 		-a \
@@ -55,7 +57,7 @@ On the HPC high-mem node this has become:
 		paired_R1_fastp.fastq.gz paired_R2_fastp.fastq.gz | samtools view \
 		-b -u -F 0x04 --threads 4 -o run0220_paired_En-Tibi_S2_L003.bam -
 
-On the HPC high-mem node this has become:
+On the HPC high-mem node this has become: -->
 
 	minimap2 \
 		-ax sr \
@@ -67,13 +69,14 @@ On the HPC high-mem node this has become:
 
 ## 5. Correct mate pairs
 
+<!--
 	samtools \
 		fixmate -r -m  \
 		--threads 4 \
 		run0220_paired_En-Tibi_S2_L003.bam \
 		run0220_paired_En-Tibi_S2_L003.fixmate.bam
 
-The newly parameterized version of this command (with the updated data) goes like this:
+The newly parameterized version of this command (with the updated data) goes like this: -->
 
     samtools \
         	fixmate -r -m  \
@@ -83,13 +86,14 @@ The newly parameterized version of this command (with the updated data) goes lik
 
 ## 6. Sort the reads
 
+<!--
 	samtools \
 		sort -l 0 \
 		-m 3G \
 		--threads 4 \
 		-o run0220_paired_En-Tibi_S2_L003.fixmate.sorted.bam run0220_paired_En-Tibi_S2_L003.fixmate.bam
 
-With the updated data, this command is now:
+With the updated data, this command is now: -->
 
     samtools \
             	sort -l 0 \
@@ -99,13 +103,14 @@ With the updated data, this command is now:
 
 ## 7. Mark duplicates
 
+<!--
 	samtools \
 		markdup -r \
 		--threads 4 \
 		run0220_paired_En-Tibi_S2_L003.fixmate.sorted.bam \
 		run0220_paired_En-Tibi_S2_L003.fixmate.sorted.markdup.bam
 
-With the updated data, this has become:
+With the updated data, this has become: -->
 
 	samtools \
 		markdup -r \
