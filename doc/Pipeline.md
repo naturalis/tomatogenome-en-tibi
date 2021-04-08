@@ -96,7 +96,7 @@ The newly parameterized version of this command (with the updated data) goes lik
 With the updated data, this command is now: -->
 
     samtools \
-            	sort -l 0 \
+		sort -l 0 \
 		-m 3G \
 		--threads 4 \
 		-o "paired_En-Tibi.fixmate.sorted.bam" "paired_En-Tibi.fixmate.bam"
