@@ -22,7 +22,7 @@ With the new data, this command has changed to: -->
 ## 2. Illumina adaptor trimming
 
 	cutadapt \
-        	-a AGATCGGAAGAGCACACGTCTGAACTCCAGTCA\
+        	-a AGATCGGAAGAGCACACGTCTGAACTCCAGTCA \
 		-A AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT \
         	-o paired_R1_fastp.fastq.gz \
 	        -p paired_R2_fastp.fastq.gz \
