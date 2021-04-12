@@ -5,6 +5,7 @@
 - [accessions table](ng.3117-S2.xls)
 - [individuals list](360_individual.list)
 - VCF files: ftp://ftp.solgenomics.net/genomes/tomato_360/
+- FASTQ files: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA259308
 
 ## Background data on the VCF files, courtesy of solgenomics
 
