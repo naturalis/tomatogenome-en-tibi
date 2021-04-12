@@ -50,5 +50,5 @@ samtools sort -l 0 -m 3G --threads 4 \
 
 # remove duplicates
 samtools markdup -r --threads 4 \
-	${BASE}.sort.bam" ${BASE}.markdup.bam
+	${BASE}.sort.bam ${BASE}.markdup.bam
 	
