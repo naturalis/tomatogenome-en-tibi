@@ -1,5 +1,9 @@
 # Pre-processing
 
+## 0. Converting SRA data
+
+    fastq-dump -I --split-files SRR1572325
+
 ## 1. Quality assessment and trimming
 
 	fastp \
