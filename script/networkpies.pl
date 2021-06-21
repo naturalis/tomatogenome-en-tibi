@@ -12,21 +12,28 @@ use Bio::Phylo::Util::Logger ':simple';
 
 my @popcolors = ( 'gray', 'black', 'white' );
 
+# https://www.datanovia.com/en/blog/top-r-color-palettes-to-know-for-great-data-visualization/
+# library(RColorBrewer) / Spectral
 my %color_for_state = (
-    'Brazil'   => '#1d8f64',
-    'Chile'    => '#ce4a08',
-    'Ecuador'  => '#6159a4',
-    'Honduras' => '#de0077',
-    'Mexico'   => '#569918',
-    'Peru'     => '#df9c09',
-    'Unknown'  => 'gray',
+    'Chile'       => '#4b3991',
+    'Brazil'      => '#2974af',
+    'Bolivia'     => '#57b894',
+    'Peru'        => '#9dd893',
+    'Ecuador'     => '#e1f686',
+    'Colombia'    => '#ffffb2',
+    'Costa Rica'  => '#fdda79',
+    'El Salvador' => '#fb9e4f',
+    'Honduras'    => '#ee5634',
+    'Guatemala'   => '#c9273e',
+    'Mexico'      => '#8a0033',
+    'Unknown'     => '#535353',
 );
 
 # process command line arguments
-my $svg_file        = '../data/network/bases.phy.full.svg'; # produced by splitstree
-my $meanq_file      = '../data/structure/structure.pruned.out.3.meanQ'; # produced by fastStructure
-my $labels_file     = '../data/structure/labels.txt'; # accession labels in same order as mapq_file
-my $accessions_file = '../doc/360/accessions_cleaned.tsv'; # accession metadata
+my $svg_file        = 'bases.phy.overview.svg'; # produced by splitstree
+my $meanq_file      = 'bases.str.3.meanQ'; # produced by fastStructure
+my $labels_file     = 'labels.txt'; # accession labels in same order as mapq_file
+my $accessions_file = 'accessions.tsv'; # accession metadata
 my $column          = 'country'; # metadata column in the accessions table
 my $verbosity       = WARN;
 GetOptions(
