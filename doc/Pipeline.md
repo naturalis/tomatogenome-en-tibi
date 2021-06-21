@@ -1,16 +1,10 @@
 # Pre-processing
 
+## 0. Converting SRA data
+
+    fastq-dump -I --split-files SRR1572325
+
 ## 1. Quality assessment and trimming
-
-<!--
-	fastp \
-		-i "En-Tibi_trimmed (paired).R1.fastq.gz" \
-		-I "En-Tibi_trimmed (paired).R2.fastq.gz" \
-		-o paired_R1_fastp.fastq.gz \
-		-O paired_R2_fastp.fastq.gz \
-		-j fastp.json -h fastp.html --verbose
-
-With the new data, this command has changed to: -->
 
 	fastp \
 	        -i "/fileserver/projects/B19015-525/updated/run0220_En-Tibi_S2_L003_R1_001.nophix.fastq.gz" \
@@ -22,7 +16,7 @@ With the new data, this command has changed to: -->
 ## 2. Illumina adaptor trimming
 
 	cutadapt \
-        	-a AGATCGGAAGAGCACACGTCTGAACTCCAGTCA\
+        	-a AGATCGGAAGAGCACACGTCTGAACTCCAGTCA \
 		-A AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT \
         	-o paired_R1_fastp.fastq.gz \
 	        -p paired_R2_fastp.fastq.gz \
@@ -33,31 +27,12 @@ With the new data, this command has changed to: -->
 
 ## 3. Indexing the reference
 
-<!--
-	minimap2 \
-		-d Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz.mmi \
-		-t 4 \
-		Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz
-
-On the HPC high-mem node this has become: -->
-
 	minimap2 \
 		-d "../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz.mmi" \
 		-t 4 \
-		"../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz"
+		"../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz"	
 
 ## 4. Mapping
-
-<!--
-	minimap2 \
-		-ax sr \
-		-a \
-		-t 4 \
-		Solanum_lycopersicum.SL2.50.dna.toplevel.fa.gz \
-		paired_R1_fastp.fastq.gz paired_R2_fastp.fastq.gz | samtools view \
-		-b -u -F 0x04 --threads 4 -o run0220_paired_En-Tibi_S2_L003.bam -
-
-On the HPC high-mem node this has become: -->
 
 	minimap2 \
 		-ax sr \
@@ -69,15 +44,8 @@ On the HPC high-mem node this has become: -->
 
 ## 5. Correct mate pairs
 
-<!--
-	samtools \
-		fixmate -r -m  \
-		--threads 4 \
-		run0220_paired_En-Tibi_S2_L003.bam \
-		run0220_paired_En-Tibi_S2_L003.fixmate.bam
-
-The newly parameterized version of this command (with the updated data) goes like this: -->
-
+    # sort by read name, apparently needed for fixmate: https://www.biostars.org/p/365882/#365887
+    samtools sort -n -l 0 -m 3G --threads 4 -o bam/NC_007898.cutadapt.sorted.bam bam/NC_007898.cutadapt.bam
     samtools \
         	fixmate -r -m  \
 	        --threads 4 \
@@ -86,31 +54,13 @@ The newly parameterized version of this command (with the updated data) goes lik
 
 ## 6. Sort the reads
 
-<!--
-	samtools \
-		sort -l 0 \
-		-m 3G \
-		--threads 4 \
-		-o run0220_paired_En-Tibi_S2_L003.fixmate.sorted.bam run0220_paired_En-Tibi_S2_L003.fixmate.bam
-
-With the updated data, this command is now: -->
-
     samtools \
-            	sort -l 0 \
+		sort -l 0 \
 		-m 3G \
 		--threads 4 \
 		-o "paired_En-Tibi.fixmate.sorted.bam" "paired_En-Tibi.fixmate.bam"
 
 ## 7. Mark duplicates
-
-<!--
-	samtools \
-		markdup -r \
-		--threads 4 \
-		run0220_paired_En-Tibi_S2_L003.fixmate.sorted.bam \
-		run0220_paired_En-Tibi_S2_L003.fixmate.sorted.markdup.bam
-
-With the updated data, this has become: -->
 
 	samtools \
 		markdup -r \
@@ -135,31 +85,13 @@ Number of bases with at least 10x coverage:
 
 Produces a file with the depth at every base:
 
-<!--
-	samtools depth -a run0220_paired_En-Tibi_S2_L003.fixmate.sorted.markdup.bam > run0220_paired_En-Tibi_S2_L003.fixmate.sorted.markdup.depth
--->
-
 	samtools depth -a "paired_En-Tibi.fixmate.sorted.markdup.bam" > "paired_En-Tibi.fixmate.sorted.markdup.depth"
 
 ## 10. Index the reference
-
-<!--
-	samtools faidx Solanum_lycopersicum.SL2.50.dna.toplevel.fa
--->	
 	
 	samtools faidx ../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa
 
 ## 11. Do the SNP calling
-
-<!--
-	bcftools mpileup \
-		-Ou \
-		-f ../reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa \
-		run0220_paired_En-Tibi_S2_L003.fixmate.sorted.markdup.bam \
-		| bcftools call -Ou -mv \
-		| bcftools filter -s LowQual -e '%QUAL<20 || DP>20' \
-		> run0220_paired_En-Tibi_S2_L003.fixmate.sorted.markdup.flt.vcf
--->
 
 	bcftools mpileup \
 		-Ou \
