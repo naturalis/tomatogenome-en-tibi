@@ -3,6 +3,9 @@ use strict;
 use warnings;
 
 # given run0220_En-Tibi_S2_L003.fixmate.sorted.markdup.depth, creates a 2-column TSV (chromo,pos) with sites cover>=10
+# NOTE:
+# - when rerunning this, Ewout used paired_En-Tibi.fixmate.sorted.markdup.depth
+# - in that reimplementation, the release prefix 'SL2.50ch' was no longer needed
 
 while(<>) {
 	chomp;
