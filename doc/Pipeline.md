@@ -55,10 +55,10 @@
 ## 6. Sort the reads
 
     samtools \
-		sort -l 0 \
-		-m 3G \
-		--threads 4 \
-		-o "paired_En-Tibi.fixmate.sorted.bam" "paired_En-Tibi.fixmate.bam"
+		      sort -l 0 \
+      		-m 3G \
+      		--threads 4 \
+      		-o "paired_En-Tibi.fixmate.sorted.bam" "paired_En-Tibi.fixmate.bam"
 
 ## 7. Mark duplicates
 
@@ -79,7 +79,7 @@ Number of bases with at least 10x coverage:
 
     #     Answer:   9,888,232
     # Ref length: 823,134,955
-    # i.e., about 1% has a coverage of >=10x
+    # i.e., about 0.75% has a coverage of >=10x
 
 ## 9. Get all the depths 
 
@@ -130,7 +130,7 @@ I.e. low coverage: the average is 2.3, and only about 1% has coverage of over 10
 
 ## Make target list
 
-Given run0220_paired_En-Tibi_S2_L003.fixmate.sorted.markdup.depth, creates a 2-column TSV (chromo,pos) with sites cover>=10,
+Given paired_En-Tibi.fixmate.sorted.markdup.depth, creates a 2-column TSV (chromo,pos) with sites cover>=10,
 i.e. mincover10.tsv, which is used by bcftools. 
 
 ```perl
@@ -138,18 +138,20 @@ while(<>) {
 	chomp;
 	@f = split /\t/, $_;
 	last if $f[0] !~ /^\d+$/;
-	if ( $f[2] >= 10 ) {		
-		print sprintf('SL2.50ch%02d', $f[0]), "\t", $f[1], "\n";
+	if ( $f[2] >= 10 ) {
+#		print sprintf('SL2.50ch%02d', $f[0]), "\t", $f[1], "\n";
+                printf("%d\t%d\n", $f[0], $f[1]);
 	}
 }
 ```
 
 ## Simplify the En Tibi snps:
 
-    bcftools view --threads 3 -H -T mincover10_int_chromo.tsv run0220_paired_En-Tibi_S2_L003.fixmate.sorted.markdup.flt.vcf.gz \
+    bcftools view --threads 3 -H -e 'DP<10' -T output_Index_high_coverage.txt \
+	paired_En-Tibi.fixmate.sorted.markdup.flt.vcf \
         | grep -v LowQual \
-        | egrep -v 'DP=\d;' \
-        | grep -v INDEL > run0220_paired_En-Tibi_S2_L003.fixmate.sorted.markdup.flt.mincover10.vcf
+        | grep -v INDEL \
+	> paired_En-Tibi.fixmate.sorted.markdup.flt.mincover10.vcf
 
 An updated version of this step is parameterized slightly differently. Notice how previously the DP was treated as something to
 filter with a grep (where any value of /^\d;$/ must implicitly be <10) where in the new version this filter is passed into
@@ -162,7 +164,7 @@ bcftools:
 
 ## Transform to CSV for [snps table](../script/schema.sql)
 
-    perl ../360/accessions/gff2csv.pl run0220_paired_En-Tibi_S2_L003.fixmate.sorted.markdup.flt.mincover10.vcf \
+    perl ../script/gff2csv.pl paired_En-Tibi.fixmate.sorted.markdup.flt.mincover10.vcf \
         | sed -e 's/$/,En-Tibi/' > En-Tibi.csv
 
 An updated version of this step produces output where the SNPs are not present/absent but have the raw ACGT values in it, i.e.:
