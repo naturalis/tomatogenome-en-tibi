@@ -9,6 +9,18 @@ biology projects.
 
 ![](doc/background/L.2111092.jpg)
 
+# Contents
+
+The repository is organized in the following folders:
+
+- [doc](doc) - contains protocol descriptions, background literature, images, etc.
+- [lib](lib) - generated library code for mapping between relational (SQLite)
+  databases and Perl5 scripts using [DBIx::Class](https://search.cpan.org/dist/DBIx-Class).
+  This library folder needs to be added to the `$PERL5LIB` environment variable
+  in order for some scripts to work.
+- [script](script) - contains Perl, Shell, Python and R scripts for various
+  analysis steps.  
+
 # License
 
 MIT License
