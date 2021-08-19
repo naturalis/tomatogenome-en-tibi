@@ -1,9 +1,9 @@
 # tomatogenome-en-tibi
 
-The full genome of an early participant in the Columbian Exchange: the _En Tibi_ tomato
-
-- [Project planning](https://github.com/naturalis/tomatogenome-en-tibi/issues/1)
-- [Documentation](doc) 
-
-The analyses are run on the high mem node of Naturalis.
+This repository contains the source and library code for analyzing the ancient genome
+of the [_En Tibi_ tomato specimen](https://data.biodiversitydata.nl/naturalis/specimen/L.2111092).
+The repository is organized in broad compliance with the community practices for Perl5 
+([CPAN](http://cpan.org)) releases and is inspired by 
+[guidelines](https://doi.org/10.1371/journal.pcbi.1000424) for organizing computational
+biology projects.
 
