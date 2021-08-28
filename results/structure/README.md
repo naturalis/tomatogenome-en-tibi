@@ -1,8 +1,8 @@
 Structure analysis
 ==================
 
-1. Producing input file
------------------------
+Producing input file
+--------------------
 
 The input file is produced with the Perl script
 [make_structure_table.pl](https://github.com/naturalis/tomatogenome-en-tibi/blob/master/script/make_structure_table.pl)
@@ -30,8 +30,8 @@ accessions:
 - TS.404
 - TS.146
 
-2. Structure analysis
----------------------
+Structure analysis
+------------------
 
 This step operates on the file `bases.str` with 
 [fastSTRUCTURE](https://github.com/rajanil/fastStructure/commit/e47212f816a77495bb79274b662ff70d7ec5a55f)
@@ -52,8 +52,8 @@ done
 	
 ```
 
-3. Find MLE
------------
+Find MLE
+--------
 
 Here we select the maximum likelihood estimate for the number of populations (3):
 
@@ -66,8 +66,8 @@ python chooseK.py --input=bases.str
 
 ```
 
-4. Results
-----------
+Results
+-------
 
 The MLE is for 3 ancestral populations. The genomes of the individual accessions have 
 been assigned to these populations like this:
@@ -75,6 +75,6 @@ been assigned to these populations like this:
 ![](distruct.png)
 
 These results are also available as machine readable data using the files
-[bases.str.3.meanQ](bases.str.3.meanQ) for the assignments, [labels.txt](labels.txt)
+[bases.str.3.meanQ](bases.str.3.meanQ.gz) for the assignments, [labels.txt](labels.txt)
 for the accession labels, and [popfile.txt](popfile.txt) for the assignment of the
 accessions to their respective populations.
