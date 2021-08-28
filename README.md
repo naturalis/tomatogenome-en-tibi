@@ -20,6 +20,7 @@ The repository is organized in the following folders:
   in order for some scripts to work.
 - [script](script) - contains Perl, Shell, Python and R scripts for various
   analysis steps.  
+- [results](results) - inputs and outputs of various analysis steps.  
 
 # License
 
