@@ -75,6 +75,6 @@ been assigned to these populations like this:
 ![](distruct.png)
 
 These results are also available as machine readable data using the files
-[bases.str.3.meanQ](bases.str.3.meanQ) for the assignments, [labels.txt](labels.txt)
+[bases.str.3.meanQ](bases.str.3.meanQ.gz) for the assignments, [labels.txt](labels.txt)
 for the accession labels, and [popfile.txt](popfile.txt) for the assignment of the
 accessions to their respective populations.
