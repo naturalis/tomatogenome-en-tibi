@@ -1,0 +1,30 @@
+2021-04-08 17:42:51,955 mapdamage.main INFO Started with the command: /Library/Frameworks/Python.framework/Versions/3.6/bin/mapDamage -i data/bam/run0220_En-Tibi_S2_L003.fixmate.sorted.markdup.bam -r data/reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa -d mapdamage -l 100
+2021-04-08 17:44:13,284 mapdamage.reader INFO Found 0 libraries in BAM file
+2021-04-08 17:44:13,290 mapdamage.main INFO Reading from 'data/bam/run0220_En-Tibi_S2_L003.fixmate.sorted.markdup.bam'
+2021-04-08 17:44:13,290 mapdamage.main INFO Writing results to 'mapdamage/'
+2021-04-08 17:55:18,703 mapdamage.main INFO Started with the command: /Library/Frameworks/Python.framework/Versions/3.6/bin/mapDamage -i data/bam/run0220_En-Tibi_S2_L003.fixmate.sorted.markdup.bam -r data/reference/Solanum_lycopersicum.SL2.50.dna.toplevel.fa -d mapdamage -l 100 --merge-libraries
+2021-04-08 17:55:18,721 mapdamage.reader INFO Found 1 libraries in BAM file
+2021-04-08 17:55:18,726 mapdamage.main INFO Reading from 'data/bam/run0220_En-Tibi_S2_L003.fixmate.sorted.markdup.bam'
+2021-04-08 17:55:18,726 mapdamage.main INFO Writing results to 'mapdamage/'
+2021-04-08 18:27:09,594 mapdamage.rscript INFO Saving misincorporation plot to '/Users/rutger.vos/Dropbox/documents/projects/dropbox-projects/tomatogenome-en-tibi/mapdamage/Fragmisincorporation_plot.pdf'
+2021-04-08 18:27:10,262 mapdamage.rscript INFO Saving length distribution plot to '/Users/rutger.vos/Dropbox/documents/projects/dropbox-projects/tomatogenome-en-tibi/mapdamage/Length_plot.pdf'
+2021-04-08 18:27:10,717 mapdamage.rscript INFO WARNING: Truncated extreme data-points corresponding to 0.69% of reads
+2021-04-08 18:27:12,285 mapdamage.rscript INFO Performing Bayesian estimates
+2021-04-08 18:27:13,508 mapdamage.rscript INFO Compiling C++ extension. This may take a moment ..
+2021-04-08 18:27:19,648 mapdamage.rscript INFO ld: warning: directory not found for option '-L/usr/local/gfortran/lib/gcc/x86_64-apple-darwin18/8.2.0'
+2021-04-08 18:27:19,776 mapdamage.rscript INFO Compilation of C++ extension completed
+2021-04-08 18:27:19,879 mapdamage.rscript INFO Starting grid search, starting from random values
+2021-04-08 18:27:35,322 mapdamage.rscript INFO Adjusting the proposal variance iteration  1
+2021-04-08 18:28:05,165 mapdamage.rscript INFO Adjusting the proposal variance iteration  2
+2021-04-08 18:28:35,172 mapdamage.rscript INFO Adjusting the proposal variance iteration  3
+2021-04-08 18:29:05,267 mapdamage.rscript INFO Adjusting the proposal variance iteration  4
+2021-04-08 18:29:35,129 mapdamage.rscript INFO Adjusting the proposal variance iteration  5
+2021-04-08 18:30:05,879 mapdamage.rscript INFO Adjusting the proposal variance iteration  6
+2021-04-08 18:30:36,283 mapdamage.rscript INFO Adjusting the proposal variance iteration  7
+2021-04-08 18:31:06,898 mapdamage.rscript INFO Adjusting the proposal variance iteration  8
+2021-04-08 18:31:36,995 mapdamage.rscript INFO Adjusting the proposal variance iteration  9
+2021-04-08 18:32:07,219 mapdamage.rscript INFO Adjusting the proposal variance iteration  10
+2021-04-08 18:32:36,878 mapdamage.rscript INFO Done burning, starting the iterations
+2021-04-08 18:35:09,634 mapdamage.rscript INFO Done with the iterations, finishing up
+2021-04-08 18:35:09,634 mapdamage.rscript INFO Writing and plotting to files
+2021-04-08 18:36:31,051 mapdamage.main INFO Successful run
