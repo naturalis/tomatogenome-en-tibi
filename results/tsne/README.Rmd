@@ -1,0 +1,99 @@
+---
+title: "t-SNE"
+author: "Rutger Vos (@rvosa)"
+date: "8/29/2021"
+output: html_document
+---
+
+In this document we perform a t-SNE analysis to place the autosomal SNPs of the
+En Tibi with the larger context of the wild relatives and neotropical cultivars
+and land races. We start by loading the dependency libraries:
+
+```{r setup}
+library(dplyr)
+library(ggplot2)
+library(Rtsne)
+```
+
+We then load the input data. This consists of two files: 1) the metadata about
+the accessions we use, which we obtain from a cleaned, TSV version of an Excel
+spreadsheet that was provided by the authors of the 360-tomato genome project,
+2) presence/absence data of SNPs as extracted from the SNP 
+[database](http://doi.org/10.5281/zenodo.4966843) using the Perl script
+[make_snp_matrix.pl](../../script/make_snp_matrix.pl)
+
+```{r data}
+# load accessions
+accessions <- read.csv2('../../doc/360/accessions_cleaned.tsv', header = T, sep = "\t")
+row.names(accessions) <- accessions$label
+
+# see https://stackoverflow.com/questions/33643181/how-do-i-flip-rows-and-columns-in-r
+df <- read.csv2('snp_matrix.tsv', header = T, sep = "\t")
+df <- df[as.character(accessions$label)] # only keep filtered accessions
+```
+
+Subsequently, we might subsample the data that we have. In the following code
+block, we subsample down to 15k SNPs. By skipping this block, the entirety of
+the SNP database will be used, which requires more RAM and longer running time.
+
+```{r subsample}
+# subsample SNP rows
+numTrain <- 15000
+set.seed(1)
+rows <- sample(1:nrow(df), numTrain)
+df <- df[rows,]
+rm(rows,numTrain)
+```
+
+The t-SNE function requires a transposed data matrix, i.e. with rows and columns
+flipped. In the next block, this is done:
+
+```{r transpose}
+# transpose
+df2 <- data.frame(t(df))
+df2 <- df2[ , apply(df2, 2, var) != 0]
+row.names(df2) <- as.character(accessions$label)
+rm(df)
+```
+
+Here the actual calculation takes place. The optimal perplexity value was
+discovered empirically from the data. For more information about the
+parameterization, consult the docs of package `Rtsne`.
+
+```{r tsne}
+# T-distributed Stochastic Neighbor Embedding
+res <- Rtsne(df2, 
+    num_threads=4, 
+    dims=2, 
+    perplexity=26, 
+    verbose=T, 
+    max_iter=1500,
+    theta=0.5
+)
+```
+
+The results object `res` is transformed for better plotting with labels:
+
+```{r label}
+results <- data.frame( 
+    x = res$Y[,1], 
+    y = res$Y[,2], 
+    botanical_variety = accessions$botanical_variety,
+    label = accessions$label)
+```
+
+And then the result is plotted:
+
+```{r plot}
+ggplot( results, aes( x = x, y = y ) ) + 
+    geom_point( 
+        shape = 21, 
+        aes( bg = results$botanical_variety ), 
+        size = 2,
+        position = position_jitter( width = 0.1,height = 0.1 ) ) +
+    scale_fill_brewer(palette="Accent") +
+    labs( 
+        bg="Botanical variety", 
+        title = "t-SNE of landraces, cultivars and wild tomatoes"
+    )
+```
