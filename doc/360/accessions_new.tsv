@@ -1,116 +1,116 @@
 accession_id	label	botanical_variety	status	country	latitude	longitude
-1	TS-267	S. pimpinellifolium	Wild  species	Bolivia
-2	TS-124	S. pimpinellifolium	Wild  species	Ecuador	-3.458333	-79.966667
-3	TS-14	S. pimpinellifolium	Wild  species	Ecuador	0.583333,	 -77.933333
-4	TS-144	S. pimpinellifolium	Wild  species	Ecuador	 -1.100000	-79.483333
-5	TS-15	S. pimpinellifolium	Wild  species	Ecuador	 -3.628056,	-79,888056
-6	TS-16	S. pimpinellifolium	Wild  species	Ecuador	-3.990000	-79.360000
-7	TS-413	S. pimpinellifolium	Wild  species	Ecuador
-8	TS-50	S. pimpinellifolium	Wild  species	Ecuador	-2.733333	-79.916667
-9	TS-77	S. pimpinellifolium	Wild  species	Ecuador	0.866667	79.850000
-10	TS-440	S. pimpinellifolium	Wild  species	Ecuador	-0.950000	90.966667
-11	TS-432	S. pimpinellifolium	Wild  species	Mexico
-12	TS-123	S. pimpinellifolium	Wild  species	Peru	-8.116667	-79.033333
-13	TS-145	S. pimpinellifolium	Wild  species	Peru	 -3.566667	 -80.466667
-14	TS-156	S. pimpinellifolium	Wild  species	Peru	-5.775833	 -78.783056
-15	TS-164	S. pimpinellifolium	Wild  species	Peru	-6.370000	-79.790000
-16	TS-17	S. pimpinellifolium	Wild  species	Peru	-9.940000	-78.230000
-17	TS-18	S. pimpinellifolium	Wild  species	Peru	 -6.590000	-79.870000
-18	TS-182	S. pimpinellifolium	Wild  species	Peru	-5.740000	 -78.670000
-19	TS-19	S. pimpinellifolium	Wild  species	Peru	-8.390000	-78.740000
-20	TS-20	S. pimpinellifolium	Wild  species	Peru	-9,481667	 -78.259167
-21	TS-21	S. pimpinellifolium	Wild  species	Peru	 -13.074722	-76.402500
-22	TS-22	S. pimpinellifolium	Wild  species	Peru	-11.475000	 -77.108333
-23	TS-23	S. pimpinellifolium	Wild  species	Peru	-12.764722	-76.505278
-24	TS-244	S. pimpinellifolium	Wild  species	Peru	-7,333333	-79,583333
-25	TS-265	S. pimpinellifolium	Wild  species	Peru	-5.260833	-79.964167
-26	TS-266	S. pimpinellifolium	Wild  species	Peru	-5.216667	-80.083333
-27	TS-291	S. pimpinellifolium	Wild  species	Peru	-8.390000	-78.740000
-28	TS-411	S. pimpinellifolium	Wild  species	Peru
-29	TS-412	S. pimpinellifolium	Wild  species	Peru	 -8.116667	 -79.033333
-30	TS-414	S. pimpinellifolium	Wild  species	Peru	 -11.970833	-76,791667
-31	TS-415	S. pimpinellifolium	Wild  species	Peru	 -8.925000	-78.566667
-32	TS-417	S. pimpinellifolium	Wild  species	Peru	-15,456389	-74.445833
-33	TS-418	S. pimpinellifolium	Wild  species	Peru	-7.200000	-78.983333
-34	TS-419	S. pimpinellifolium	Wild  species	Peru
-35	TS-420	S. pimpinellifolium	Wild  species	Peru	-5.587500	-78,550556
-36	TS-421	S. pimpinellifolium	Wild  species	Peru	-5.925000	 -78.050000
-37	TS-424	S. pimpinellifolium	Wild  species	Peru
-38	TS-425	S. pimpinellifolium	Wild  species	Peru
-39	TS-429	S. pimpinellifolium	Wild  species	Peru
-40	TS-434	S. pimpinellifolium	Wild  species	Peru	 -7.716667	-79.116667
-41	TS-435	S. pimpinellifolium	Wild  species	Peru	-9.270000	-78.470000
-42	TS-437	S. pimpinellifolium	Wild  species	Peru	-7,333333	-79,583333
-43	TS-439	S. pimpinellifolium	Wild  species	Peru	 -3.800000	-80.700000
-44	TS-79	S. pimpinellifolium	Wild  species	Peru	-14.628889	-75.214167
-45	TS-92	S. pimpinellifolium	Wild  species	Peru	-6.150000	-79.733333
-46	TS-32	S. lycopersicum var cerasiforme	Latin American cultivar 	Bolivia
-47	TS-202	S. lycopersicum var cerasiforme	Latin American cultivar 	Brazil	-27.600000	-48.550000
-48	TS-229	S. lycopersicum var cerasiforme	Wild  species 	Brazil	-12.750000	39.433333
-49	TS-302	S. lycopersicum var cerasiforme	Wild  species 	Brazil
-50	TS-149	S. lycopersicum var cerasiforme	Latin American cultivar 	Colombia
-51	TS-105	S. lycopersicum var cerasiforme	Wild  species	Costa Rica
-52	TS-107	S. lycopersicum var cerasiforme	Wild  species	Costa Rica
-53	TS-289	S. lycopersicum var cerasiforme	Latin American cultivar 	Ecuador
-54	TS-295	S. lycopersicum var cerasiforme	Latin American cultivar; Wild  species	Ecuador	-2.733333	-79.916667
-55	TS-118	S. lycopersicum var cerasiforme	Latin American cultivar;Wild  species 	Ecuador
-56	TS-134	S. lycopersicum var cerasiforme	Wild  species	Ecuador	-0,816667	-80.233333
-57	TS-33	S. lycopersicum var cerasiforme	Wild  species	Ecuador
-58	TS-53	S. lycopersicum var cerasiforme	Wild  species	Ecuador	 -3.935278	-79.646111
-59	TS-238	S. lycopersicum var cerasiforme	Wild  species 	Ecuador	 -2.170000	 -78.030000
-60	TS-262	S. lycopersicum var cerasiforme	Wild  species 	Ecuador	-3.990000	 -79.360000
-61	TS-299	S. lycopersicum var cerasiforme	Wild  species 	Ecuador	-3.454444	-78.555278
-62	TS-300	S. lycopersicum var cerasiforme	Wild  species 	Ecuador	-0.983333	 -77.816667
-63	TS-30	S. lycopersicum var cerasiforme	Wild  species	Guatemala
-64	TS-31	S. lycopersicum var cerasiforme	Wild  species	Honduras	15.383333	-87.816667
-65	TS-165	S. lycopersicum var cerasiforme	Latin American cultivar 	Mexico
-66	TS-233	S. lycopersicum var cerasiforme	Latin American cultivar 	Mexico
-67	TS-154	S. lycopersicum var cerasiforme	Wild  species	Mexico
-68	TS-221	S. lycopersicum var cerasiforme	Wild  species 	Mexico
-69	TS-96	S. lycopersicum var cerasiforme	Wild  species 	Mexico	19.166667	-96.133333
-70	TS-181	S. lycopersicum var cerasiforme	Wild  species	Mexico	18.466667	-97.400000
-71	TS-304	S. lycopersicum var cerasiforme	 Latin American cultivar 	Peru	-6.501389	-76.365556
-72	TS-56	S. lycopersicum var cerasiforme	 Wild  species 	Peru	-13.550000	-72.616667
-73	TS-57	S. lycopersicum var cerasiforme	 Wild  species 	Peru	 -12.616667	73.791667
-74	TS-61	S. lycopersicum var cerasiforme	 Wild  species 	Peru	-14.100000	-69.025000
-75	TS-129	S. lycopersicum var cerasiforme	Latin American cultivar; Wild  species 	Peru	 -6.050000	-76.966667
-76	TS-87	S. lycopersicum var cerasiforme	Latin American cultivar; Wild  species 	Peru	-8.116667	-79.033333
-77	TS-148	S. lycopersicum var cerasiforme	Wild  species	Peru	 -13.116667	-72.366667
-78	TS-158	S. lycopersicum var cerasiforme	Wild  species	Peru	-12.866667	-72,716667
-79	TS-34	S. lycopersicum var cerasiforme	Wild  species	Peru	 -13.636944	-70.460556
-80	TS-37	S. lycopersicum var cerasiforme	Wild  Species	Peru
-81	TS-223	S. lycopersicum var cerasiforme	Wild  species 	Peru	 -13.636944	-70.460556
-82	TS-273	S. lycopersicum var cerasiforme	Wild  species 	Peru	-13.641667	-72.908333
-83	TS-281	S. lycopersicum var cerasiforme	Wild  species 	Peru	 -11.166667	-74.466667
-84	TS-298	S. lycopersicum var cerasiforme	Wild  species 	Peru	 -6.733333	-76.333333
-85	TS-301	S. lycopersicum var cerasiforme	Wild  species 	Peru	-12.678333	 -71.301111
-86	TS-423	S. lycopersicum var cerasiforme	Wild  species 	Peru
-87	TS-66	S. lycopersicum var cerasiforme	Wild  species 	Peru	 -11.116667	-75.350000
-88	TS-152	S. lycopersicum	Landrace/Latin American cultivar 	Brazil
-89	TS-261	S. lycopersicum	Wild  species 	Brazil	-19.450000	-44.233333
-90	TS-135	S. lycopersicum	Landrace/Latin American cultivar 	Chile	 -18.416667	 -70.150000
-91	TS-224	S. lycopersicum	Landrace/Latin American cultivar 	Ecuador
-92	TS-241	S. lycopersicum	Latin American cultivar 	Ecuador	-0.216667	-78.500000
-93	TS-201	S. lycopersicum	Landrace/Latin American cultivar	El Salvador
-94	TS-167	S. lycopersicum	Landrace/Latin American cultivar 	Honduras
-95	TS-153	S. lycopersicum	Landrace/Latin American cultivar 	Mexico
-96	TS-249	S. lycopersicum	Landrace/Latin American cultivar 	Mexico
-97	TS-48	S. lycopersicum	Landrace/Latin American cultivar 	Mexico
-98	TS-69	S. lycopersicum	Latin American cultivar 	Mexico
-99	TS-127	S. lycopersicum	Landrace/Latin American cultivar 	Peru	-7.227222	-79.429444
-100	TS-150	S. lycopersicum	Landrace/Latin American cultivar 	Peru	 -6.501389	 -76.365556
-101	TS-166	S. lycopersicum	Landrace/Latin American cultivar 	Peru
-102	TS-242	S. lycopersicum	Latin American cultivar 	Peru	 -13.158333	-74.223889
-103	TS-256	S. lycopersicum	Latin American cultivar 	Peru	 -6.222778	-76.819167
-104	TS-68	S. lycopersicum	Latin American cultivar 	Peru	 -6.766667	"-79.850000 "
-105	TS-407	S. habrochaites	Wild  species 	Ecuador
-106	TS-208	S. galapagense	Wild  species 	Ecuador	-0.750000	-90.316667
-107	TS-408	S. chilense	Wild  species 	Peru	-17.552778	-70.028333
-108	TS-199	S. cheesmaniae	Wild  species 	Ecuador	 -1.000000	 -91.416667
-109	TS-207	S. cheesmaniae	Wild  species 	Ecuador	-0.422500	-91.116667
-110	TS-217	S. cheesmaniae	Wild  species 	Ecuador	-0.643889	-90.329444
-111	TS-403	S. peruvianum	Wild  species 	Chile
-112	TS-402	S. peruvianum	Wild  species 	Peru
-113	TS-404	S. peruvianum	Wild  species 	Peru
-114	TS-146	S. neorickii	Wild  species 	Peru	-3.400000	-79.183333
-115	En.Tibi Unknown Unknown Unknown
+1	TS.267	S. pimpinellifolium	Wild species	Bolivia		
+2	TS.124	S. pimpinellifolium	Wild species	Ecuador	-3.458333	-79.966667
+3	TS.14	S. pimpinellifolium	Wild species	Ecuador	0.583333	 -77.933333
+4	TS.144	S. pimpinellifolium	Wild species	Ecuador	-1.100000	-79.483333
+5	TS.15	S. pimpinellifolium	Wild species	Ecuador	-3.628056	-79.888056
+6	TS.16	S. pimpinellifolium	Wild species	Ecuador	-3.990000	-79.360000
+7	TS.413	S. pimpinellifolium	Wild species	Ecuador		
+8	TS.50	S. pimpinellifolium	Wild species	Ecuador	-2.733333	-79.916667
+9	TS.77	S. pimpinellifolium	Wild species	Ecuador	0.866667	79.850000
+10	TS.440	S. pimpinellifolium	Wild species	Ecuador	-0.950000	90.966667
+11	TS.432	S. pimpinellifolium	Wild species	Mexico		
+12	TS.123	S. pimpinellifolium	Wild species	Peru	-8.116667	-79.033333
+13	TS.145	S. pimpinellifolium	Wild species	Peru	-3.566667	-80.466667
+14	TS.156	S. pimpinellifolium	Wild species	Peru	-5.775833	-78.783056
+15	TS.164	S. pimpinellifolium	Wild species	Peru	-6.370000	-79.790000
+16	TS.17	S. pimpinellifolium	Wild species	Peru	-9.940000	-78.230000
+17	TS.18	S. pimpinellifolium	Wild species	Peru	-6.590000	-79.870000
+18	TS.182	S. pimpinellifolium	Wild species	Peru	-5.740000	-78.670000
+19	TS.19	S. pimpinellifolium	Wild species	Peru	-8.390000	-78.740000
+20	TS.20	S. pimpinellifolium	Wild species	Peru	-9.481667	-78.259167
+21	TS.21	S. pimpinellifolium	Wild species	Peru	-13.074722	-76.402500
+22	TS.22	S. pimpinellifolium	Wild species	Peru	-11.475000	-77.108333
+23	TS.23	S. pimpinellifolium	Wild species	Peru	-12.764722	-76.505278
+24	TS.244	S. pimpinellifolium	Wild species	Peru	-7.333333	-79.583333
+25	TS.265	S. pimpinellifolium	Wild species	Peru	-5.260833	-79.964167
+26	TS.266	S. pimpinellifolium	Wild species	Peru	-5.216667	-80.083333
+27	TS.291	S. pimpinellifolium	Wild species	Peru	-8.390000	-78.740000
+28	TS.411	S. pimpinellifolium	Wild species	Peru		
+29	TS.412	S. pimpinellifolium	Wild species	Peru	-8.116667	-79.033333
+30	TS.414	S. pimpinellifolium	Wild species	Peru	-11.970833	-76.791667
+31	TS.415	S. pimpinellifolium	Wild species	Peru	-8.925000	-78.566667
+32	TS.417	S. pimpinellifolium	Wild species	Peru	-15.456389	-74.445833
+33	TS.418	S. pimpinellifolium	Wild species	Peru	-7.200000	-78.983333
+34	TS.419	S. pimpinellifolium	Wild species	Peru		
+35	TS.420	S. pimpinellifolium	Wild species	Peru	-5.587500	-78.550556
+36	TS.421	S. pimpinellifolium	Wild species	Peru	-5.925000	-78.050000
+37	TS.424	S. pimpinellifolium	Wild species	Peru		
+38	TS.425	S. pimpinellifolium	Wild species	Peru		
+39	TS.429	S. pimpinellifolium	Wild species	Peru		
+40	TS.434	S. pimpinellifolium	Wild species	Peru	-7.716667	-79.116667
+41	TS.435	S. pimpinellifolium	Wild species	Peru	-9.270000	-78.470000
+42	TS.437	S. pimpinellifolium	Wild species	Peru	-7.333333	-79.583333
+43	TS.439	S. pimpinellifolium	Wild species	Peru	-3.800000	-80.700000
+44	TS.79	S. pimpinellifolium	Wild species	Peru	-14.628889	-75.214167
+45	TS.92	S. pimpinellifolium	Wild species	Peru	-6.150000	-79.733333
+46	TS.32	S. lycopersicum var cerasiforme	Latin American cultivar	Bolivia		
+47	TS.202	S. lycopersicum var cerasiforme	Latin American cultivar	Brazil	-27.600000	-48.550000
+48	TS.229	S. lycopersicum var cerasiforme	Wild species	Brazil	-12.750000	39.433333
+49	TS.302	S. lycopersicum var cerasiforme	Wild species	Brazil		
+50	TS.149	S. lycopersicum var cerasiforme	Latin American cultivar	Colombia		
+51	TS.105	S. lycopersicum var cerasiforme	Wild species	Costa Rica		
+52	TS.107	S. lycopersicum var cerasiforme	Wild species	Costa Rica		
+53	TS.289	S. lycopersicum var cerasiforme	Latin American cultivar	Ecuador		
+54	TS.295	S. lycopersicum var cerasiforme	Latin American cultivar; Wild species	Ecuador	-2.733333	-79.916667
+55	TS.118	S. lycopersicum var cerasiforme	Latin American cultivar;Wild species	Ecuador		
+56	TS.134	S. lycopersicum var cerasiforme	Wild species	Ecuador	-0.816667	-80.233333
+57	TS.33	S. lycopersicum var cerasiforme	Wild species	Ecuador		
+58	TS.53	S. lycopersicum var cerasiforme	Wild species	Ecuador	-3.935278	-79.646111
+59	TS.238	S. lycopersicum var cerasiforme	Wild species	Ecuador	-2.170000	-78.030000
+60	TS.262	S. lycopersicum var cerasiforme	Wild species	Ecuador	-3.990000	-79.360000
+61	TS.299	S. lycopersicum var cerasiforme	Wild species	Ecuador	-3.454444	-78.555278
+62	TS.300	S. lycopersicum var cerasiforme	Wild species	Ecuador	-0.983333	-77.816667
+63	TS.30	S. lycopersicum var cerasiforme	Wild species	Guatemala		
+64	TS.31	S. lycopersicum var cerasiforme	Wild species	Honduras	15.383333	-87.816667
+65	TS.165	S. lycopersicum var cerasiforme	Latin American cultivar	Mexico		
+66	TS.233	S. lycopersicum var cerasiforme	Latin American cultivar	Mexico		
+67	TS.154	S. lycopersicum var cerasiforme	Wild species	Mexico		
+68	TS.221	S. lycopersicum var cerasiforme	Wild species	Mexico		
+69	TS.96	S. lycopersicum var cerasiforme	Wild species	Mexico	19.166667	-96.133333
+70	TS.181	S. lycopersicum var cerasiforme	Wild species	Mexico	18.466667	-97.400000
+71	TS.304	S. lycopersicum var cerasiforme	 Latin American cultivar	Peru	-6.501389	-76.365556
+72	TS.56	S. lycopersicum var cerasiforme	 Wild species	Peru	-13.550000	-72.616667
+73	TS.57	S. lycopersicum var cerasiforme	 Wild species	Peru	-12.616667	73.791667
+74	TS.61	S. lycopersicum var cerasiforme	 Wild species	Peru	-14.100000	-69.025000
+75	TS.129	S. lycopersicum var cerasiforme	Latin American cultivar; Wild species	Peru	-6.050000	-76.966667
+76	TS.87	S. lycopersicum var cerasiforme	Latin American cultivar; Wild species	Peru	-8.116667	-79.033333
+77	TS.148	S. lycopersicum var cerasiforme	Wild species	Peru	-13.116667	-72.366667
+78	TS.158	S. lycopersicum var cerasiforme	Wild species	Peru	-12.866667	-72.716667
+79	TS.34	S. lycopersicum var cerasiforme	Wild species	Peru	-13.636944	-70.460556
+80	TS.37	S. lycopersicum var cerasiforme	Wild Species	Peru		
+81	TS.223	S. lycopersicum var cerasiforme	Wild species	Peru	-13.636944	-70.460556
+82	TS.273	S. lycopersicum var cerasiforme	Wild species	Peru	-13.641667	-72.908333
+83	TS.281	S. lycopersicum var cerasiforme	Wild species	Peru	-11.166667	-74.466667
+84	TS.298	S. lycopersicum var cerasiforme	Wild species	Peru	-6.733333	-76.333333
+85	TS.301	S. lycopersicum var cerasiforme	Wild species	Peru	-12.678333	-71.301111
+86	TS.423	S. lycopersicum var cerasiforme	Wild species	Peru		
+87	TS.66	S. lycopersicum var cerasiforme	Wild species	Peru	-11.116667	-75.350000
+88	TS.152	S. lycopersicum	Landrace/Latin American cultivar	Brazil		
+89	TS.261	S. lycopersicum	Wild species	Brazil	-19.450000	-44.233333
+90	TS.135	S. lycopersicum	Landrace/Latin American cultivar	Chile	-18.416667	-70.150000
+91	TS.224	S. lycopersicum	Landrace/Latin American cultivar	Ecuador		
+92	TS.241	S. lycopersicum	Latin American cultivar	Ecuador	-0.216667	-78.500000
+93	TS.201	S. lycopersicum	Landrace/Latin American cultivar	El Salvador		
+94	TS.167	S. lycopersicum	Landrace/Latin American cultivar	Honduras		
+95	TS.153	S. lycopersicum	Landrace/Latin American cultivar	Mexico		
+96	TS.249	S. lycopersicum	Landrace/Latin American cultivar	Mexico		
+97	TS.48	S. lycopersicum	Landrace/Latin American cultivar	Mexico		
+98	TS.69	S. lycopersicum	Latin American cultivar	Mexico		
+99	TS.127	S. lycopersicum	Landrace/Latin American cultivar	Peru	-7.227222	-79.429444
+100	TS.150	S. lycopersicum	Landrace/Latin American cultivar	Peru	-6.501389	-76.365556
+101	TS.166	S. lycopersicum	Landrace/Latin American cultivar	Peru		
+102	TS.242	S. lycopersicum	Latin American cultivar	Peru	-13.158333	-74.223889
+103	TS.256	S. lycopersicum	Latin American cultivar	Peru	-6.222778	-76.819167
+104	TS.68	S. lycopersicum	Latin American cultivar	Peru	-6.766667	-79.850000
+105	TS.407	S. habrochaites	Wild species	Ecuador		
+106	TS.208	S. galapagense	Wild species	Ecuador	-0.750000	-90.316667
+107	TS.408	S. chilense	Wild species	Peru	-17.552778	-70.028333
+108	TS.199	S. cheesmaniae	Wild species	Ecuador	-1.000000	-91.416667
+109	TS.207	S. cheesmaniae	Wild species	Ecuador	-0.422500	-91.116667
+110	TS.217	S. cheesmaniae	Wild species	Ecuador	-0.643889	-90.329444
+111	TS.403	S. peruvianum	Wild species	Chile		
+112	TS.402	S. peruvianum	Wild species	Peru		
+113	TS.404	S. peruvianum	Wild species	Peru		
+114	TS.146	S. neorickii	Wild species	Peru	-3.400000	-79.183333
+115	En.Tibi	Unknown	Unknown	Unknown		
