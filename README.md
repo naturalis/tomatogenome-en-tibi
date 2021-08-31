@@ -7,7 +7,7 @@ The repository is organized in broad compliance with the community practices for
 [guidelines](https://doi.org/10.1371/journal.pcbi.1000424) for organizing computational
 biology projects.
 
-![](doc/background/L.2111092.jpg)
+![](doc/images/Afbeelding3.png)
 
 # Contents
 
