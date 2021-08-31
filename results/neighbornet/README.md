@@ -50,3 +50,22 @@ two different zoom levels produces the files:
 
 - `bases.phy.overview.svg`
 - `bases.phy.zoom.svg`
+
+Image refinement
+----------------
+
+To create the versions with pie charts and country colors:
+
+	perl networkpies.pl \
+		-m ../results/structure/bases.str.3.meanQ \
+		-s ../results/neighbornet/bases.phy.overview.svg \
+		-l ../results/structure/labels.txt \
+		-a ../doc/360/accessions_new.tsv \
+		> ../results/neighbornet/bases.phy.overview.pies.svg
+
+	perl networkpies.pl \
+		-m ../results/structure/bases.str.3.meanQ \
+		-s ../results/neighbornet/bases.phy.zoom.svg \
+		-l ../results/structure/labels.txt \
+		-a ../doc/360/accessions_new.tsv \
+		> ../results/neighbornet/bases.phy.zoom.pies.svg		

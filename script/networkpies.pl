@@ -37,10 +37,11 @@ my $accessions_file = 'accessions.tsv'; # accession metadata
 my $column          = 'country'; # metadata column in the accessions table
 my $verbosity       = WARN;
 GetOptions(
-    'svg_file=s'    => \$svg_file,
-    'meanq_file=s'  => \$meanq_file,
-    'labels_file=s' => \$labels_file,
-    'verbose+'      => \$verbosity,
+    'svg_file=s'        => \$svg_file,
+    'meanq_file=s'      => \$meanq_file,
+    'labels_file=s'     => \$labels_file,
+    'accessions_file=s' => \$accessions_file,
+    'verbose+'          => \$verbosity,
 );
 Bio::Phylo::Util::Logger->new( '-level' => $verbosity, '-class' => 'main' );
 
@@ -111,7 +112,6 @@ sub map_nodes_to_labels {
         my $label = $text->text;
         if ( $label !~ /^\d+\.\d+$/ ) {
             push @labels, $label;
-            INFO $label;
             if ( $cultivars{$label} =~ /pimp/ ) {
                 $label =~ s/TS/P/;
             }
