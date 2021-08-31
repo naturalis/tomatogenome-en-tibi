@@ -1,5 +1,8 @@
 ## 360 tomato reseq project
 
+This folder contains information and data of the 360 tomato genome project, which we
+use as a panel to compare the _En Tibi_ against.
+
 - [Genomic analyses provide insights into the history of tomato breeding](ng.3117.pdf)
 - [supplementary methods](ng.3117-S1.pdf)
 - [accessions table](ng.3117-S2.xls)
