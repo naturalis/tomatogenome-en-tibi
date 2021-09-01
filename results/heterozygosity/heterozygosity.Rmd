@@ -1,0 +1,38 @@
+---
+title: "heterozygosity.Rmd"
+author: "Rutger Vos (@rvosa)"
+date: "9/1/2021"
+output: html_document
+---
+
+We start by loading the dependency libraries:
+
+```{r libs}
+library(tidyverse)
+```
+
+In this workflow we create plots that aggregate heterozygosity over botanical
+variety, country, and status. We start by loading the data in a frame:
+
+```{r load}
+# read tab-separated data with header
+data <- read.csv2(file='h.tsv', header=T, sep = "\t")
+
+# several columns are factors
+data$botanical_variety <- factor(data$botanical_variety)
+data$status <- factor(data$status)
+data$country <- factor(data$country)
+
+```
+
+We then compute the ratio of the counts of heterozygous alleles over homozygous
+alleles. This ignores loci where the accession is identical to the reference:
+
+```{r ratio}
+data$ratio <- data$het / data$hom
+```
+
+
+```{r plot}
+ggplot(data = data, mapping = aes(x = status, y = ratio)) + geom_boxplot()
+```
