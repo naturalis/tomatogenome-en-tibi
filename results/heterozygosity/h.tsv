@@ -1,106 +1,106 @@
-label	ref	hom	het	botanical_variety	status	country
-En.Tibi	232133	23006	10	En Tibi	En Tibi	En Tibi
-TS.105	224607	30537	6	S. lycopersicum var cerasiforme	Wild	Costa Rica
-TS.107	238239	16912	0	S. lycopersicum var cerasiforme	Wild	Costa Rica
-TS.118	229641	25499	9	S. lycopersicum var cerasiforme	Hybrid	Ecuador
-TS.123	203992	51149	10	S. pimpinellifolium	Wild	Peru
-TS.124	227755	27390	6	S. pimpinellifolium	Wild	Ecuador
-TS.127	210840	44308	3	S. lycopersicum	Landrace	Peru
-TS.129	230808	24342	1	S. lycopersicum var cerasiforme	Hybrid	Peru
-TS.134	230635	24513	2	S. lycopersicum var cerasiforme	Wild	Ecuador
-TS.135	236852	18298	1	S. lycopersicum	Landrace	Chile
-TS.14	186657	68449	42	S. pimpinellifolium	Wild	Ecuador
-TS.144	206147	48959	35	S. pimpinellifolium	Wild	Ecuador
-TS.145	222433	32708	10	S. pimpinellifolium	Wild	Peru
-TS.148	217727	37418	6	S. lycopersicum var cerasiforme	Wild	Peru
-TS.149	231000	24146	5	S. lycopersicum var cerasiforme	Cultivar	Colombia
-TS.15	207289	47857	5	S. pimpinellifolium	Wild	Ecuador
-TS.150	236010	19140	1	S. lycopersicum	Landrace	Peru
-TS.152	238749	16402	0	S. lycopersicum	Landrace	Brazil
-TS.153	238801	16349	1	S. lycopersicum	Landrace	Mexico
-TS.154	236935	18214	2	S. lycopersicum var cerasiforme	Wild	Mexico
-TS.156	194932	60208	10	S. pimpinellifolium	Wild	Peru
-TS.158	224585	30561	5	S. lycopersicum var cerasiforme	Wild	Peru
-TS.16	201949	53185	15	S. pimpinellifolium	Wild	Ecuador
-TS.164	207091	48029	30	S. pimpinellifolium	Wild	Peru
-TS.165	236104	19047	0	S. lycopersicum var cerasiforme	Cultivar	Mexico
-TS.166	237784	17367	0	S. lycopersicum	Landrace	Peru
-TS.167	238759	16392	0	S. lycopersicum	Landrace	Honduras
-TS.17	175969	79136	45	S. pimpinellifolium	Wild	Peru
-TS.18	180262	74854	32	S. pimpinellifolium	Wild	Peru
-TS.181	235971	19180	0	S. lycopersicum var cerasiforme	Wild	Mexico
-TS.182	215475	39670	6	S. pimpinellifolium	Wild	Peru
-TS.19	184691	70430	29	S. pimpinellifolium	Wild	Peru
-TS.20	182349	72776	24	S. pimpinellifolium	Wild	Peru
-TS.201	238285	16866	0	S. lycopersicum	Landrace	El Salvador
-TS.202	237880	17271	0	S. lycopersicum var cerasiforme	Cultivar	Brazil
-TS.21	181261	73862	27	S. pimpinellifolium	Wild	Peru
-TS.22	186109	69026	14	S. pimpinellifolium	Wild	Peru
-TS.221	232584	22567	0	S. lycopersicum var cerasiforme	Wild	Mexico
-TS.223	215335	39782	31	S. lycopersicum var cerasiforme	Wild	Peru
-TS.224	230044	25107	0	S. lycopersicum	Landrace	Ecuador
-TS.229	237468	17682	0	S. lycopersicum var cerasiforme	Wild	Brazil
-TS.23	184964	70170	16	S. pimpinellifolium	Wild	Peru
-TS.233	238465	16686	0	S. lycopersicum var cerasiforme	Cultivar	Mexico
-TS.238	233501	21649	1	S. lycopersicum var cerasiforme	Wild	Ecuador
-TS.241	239106	16044	1	S. lycopersicum	Cultivar	Ecuador
-TS.242	232913	22238	0	S. lycopersicum	Cultivar	Peru
-TS.244	189123	66008	19	S. pimpinellifolium	Wild	Peru
-TS.249	238200	16951	0	S. lycopersicum	Landrace	Mexico
-TS.256	230893	24257	1	S. lycopersicum	Cultivar	Peru
-TS.261	237908	17241	2	S. lycopersicum	Wild	Brazil
-TS.262	208969	46174	7	S. lycopersicum var cerasiforme	Wild	Ecuador
-TS.265	212136	42988	26	S. pimpinellifolium	Wild	Peru
-TS.266	212548	42589	12	S. pimpinellifolium	Wild	Peru
-TS.267	204539	50582	26	S. pimpinellifolium	Wild	Bolivia
-TS.273	226755	28393	2	S. lycopersicum var cerasiforme	Wild	Peru
-TS.281	238157	16994	0	S. lycopersicum var cerasiforme	Wild	Peru
-TS.289	236293	18858	0	S. lycopersicum var cerasiforme	Cultivar	Ecuador
-TS.291	216975	38169	7	S. pimpinellifolium	Wild	Peru
-TS.295	219691	35452	7	S. lycopersicum var cerasiforme	Hybrid	Ecuador
-TS.298	236716	18433	2	S. lycopersicum var cerasiforme	Wild	Peru
-TS.299	230801	24350	0	S. lycopersicum var cerasiforme	Wild	Ecuador
-TS.30	236542	18607	2	S. lycopersicum var cerasiforme	Wild	Guatemala
-TS.300	211200	43947	4	S. lycopersicum var cerasiforme	Wild	Ecuador
-TS.301	227679	27465	7	S. lycopersicum var cerasiforme	Wild	Peru
-TS.302	237523	17628	0	S. lycopersicum var cerasiforme	Wild	Brazil
-TS.304	236288	18861	2	S. lycopersicum var cerasiforme	Cultivar	Peru
-TS.31	235884	19267	0	S. lycopersicum var cerasiforme	Wild	Honduras
-TS.32	234761	20389	1	S. lycopersicum var cerasiforme	Cultivar	Bolivia
-TS.33	189361	65727	55	S. lycopersicum var cerasiforme	Wild	Ecuador
-TS.34	217250	37894	7	S. lycopersicum var cerasiforme	Wild	Peru
-TS.37	201066	54073	12	S. lycopersicum var cerasiforme	Wild	Peru
-TS.411	193461	61673	17	S. pimpinellifolium	Wild	Peru
-TS.412	192415	62731	5	S. pimpinellifolium	Wild	Peru
-TS.413	208167	46973	11	S. pimpinellifolium	Wild	Ecuador
-TS.414	188320	66825	6	S. pimpinellifolium	Wild	Peru
-TS.415	180399	74702	48	S. pimpinellifolium	Wild	Peru
-TS.417	187852	67284	15	S. pimpinellifolium	Wild	Peru
-TS.418	193897	61240	12	S. pimpinellifolium	Wild	Peru
-TS.419	185889	69243	19	S. pimpinellifolium	Wild	Peru
-TS.420	199158	55972	20	S. pimpinellifolium	Wild	Peru
-TS.421	178592	76503	55	S. pimpinellifolium	Wild	Peru
-TS.423	222175	32973	3	S. lycopersicum var cerasiforme	Wild	Peru
-TS.424	191408	63734	9	S. pimpinellifolium	Wild	Peru
-TS.425	188414	66723	14	S. pimpinellifolium	Wild	Peru
-TS.429	189627	65508	15	S. pimpinellifolium	Wild	Peru
-TS.432	236206	18945	0	S. pimpinellifolium	Wild	Mexico
-TS.434	184293	70820	38	S. pimpinellifolium	Wild	Peru
-TS.435	186550	68571	30	S. pimpinellifolium	Wild	Peru
-TS.437	191612	63535	4	S. pimpinellifolium	Wild	Peru
-TS.439	185648	69478	25	S. pimpinellifolium	Wild	Peru
-TS.440	192060	63052	36	S. pimpinellifolium	Wild	Ecuador
-TS.48	229329	25822	0	S. lycopersicum	Landrace	Mexico
-TS.50	209761	45369	20	S. pimpinellifolium	Wild	Ecuador
-TS.53	220405	34736	9	S. lycopersicum var cerasiforme	Wild	Ecuador
-TS.56	225889	29260	2	S. lycopersicum var cerasiforme	Wild	Peru
-TS.57	230460	24688	3	S. lycopersicum var cerasiforme	Wild	Peru
-TS.61	238167	16984	0	S. lycopersicum var cerasiforme	Wild	Peru
-TS.66	226467	28684	0	S. lycopersicum var cerasiforme	Wild	Peru
-TS.68	218859	36284	7	S. lycopersicum	Cultivar	Peru
-TS.69	238199	16952	0	S. lycopersicum	Cultivar	Mexico
-TS.77	190401	64745	5	S. pimpinellifolium	Wild	Ecuador
-TS.79	186930	68177	42	S. pimpinellifolium	Wild	Peru
-TS.87	231997	23152	2	S. lycopersicum var cerasiforme	Hybrid	Peru
-TS.92	217179	37958	13	S. pimpinellifolium	Wild	Peru
-TS.96	231249	23894	7	S. lycopersicum var cerasiforme	Wild	Mexico
+label	ref	hom	het	botanical_variety	status	country	region
+En.Tibi	232133	23006	10	En Tibi	En Tibi	En Tibi	En Tibi
+TS.105	224607	30537	6	S. lycopersicum var cerasiforme	Wild	Costa Rica	expanded
+TS.107	238239	16912	0	S. lycopersicum var cerasiforme	Wild	Costa Rica	expanded
+TS.118	229641	25499	9	S. lycopersicum var cerasiforme	Hybrid	Ecuador	Andean
+TS.123	203992	51149	10	S. pimpinellifolium	Wild	Peru	Andean
+TS.124	227755	27390	6	S. pimpinellifolium	Wild	Ecuador	Andean
+TS.127	210840	44308	3	S. lycopersicum	Landrace	Peru	Andean
+TS.129	230808	24342	1	S. lycopersicum var cerasiforme	Hybrid	Peru	Andean
+TS.134	230635	24513	2	S. lycopersicum var cerasiforme	Wild	Ecuador	Andean
+TS.135	236852	18298	1	S. lycopersicum	Landrace	Chile	Andean
+TS.14	186657	68449	42	S. pimpinellifolium	Wild	Ecuador	Andean
+TS.144	206147	48959	35	S. pimpinellifolium	Wild	Ecuador	Andean
+TS.145	222433	32708	10	S. pimpinellifolium	Wild	Peru	Andean
+TS.148	217727	37418	6	S. lycopersicum var cerasiforme	Wild	Peru	Andean
+TS.149	231000	24146	5	S. lycopersicum var cerasiforme	Cultivar	Colombia	Andean
+TS.15	207289	47857	5	S. pimpinellifolium	Wild	Ecuador	Andean
+TS.150	236010	19140	1	S. lycopersicum	Landrace	Peru	Andean
+TS.152	238749	16402	0	S. lycopersicum	Landrace	Brazil	expanded
+TS.153	238801	16349	1	S. lycopersicum	Landrace	Mexico	expanded
+TS.154	236935	18214	2	S. lycopersicum var cerasiforme	Wild	Mexico	expanded
+TS.156	194932	60208	10	S. pimpinellifolium	Wild	Peru	Andean
+TS.158	224585	30561	5	S. lycopersicum var cerasiforme	Wild	Peru	Andean
+TS.16	201949	53185	15	S. pimpinellifolium	Wild	Ecuador	Andean
+TS.164	207091	48029	30	S. pimpinellifolium	Wild	Peru	Andean
+TS.165	236104	19047	0	S. lycopersicum var cerasiforme	Cultivar	Mexico	expanded
+TS.166	237784	17367	0	S. lycopersicum	Landrace	Peru	Andean
+TS.167	238759	16392	0	S. lycopersicum	Landrace	Honduras	expanded
+TS.17	175969	79136	45	S. pimpinellifolium	Wild	Peru	Andean
+TS.18	180262	74854	32	S. pimpinellifolium	Wild	Peru	Andean
+TS.181	235971	19180	0	S. lycopersicum var cerasiforme	Wild	Mexico	expanded
+TS.182	215475	39670	6	S. pimpinellifolium	Wild	Peru	Andean
+TS.19	184691	70430	29	S. pimpinellifolium	Wild	Peru	Andean
+TS.20	182349	72776	24	S. pimpinellifolium	Wild	Peru	Andean
+TS.201	238285	16866	0	S. lycopersicum	Landrace	El Salvador	expanded
+TS.202	237880	17271	0	S. lycopersicum var cerasiforme	Cultivar	Brazil	expanded
+TS.21	181261	73862	27	S. pimpinellifolium	Wild	Peru	Andean
+TS.22	186109	69026	14	S. pimpinellifolium	Wild	Peru	Andean
+TS.221	232584	22567	0	S. lycopersicum var cerasiforme	Wild	Mexico	expanded
+TS.223	215335	39782	31	S. lycopersicum var cerasiforme	Wild	Peru	Andean
+TS.224	230044	25107	0	S. lycopersicum	Landrace	Ecuador	Andean
+TS.229	237468	17682	0	S. lycopersicum var cerasiforme	Wild	Brazil	expanded
+TS.23	184964	70170	16	S. pimpinellifolium	Wild	Peru	Andean
+TS.233	238465	16686	0	S. lycopersicum var cerasiforme	Cultivar	Mexico	expanded
+TS.238	233501	21649	1	S. lycopersicum var cerasiforme	Wild	Ecuador	Andean
+TS.241	239106	16044	1	S. lycopersicum	Cultivar	Ecuador	Andean
+TS.242	232913	22238	0	S. lycopersicum	Cultivar	Peru	Andean
+TS.244	189123	66008	19	S. pimpinellifolium	Wild	Peru	Andean
+TS.249	238200	16951	0	S. lycopersicum	Landrace	Mexico	expanded
+TS.256	230893	24257	1	S. lycopersicum	Cultivar	Peru	Andean
+TS.261	237908	17241	2	S. lycopersicum	Wild	Brazil	expanded
+TS.262	208969	46174	7	S. lycopersicum var cerasiforme	Wild	Ecuador	Andean
+TS.265	212136	42988	26	S. pimpinellifolium	Wild	Peru	Andean
+TS.266	212548	42589	12	S. pimpinellifolium	Wild	Peru	Andean
+TS.267	204539	50582	26	S. pimpinellifolium	Wild	Bolivia	Andean
+TS.273	226755	28393	2	S. lycopersicum var cerasiforme	Wild	Peru	Andean
+TS.281	238157	16994	0	S. lycopersicum var cerasiforme	Wild	Peru	Andean
+TS.289	236293	18858	0	S. lycopersicum var cerasiforme	Cultivar	Ecuador	Andean
+TS.291	216975	38169	7	S. pimpinellifolium	Wild	Peru	Andean
+TS.295	219691	35452	7	S. lycopersicum var cerasiforme	Hybrid	Ecuador	Andean
+TS.298	236716	18433	2	S. lycopersicum var cerasiforme	Wild	Peru	Andean
+TS.299	230801	24350	0	S. lycopersicum var cerasiforme	Wild	Ecuador	Andean
+TS.30	236542	18607	2	S. lycopersicum var cerasiforme	Wild	Guatemala	expanded
+TS.300	211200	43947	4	S. lycopersicum var cerasiforme	Wild	Ecuador	Andean
+TS.301	227679	27465	7	S. lycopersicum var cerasiforme	Wild	Peru	Andean
+TS.302	237523	17628	0	S. lycopersicum var cerasiforme	Wild	Brazil	expanded
+TS.304	236288	18861	2	S. lycopersicum var cerasiforme	Cultivar	Peru	Andean
+TS.31	235884	19267	0	S. lycopersicum var cerasiforme	Wild	Honduras	expanded
+TS.32	234761	20389	1	S. lycopersicum var cerasiforme	Cultivar	Bolivia	Andean
+TS.33	189361	65727	55	S. lycopersicum var cerasiforme	Wild	Ecuador	Andean
+TS.34	217250	37894	7	S. lycopersicum var cerasiforme	Wild	Peru	Andean
+TS.37	201066	54073	12	S. lycopersicum var cerasiforme	Wild	Peru	Andean
+TS.411	193461	61673	17	S. pimpinellifolium	Wild	Peru	Andean
+TS.412	192415	62731	5	S. pimpinellifolium	Wild	Peru	Andean
+TS.413	208167	46973	11	S. pimpinellifolium	Wild	Ecuador	Andean
+TS.414	188320	66825	6	S. pimpinellifolium	Wild	Peru	Andean
+TS.415	180399	74702	48	S. pimpinellifolium	Wild	Peru	Andean
+TS.417	187852	67284	15	S. pimpinellifolium	Wild	Peru	Andean
+TS.418	193897	61240	12	S. pimpinellifolium	Wild	Peru	Andean
+TS.419	185889	69243	19	S. pimpinellifolium	Wild	Peru	Andean
+TS.420	199158	55972	20	S. pimpinellifolium	Wild	Peru	Andean
+TS.421	178592	76503	55	S. pimpinellifolium	Wild	Peru	Andean
+TS.423	222175	32973	3	S. lycopersicum var cerasiforme	Wild	Peru	Andean
+TS.424	191408	63734	9	S. pimpinellifolium	Wild	Peru	Andean
+TS.425	188414	66723	14	S. pimpinellifolium	Wild	Peru	Andean
+TS.429	189627	65508	15	S. pimpinellifolium	Wild	Peru	Andean
+TS.432	236206	18945	0	S. pimpinellifolium	Wild	Mexico	expanded
+TS.434	184293	70820	38	S. pimpinellifolium	Wild	Peru	Andean
+TS.435	186550	68571	30	S. pimpinellifolium	Wild	Peru	Andean
+TS.437	191612	63535	4	S. pimpinellifolium	Wild	Peru	Andean
+TS.439	185648	69478	25	S. pimpinellifolium	Wild	Peru	Andean
+TS.440	192060	63052	36	S. pimpinellifolium	Wild	Ecuador	Andean
+TS.48	229329	25822	0	S. lycopersicum	Landrace	Mexico	expanded
+TS.50	209761	45369	20	S. pimpinellifolium	Wild	Ecuador	Andean
+TS.53	220405	34736	9	S. lycopersicum var cerasiforme	Wild	Ecuador	Andean
+TS.56	225889	29260	2	S. lycopersicum var cerasiforme	Wild	Peru	Andean
+TS.57	230460	24688	3	S. lycopersicum var cerasiforme	Wild	Peru	Andean
+TS.61	238167	16984	0	S. lycopersicum var cerasiforme	Wild	Peru	Andean
+TS.66	226467	28684	0	S. lycopersicum var cerasiforme	Wild	Peru	Andean
+TS.68	218859	36284	7	S. lycopersicum	Cultivar	Peru	Andean
+TS.69	238199	16952	0	S. lycopersicum	Cultivar	Mexico	expanded
+TS.77	190401	64745	5	S. pimpinellifolium	Wild	Ecuador	Andean
+TS.79	186930	68177	42	S. pimpinellifolium	Wild	Peru	Andean
+TS.87	231997	23152	2	S. lycopersicum var cerasiforme	Hybrid	Peru	Andean
+TS.92	217179	37958	13	S. pimpinellifolium	Wild	Peru	Andean
+TS.96	231249	23894	7	S. lycopersicum var cerasiforme	Wild	Mexico	expanded
