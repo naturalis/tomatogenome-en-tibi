@@ -34,5 +34,6 @@ data$ratio <- data$het / data$hom
 
 
 ```{r plot}
+# status, botanical_variety, region
 ggplot(data = data, mapping = aes(x = status, y = ratio)) + geom_boxplot()
 ```
