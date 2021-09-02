@@ -5,6 +5,8 @@ date: "9/1/2021"
 output: html_document
 ---
 
+# Setup
+
 We start by loading the dependency libraries:
 
 ```{r libs}
@@ -19,21 +21,79 @@ variety, country, and status. We start by loading the data in a frame:
 data <- read.csv2(file='h.tsv', header=T, sep = "\t")
 
 # several columns are factors
-data$botanical_variety <- factor(data$botanical_variety)
-data$status <- factor(data$status)
+data$Taxon <- factor(data$Taxon)
+data$Status <- factor(data$Status)
 data$country <- factor(data$country)
 
 ```
 
+# Assessment of heterozygous SNP quality
+
 We then compute the ratio of the counts of heterozygous alleles over homozygous
-alleles. This ignores loci where the accession is identical to the reference:
+alleles. This ignores loci where the accession is identical to the reference.
+To take into account the low coverage of the En Tibi specimen and potential bias
+towards heterozygosity due to deamination/misincorporation, we assess the 
+heterozygous sites manually and discard several in our conservative estimate:
+
+| a1 | a2 | chr | pos      | aln                    | pattern   | r | ref |
+|----|----|-----|----------|------------------------|-----------|---|-----|
+| C	 | T  | 1   | 10679919 | [aln](1-10679919.png)  | 10c:3t:2a | 1 | A*  |
+| G	 | A  | 1   | 10688310 | [aln](1-10688310.png)  | 3g:2a:7t  | 1 | T*  |
+| C	 | T  | 1   | 10935943 | [aln](1-10935943.png)  | 4c:11t    |   | A   |
+| C	 | T  | 2   | 24507447 | [aln](2-24507447.png)  | 10c:2t    | 2 | A   |
+| C	 | T  | 3   | 15956357 | [aln](3-15956357.png)  | 17c:4t    |   | A   |
+| G	 | C  | 3   | 15956506 | [aln](3-15956506.png)  | 6g:4c     |   | T   |
+| C	 | A  | 3   | 15956779 | [aln](3-15956779.png)  | 8c:4a     |   | G   |
+| A	 | T  | 3   | 15956789 | [aln](3-15956789.png)  | 7a:4t     |   | G   |
+| C	 | T  | 3   | 15960180 | [aln](3-15960180.png)  | 9c:4t     |   | G   |
+| A	 | G  | 5   | 52537503 | [aln](5-52537503.png)  | 10a:2g    | 2 | T   |
+| G	 | T  | 6   | 11578526 | [aln](6-11578526.png)  | 4g:3t:12c | 1 | C*  |
+| G	 | A  | 6   | 11604443 | [aln](6-11604443.png)  | 14g:4a    |   | T   |
+| T	 | A  | 6   | 12267118 | [aln](6-12267118.png)  | 12t:2a:1g | 1 | G*  |
+| C	 | T  | 7   | 28594407 | [aln](7-28594407.png)  | 5c:2t:7a  | 1 | A*  |
+| T	 | G  | 7   | 48944035 | [aln](7-48944035.png)  | 2t:2g:6c  | 1 | C*  |
+| G	 | T  | 10  | 51199918 | [aln](10-51199918.png) | 13g:2t    | 2 | A   |
+| G	 | A  | 10  | 52815023 | [aln](10-52815023.png) | 9g:2a     | 2 | T   |
+
+1. Already rejected as site in bases.str due to three bases being called,
+   include the allele of the reference, hence not well-supported heterozygous
+2. Reject 4 SNPs due to low (<4x) coverage of alt allele
 
 ```{r ratio}
-data$ratio <- data$het / data$hom
+data$Heterozygosity <- data$het / data$hom
+entibi.ratio <- data$Heterozygosity[1]
+entibi.ratio.conservative <- ( data$het[1] - 4 ) / data$hom[1]
+data <- data[-c(1),]
 ```
 
+# Heterozygosity per taxon
+
+This plot demonstrates that the En Tibi specimen has heterozygosity that is
+presently observed in the wild relative _S. pimpinellifolium_ and in cherry 
+tomatoes both collected in Andean localities and in the wider Neotropics.
 
 ```{r plot}
-# status, botanical_variety, region
-ggplot(data = data, mapping = aes(x = status, y = ratio)) + geom_boxplot()
+# Status, Taxon, Locality
+ggplot() + 
+    geom_hline( aes( yintercept=entibi.ratio ), colour="#990000" ) +
+    geom_hline( aes( yintercept=entibi.ratio.conservative ), colour="#990000" ) +
+    geom_boxplot( data=data, mapping=aes( x=Taxon, y=Heterozygosity, fill=Locality ) )
+     
+
 ```
+
+# Heterozygosity per status
+
+This plot demonstrates that the En Tibi specimen has heterozygosity that is
+presently observed in wild, feral and wild*domesticate hybrids:
+
+```{r plot}
+# Status, Taxon, Locality
+ggplot() + 
+    geom_hline( aes( yintercept=entibi.ratio ), colour="#990000" ) +
+    geom_hline( aes( yintercept=entibi.ratio.conservative ), colour="#990000" ) +
+    geom_boxplot( data=data, mapping=aes( x=Status, y=Heterozygosity, fill=Locality ) )
+     
+```
+
+
