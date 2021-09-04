@@ -19,23 +19,30 @@ Load data:
 
 ```{r data}
 df <- read.csv2('data.tsv', header=T, sep="\t", dec=".")
+
+# only look at the western hemisphere 
+# (otherwise there is one accession in the Philippines)
+df <- df[df$lon<0,]
+
+# only retain accessions with p1>0.000001
+# df <- df[df$p1>0.000001,]
+
 ```
 
 Draw map:
 
 ```{r map}
 # make the bounding box relative to the extent of the occurrences
-bbox <- make_bbox(lon, lat, data = df, f = .05)
+bbox <- make_bbox(lon, lat, data = df, f = .2)
 
 # fetch a mp from google
 map <- get_map(
     location = bbox, 
-    maptype = "watercolor", 
-    source = "stamen", 
-    force = T,
-    zoom = 5)
+    maptype = "satellite", 
+    source = "google", 
+    force = T)
 ggmap(map) +
-    geom_scatterpie(data=df, aes(x=lon, y=lat), cols=c('p1', 'p2', 'p3')) 
+    geom_scatterpie(data=df, aes(x=lon, y=lat), cols=c('p1', 'p2', 'p3'), pie_scale=2) 
 
 ```
 
