@@ -1,0 +1,43 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+Here we plot the localities at which accessions of the 360 tomato project were
+collected. They are _S. lycopersicum_ and other wild relatives. We start by 
+loading the required libraries:
+
+```{r load}
+library(dplyr)
+library(ggplot2)
+library(ggmap)
+library(RColorBrewer)
+library(scatterpie)
+```
+
+Load data:
+
+```{r data}
+df <- read.csv2('data.tsv', header=T, sep="\t", dec=".")
+```
+
+Draw map:
+
+```{r map}
+# make the bounding box relative to the extent of the occurrences
+bbox <- make_bbox(lon, lat, data = df, f = .05)
+
+# fetch a mp from google
+map <- get_map(
+    location = bbox, 
+    maptype = "watercolor", 
+    source = "stamen", 
+    force = T,
+    zoom = 5)
+ggmap(map) +
+    geom_scatterpie(data=df, aes(x=lon, y=lat), cols=c('p1', 'p2', 'p3')) 
+
+```
+
+
+
