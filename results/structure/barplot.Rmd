@@ -1,0 +1,60 @@
+---
+title: "Stacked bar plot"
+author: "Rutger Vos (@rvosa)"
+date: "9/9/2021"
+output: html_document
+---
+
+We start by loading the required libraries:
+
+```{r setup, include=FALSE}
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+```
+
+Load data:
+
+```{r data}
+
+# separated by two spaces, so gets empty columns
+meanQ <- read.csv2('bases.str.3.meanQ', header = F, sep = ' ', dec = '.')
+
+# names of accessions and botanical variants
+acc <- read.csv2('labels.txt', header = F)
+pop <- read.csv2('popfile.txt', header = F)
+
+# combine in df and cleanup
+df <- data.frame( 
+    pop=pop$V1, 
+    acc=acc$V1, 
+    pop1=meanQ$V1, 
+    pop2=meanQ$V3, 
+    pop3=meanQ$V5
+)
+rm( meanQ, acc, pop )
+```
+
+Transform data:
+
+```{r sort}
+
+# sort on botanical variat and 3 meanQ columns
+sorted <- df[order(df$pop,df$pop1,df$pop2,df$pop3),]
+
+# add sort column
+sorted$sortCol <- 1:105
+
+# create long version: https://datacarpentry.org/R-ecology-lesson/03-dplyr.html#Reshaping_with_gather_and_spread
+long <- sorted %>% gather( key = "population", value = "meanQ", -acc, -pop, -sortCol )
+
+sorted.long <- long[order(long$sortCol),]
+```
+
+Plot:
+
+```{r plot}
+# https://www.r-graph-gallery.com/48-grouped-barplot-with-ggplot2.html
+ggplot(sorted.long, aes(fill=population, y=meanQ, x=sortCol)) + 
+     geom_bar(position="fill", stat="identity")
+```
