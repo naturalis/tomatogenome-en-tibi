@@ -1,3 +1,6 @@
+
+[![DOI](https://zenodo.org/badge/209058101.svg)](https://zenodo.org/badge/latestdoi/209058101)
+
 # tomatogenome-en-tibi
 
 This repository contains the source and library code for analyzing the ancient genome
